@@ -64,10 +64,9 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 border-t border-white/[0.12] pt-7 text-xs text-white/40 md:grid-cols-3 md:items-center">
+        <div className="mt-14 grid grid-cols-1 gap-5 border-t border-white/[0.12] pt-7 text-xs text-white/40 md:grid-cols-2 md:items-center">
           <p>© {new Date().getFullYear()} MAVEX INVESTMENTS PTE. LTD.</p>
-          <p className="flex items-center gap-2 md:justify-center"><MapPin className="h-3.5 w-3.5" aria-hidden="true" /> Singapore · Laos · International markets</p>
-          <p className="md:text-right">Singapore UEN 202508354H</p>
+          <p className="flex items-center gap-2 md:justify-end"><MapPin className="h-3.5 w-3.5" aria-hidden="true" /> Singapore · Laos · International markets</p>
         </div>
       </div>
     </footer>

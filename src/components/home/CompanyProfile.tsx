@@ -30,15 +30,10 @@ const capacityMetrics = [
     unit: 'tonnes / year',
     label: 'Combined ferroalloy capacity',
   },
-  {
-    value: '2025',
-    unit: 'regional platform',
-    label: 'Singapore and Laos entities established',
-  },
 ];
 
 const materials = [
-  { symbol: 'W', name: 'Tungsten', detail: 'APT and tungsten-bearing material recovery' },
+  { symbol: 'W', name: 'Tungsten', detail: 'APT, ferrotungsten, and tungsten-bearing material recovery' },
   { symbol: 'Mo', name: 'Molybdenum', detail: 'Molybdenum products and ferromolybdenum' },
   { symbol: 'V', name: 'Vanadium', detail: 'Vanadium-bearing catalysts and ferrovanadium' },
   { symbol: 'Co', name: 'Cobalt', detail: 'Cobalt-bearing secondary material streams' },
@@ -62,7 +57,7 @@ const valueChain = [
     number: '03',
     icon: FlaskConical,
     title: 'Product conversion',
-    text: 'Convert recovered material into products such as APT, ferromolybdenum, and ferrovanadium.',
+    text: 'Convert recovered material into products such as APT, ferrotungsten, ferromolybdenum, and ferrovanadium.',
   },
   {
     number: '04',
@@ -110,29 +105,29 @@ const CompanyProfile: React.FC = () => {
               </figcaption>
             </figure>
             <div className="bg-white p-8 md:p-12 lg:col-span-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-jade-dark">Registered commercial hub</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-jade-dark">Regional commercial platform</p>
               <h3 className="mt-4 text-3xl font-semibold uppercase text-graphite">MAVEX Investments</h3>
               <p className="mt-5 text-steel-gray">
-                Incorporated in Singapore on 26 February 2025 as a private company limited by shares, with wholesale of basic industrial chemicals as its primary registered activity.
+                Based in Singapore, MAVEX supports international trading, strategic investment, and cross-border coordination across strategic-metal value chains.
               </p>
               <dl className="mt-8 border-t border-graphite/[0.15]">
                 <div className="grid grid-cols-[7rem_1fr] gap-4 border-b border-graphite/[0.15] py-4">
-                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">UEN</dt>
-                  <dd className="font-medium text-graphite">202508354H</dd>
+                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">Role</dt>
+                  <dd className="font-medium text-graphite">International trading &amp; investment</dd>
                 </div>
                 <div className="grid grid-cols-[7rem_1fr] gap-4 border-b border-graphite/[0.15] py-4">
-                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">Status</dt>
-                  <dd className="font-medium text-graphite">Live company</dd>
+                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">Network</dt>
+                  <dd className="font-medium text-graphite">Singapore · Laos · International markets</dd>
                 </div>
                 <div className="grid grid-cols-[7rem_1fr] gap-4 py-4">
-                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">Office</dt>
-                  <dd className="font-medium text-graphite">112 Robinson Road, #03-01, Singapore 068902</dd>
+                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">Focus</dt>
+                  <dd className="font-medium text-graphite">Strategic metals &amp; circular value</dd>
                 </div>
               </dl>
             </div>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 gap-px bg-graphite/[0.15] lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-1 gap-px bg-graphite/[0.15] sm:grid-cols-3">
             {capacityMetrics.map((metric) => (
               <div key={metric.label} className="bg-warm-stone p-6 md:p-8">
                 <div className="font-display text-5xl font-semibold text-graphite md:text-6xl">{metric.value}</div>
@@ -185,10 +180,14 @@ const CompanyProfile: React.FC = () => {
                   <p className="text-xs uppercase tracking-[0.16em] text-white/60">Conceptual material visualization</p>
                 </div>
               </div>
-              <div className="mt-6 grid grid-cols-1 gap-px bg-white/[0.12] sm:grid-cols-3">
+              <div className="mt-6 grid grid-cols-1 gap-px bg-white/[0.12] sm:grid-cols-2 lg:grid-cols-4">
                 <div className="bg-steel px-5 py-6">
                   <span className="text-xs uppercase tracking-[0.16em] text-copper-light">Primary product</span>
                   <p className="mt-2 font-semibold">Ammonium paratungstate</p>
+                </div>
+                <div className="bg-steel px-5 py-6">
+                  <span className="text-xs uppercase tracking-[0.16em] text-copper-light">Ferroalloy</span>
+                  <p className="mt-2 font-semibold">Ferrotungsten</p>
                 </div>
                 <div className="bg-steel px-5 py-6">
                   <span className="text-xs uppercase tracking-[0.16em] text-copper-light">Ferroalloy</span>
