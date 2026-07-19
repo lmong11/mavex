@@ -33,9 +33,6 @@ const capacityMetrics = [
 const materials = [
   { symbol: 'W', key: 'tungsten' },
   { symbol: 'Mo', key: 'molybdenum' },
-  { symbol: 'V', key: 'vanadium' },
-  { symbol: 'Co', key: 'cobalt' },
-  { symbol: 'Ni', key: 'nickel' },
 ];
 
 const valueChain = [
@@ -145,9 +142,9 @@ const CompanyProfile: React.FC = () => {
                 {t('capabilities.intro')}
               </p>
 
-              <div className="mt-10 grid grid-cols-1 gap-px bg-white/[0.12] sm:grid-cols-2">
-                {materials.map((material, index) => (
-                  <article key={material.symbol} className={`bg-graphite p-5 ${index === materials.length - 1 ? 'sm:col-span-2' : ''}`}>
+              <div className="mt-10 grid grid-cols-1 gap-px bg-white/[0.12]">
+                {materials.map((material) => (
+                  <article key={material.symbol} className="bg-graphite p-6">
                     <div className="flex items-start gap-4">
                       <span className="flex h-12 w-12 shrink-0 items-center justify-center border border-jade/[0.45] font-display text-2xl font-semibold text-jade-light">
                         {material.symbol}
@@ -175,7 +172,7 @@ const CompanyProfile: React.FC = () => {
                   <p className="text-xs uppercase tracking-[0.16em] text-white/60">{t('capabilities.conceptCaption')}</p>
                 </div>
               </div>
-              <div className="mt-6 grid grid-cols-1 gap-px bg-white/[0.12] sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-6 grid grid-cols-1 gap-px bg-white/[0.12] sm:grid-cols-3">
                 <div className="bg-steel px-5 py-6">
                   <span className="text-xs uppercase tracking-[0.16em] text-copper-light">{t('capabilities.primaryProduct')}</span>
                   <p className="mt-2 font-semibold">{t('capabilities.apt')}</p>
@@ -187,10 +184,6 @@ const CompanyProfile: React.FC = () => {
                 <div className="bg-steel px-5 py-6">
                   <span className="text-xs uppercase tracking-[0.16em] text-copper-light">{t('capabilities.ferroalloy')}</span>
                   <p className="mt-2 font-semibold">{t('capabilities.ferromolybdenum')}</p>
-                </div>
-                <div className="bg-steel px-5 py-6">
-                  <span className="text-xs uppercase tracking-[0.16em] text-copper-light">{t('capabilities.ferroalloy')}</span>
-                  <p className="mt-2 font-semibold">{t('capabilities.ferrovanadium')}</p>
                 </div>
               </div>
             </figure>
@@ -316,7 +309,7 @@ const CompanyProfile: React.FC = () => {
                 {t('operations.openGallery')}
                 <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
               </Link>
-              <a href="mailto:Business@mavexinvest.com" className="inline-flex items-center justify-between border-b border-white/40 py-3 font-semibold hover:border-white">
+              <a href="mailto:business@mavexinvest.com" className="inline-flex items-center justify-between border-b border-white/40 py-3 font-semibold hover:border-white">
                 {t('operations.discuss')}
                 <Mail className="h-5 w-5" aria-hidden="true" />
               </a>

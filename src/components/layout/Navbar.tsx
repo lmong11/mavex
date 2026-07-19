@@ -72,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
             ))}
             <LanguageSwitcher />
             <a
-              href="mailto:Business@mavexinvest.com"
+              href="mailto:business@mavexinvest.com"
               className="inline-flex items-center gap-2 border border-white/30 px-4 py-2 text-sm font-semibold text-white transition-colors hover:border-copper hover:bg-copper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-light"
             >
               <Mail className="h-4 w-4" aria-hidden="true" />
@@ -119,11 +119,11 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
                 </Link>
               ))}
               <a
-                href="mailto:Business@mavexinvest.com"
+                href="mailto:business@mavexinvest.com"
                 className="flex items-center gap-2 rounded-md px-3 py-3 text-base font-medium text-white hover:bg-slate-light"
               >
                 <Mail className="h-5 w-5 text-copper-light" aria-hidden="true" />
-                Business@mavexinvest.com
+                business@mavexinvest.com
               </a>
             </nav>
           </div>

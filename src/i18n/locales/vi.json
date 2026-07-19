@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "MAVEX INVESTMENTS | Kim loại chiến lược & Giá trị tuần hoàn",
-    "description": "MAVEX INVESTMENTS kết nối chuyên môn thương mại tại Singapore với hoạt động chế biến, thu hồi và sản xuất kim loại chiến lược tại Lào."
+    "title": "MAVEX INVESTMENTS | Vonfram, Molypden & Giá trị tuần hoàn",
+    "description": "MAVEX INVESTMENTS kết nối nền tảng thương mại tại Singapore với hoạt động gia công, thu hồi và thương mại quốc tế vật liệu chứa vonfram và molypden tại Lào."
   },
   "language": { "select": "Chọn ngôn ngữ" },
   "accessibility": { "skip": "Chuyển đến nội dung chính" },
@@ -19,9 +19,9 @@
     "footerLabel": "Điều hướng chân trang"
   },
   "hero": {
-    "label": "Kim loại chiến lược · Chuỗi giá trị tuần hoàn",
+    "label": "Vonfram · Molypden · Giá trị tuần hoàn",
     "title": "Từ vật liệu phức tạp đến giá trị chiến lược.",
-    "intro": "Kết hợp chuyên môn thương mại tại Singapore với nền tảng công nghiệp đang phát triển ở Lào để chế biến, thu hồi và giao thương quốc tế kim loại chiến lược.",
+    "intro": "Kết nối nền tảng thương mại tại Singapore với hoạt động công nghiệp tại Lào để gia công, thu hồi, chuyển đổi sản phẩm và thương mại quốc tế vật liệu chứa vonfram và molypden.",
     "explore": "Khám phá năng lực",
     "viewFactory": "Xem nhà máy",
     "base": "Cơ sở sản xuất tại Lào",
@@ -50,19 +50,16 @@
     "unit": "tấn / năm",
     "processing": "Công suất xử lý vật liệu chứa kim loại",
     "aptCapacity": "Công suất amoni paratungstat",
-    "ferroalloyCapacity": "Tổng công suất hợp kim sắt",
-    "capacityNote": "Các số liệu công suất phản ánh hồ sơ hiện tại của công ty và thiết kế sản xuất đã công bố."
+    "ferroalloyCapacity": "Công suất thiết kế hợp kim sắt",
+    "capacityNote": "Các số liệu công suất thể hiện công suất danh nghĩa và thiết kế nêu trong tài liệu công ty, không phải sản lượng thực tế hằng năm."
   },
   "capabilities": {
-    "label": "Vật liệu & sản phẩm",
-    "title": "Tập trung vào giá trị kim loại chiến lược.",
-    "intro": "Hoạt động kinh doanh tập trung vào thu hồi, chế biến và thương mại hóa các vật liệu chứa vonfram, molypden, vanadi, coban và niken.",
+    "label": "Phạm vi gia công hiện tại",
+    "title": "Tập trung vào giá trị vonfram và molypden.",
+    "intro": "Phạm vi gia công theo hợp đồng hiện tại bao gồm vật liệu chứa vonfram và molypden, với các sản phẩm gồm APT, ferrovonfram và ferromolypden.",
     "materials": {
       "tungsten": { "name": "Vonfram", "detail": "APT, ferrovonfram và thu hồi vật liệu chứa vonfram" },
-      "molybdenum": { "name": "Molypden", "detail": "Sản phẩm molypden và ferromolypden" },
-      "vanadium": { "name": "Vanadi", "detail": "Xúc tác chứa vanadi và ferrovanadi" },
-      "cobalt": { "name": "Coban", "detail": "Các dòng vật liệu thứ cấp chứa coban" },
-      "nickel": { "name": "Niken", "detail": "Vật liệu công nghiệp chứa niken" }
+      "molybdenum": { "name": "Molypden", "detail": "Ferromolypden và gia công vật liệu chứa molypden" }
     },
     "conceptAlt": "Bố cục ý tưởng về các vật liệu kim loại chiến lược",
     "conceptCaption": "Hình ảnh ý tưởng về vật liệu",
@@ -70,8 +67,7 @@
     "ferroalloy": "Hợp kim sắt",
     "apt": "Amoni paratungstat",
     "ferrotungsten": "Ferrovonfram",
-    "ferromolybdenum": "Ferromolypden",
-    "ferrovanadium": "Ferrovanadi"
+    "ferromolybdenum": "Ferromolypden"
   },
   "valueChain": {
     "label": "Chuỗi giá trị",
@@ -82,12 +78,12 @@
     "steps": {
       "review": { "title": "Đánh giá nguyên liệu", "text": "Đánh giá thành phần vật liệu, hồ sơ và mức độ phù hợp thương mại trước khi chế biến." },
       "recovery": { "title": "Phân tách & thu hồi", "text": "Áp dụng các quy trình có kiểm soát để phân tách và thu hồi giá trị kim loại chiến lược từ vật liệu phức tạp." },
-      "conversion": { "title": "Chuyển đổi sản phẩm", "text": "Chuyển vật liệu thu hồi thành các sản phẩm như APT, ferrovonfram, ferromolypden và ferrovanadi." },
+      "conversion": { "title": "Chuyển đổi sản phẩm", "text": "Chuyển vật liệu thu hồi thành các sản phẩm như APT, ferrovonfram và ferromolypden." },
       "delivery": { "title": "Cung ứng thương mại", "text": "Điều phối chất lượng, hồ sơ và giao hàng quốc tế thông qua nền tảng thương mại tại Singapore." }
     },
     "benefits": {
       "efficiency": { "title": "Hiệu quả tài nguyên", "text": "Thu hồi giá trị từ vật liệu thứ cấp phức tạp và hỗ trợ sử dụng vật liệu theo hướng tuần hoàn hơn." },
-      "sourcing": { "title": "Nguồn cung có trách nhiệm", "text": "Xây dựng quy trình dựa trên hồ sơ, khả năng truy xuất và các nguyên tắc nguồn cung có trách nhiệm được công nhận." },
+      "sourcing": { "title": "Dòng vật liệu có hồ sơ theo dõi", "text": "Duy trì hồ sơ theo lô, kết quả phân tích, chứng từ nguồn gốc và khả năng truy xuất trong suốt quá trình tiếp nhận và gia công." },
       "coordination": { "title": "Phối hợp xuyên biên giới", "text": "Kết nối hoạt động khu vực với khách hàng và đối tác trên các thị trường quốc tế." }
     }
   },
@@ -106,7 +102,7 @@
     "openGallery": "Mở thư viện nhà máy",
     "discuss": "Trao đổi cơ hội hợp tác",
     "singapore": "Singapore",
-    "commercialHeadquarters": "Trụ sở thương mại",
+    "commercialHeadquarters": "Văn phòng Singapore",
     "laos": "Lào",
     "productionOperations": "Hoạt động sản xuất",
     "laosAddress": "Tỉnh Khammouane, Lào"
@@ -148,9 +144,9 @@
     }
   },
   "footer": {
-    "description": "Chế biến kim loại chiến lược, thu hồi vật liệu công nghiệp, thương mại quốc tế và đầu tư dài hạn tại Singapore và Lào.",
+    "description": "Gia công vật liệu chứa vonfram và molypden, thu hồi vật liệu công nghiệp, thương mại quốc tế và đầu tư dài hạn tại Singapore và Lào.",
     "footprint": "Phạm vi hoạt động",
-    "singaporeHeadquarters": "Trụ sở Singapore",
+    "singaporeHeadquarters": "Văn phòng Singapore",
     "laosOperations": "Sản xuất tại Lào",
     "navigate": "Điều hướng",
     "valueChain": "Chuỗi giá trị",

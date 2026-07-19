@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "MAVEX INVESTMENTS | 전략 금속과 순환 가치",
-    "description": "MAVEX INVESTMENTS는 싱가포르의 상업 전문성과 라오스의 전략 금속 가공·회수·생산 운영을 연결합니다."
+    "title": "MAVEX INVESTMENTS | 텅스텐·몰리브덴과 순환 가치",
+    "description": "MAVEX INVESTMENTS는 싱가포르 상업 플랫폼과 라오스의 텅스텐·몰리브덴 함유 원료 가공, 회수 및 국제 무역을 연결합니다."
   },
   "language": { "select": "언어 선택" },
   "accessibility": { "skip": "본문으로 건너뛰기" },
@@ -19,9 +19,9 @@
     "footerLabel": "푸터 내비게이션"
   },
   "hero": {
-    "label": "전략 금속 · 순환 가치사슬",
+    "label": "텅스텐 · 몰리브덴 · 순환 가치",
     "title": "복합 원료를 전략적 가치로.",
-    "intro": "싱가포르 기반의 상업 전문성과 라오스에서 성장하는 산업 플랫폼을 통해 전략 금속 가공, 회수 및 국제 무역을 수행합니다.",
+    "intro": "싱가포르 상업 플랫폼과 라오스 산업 운영을 통해 텅스텐·몰리브덴 함유 원료의 가공, 회수, 제품 전환 및 국제 무역을 수행합니다.",
     "explore": "사업 역량 보기",
     "viewFactory": "공장 보기",
     "base": "라오스 생산기지",
@@ -50,19 +50,16 @@
     "unit": "톤 / 연",
     "processing": "금속 함유 원료 처리 능력",
     "aptCapacity": "파라텅스텐산암모늄 생산 능력",
-    "ferroalloyCapacity": "합금철 종합 생산 능력",
-    "capacityNote": "생산 능력 수치는 회사의 최신 기업 자료와 명시된 생산 설계를 기준으로 합니다."
+    "ferroalloyCapacity": "합금철 설계 생산 능력",
+    "capacityNote": "생산 능력 수치는 회사 자료에 명시된 명목·설계 능력이며 실제 연간 생산량을 의미하지 않습니다."
   },
   "capabilities": {
-    "label": "소재 및 제품",
-    "title": "전략 금속 가치에 집중합니다.",
-    "intro": "텅스텐, 몰리브덴, 바나듐, 코발트 및 니켈 함유 원료의 회수, 가공, 상용화를 중심으로 사업을 구성합니다.",
+    "label": "현재 가공 범위",
+    "title": "텅스텐과 몰리브덴 가치에 집중합니다.",
+    "intro": "현재 위탁가공 범위는 텅스텐 및 몰리브덴 함유 원료를 대상으로 하며, APT, 페로텅스텐, 페로몰리브덴을 포함합니다.",
     "materials": {
       "tungsten": { "name": "텅스텐", "detail": "APT, 페로텅스텐 및 텅스텐 함유 원료 회수" },
-      "molybdenum": { "name": "몰리브덴", "detail": "몰리브덴 제품 및 페로몰리브덴" },
-      "vanadium": { "name": "바나듐", "detail": "바나듐 함유 촉매 및 페로바나듐" },
-      "cobalt": { "name": "코발트", "detail": "코발트 함유 2차 원료" },
-      "nickel": { "name": "니켈", "detail": "니켈 함유 산업 원료" }
+      "molybdenum": { "name": "몰리브덴", "detail": "페로몰리브덴 및 몰리브덴 함유 원료 가공" }
     },
     "conceptAlt": "전략 금속 소재의 콘셉트 배치",
     "conceptCaption": "소재 콘셉트 이미지",
@@ -70,8 +67,7 @@
     "ferroalloy": "합금철",
     "apt": "파라텅스텐산암모늄",
     "ferrotungsten": "페로텅스텐",
-    "ferromolybdenum": "페로몰리브덴",
-    "ferrovanadium": "페로바나듐"
+    "ferromolybdenum": "페로몰리브덴"
   },
   "valueChain": {
     "label": "가치사슬",
@@ -82,12 +78,12 @@
     "steps": {
       "review": { "title": "원료 검토", "text": "가공 전 원료 구성, 관련 문서 및 상업적 적합성을 평가합니다." },
       "recovery": { "title": "분리 및 회수", "text": "통제된 공정을 적용해 복합 원료에서 전략 금속의 가치를 분리하고 회수합니다." },
-      "conversion": { "title": "제품 전환", "text": "회수 원료를 APT, 페로텅스텐, 페로몰리브덴, 페로바나듐 등의 제품으로 전환합니다." },
+      "conversion": { "title": "제품 전환", "text": "회수 원료를 APT, 페로텅스텐, 페로몰리브덴 등의 제품으로 전환합니다." },
       "delivery": { "title": "상업 공급", "text": "싱가포르 상업 플랫폼을 통해 품질, 문서 및 국제 공급을 조율합니다." }
     },
     "benefits": {
       "efficiency": { "title": "자원 효율성", "text": "복합 2차 원료에서 가치를 회수하고 보다 순환적인 소재 활용을 지원합니다." },
-      "sourcing": { "title": "책임 있는 조달", "text": "문서화, 추적성 및 공인된 책임 조달 원칙을 중심으로 프로세스를 구축합니다." },
+      "sourcing": { "title": "기록 기반 원료 관리", "text": "취급 및 가공 전 과정에서 배치 기록, 분석 결과, 원산지 문서와 추적 정보를 유지합니다." },
       "coordination": { "title": "국경 간 협업", "text": "지역 운영을 국제 시장의 고객 및 파트너와 연결합니다." }
     }
   },
@@ -106,7 +102,7 @@
     "openGallery": "공장 갤러리 열기",
     "discuss": "사업 기회 문의",
     "singapore": "싱가포르",
-    "commercialHeadquarters": "상업 본사",
+    "commercialHeadquarters": "싱가포르 사무소",
     "laos": "라오스",
     "productionOperations": "생산 운영",
     "laosAddress": "라오스 캄무안주"
@@ -148,9 +144,9 @@
     }
   },
   "footer": {
-    "description": "싱가포르와 라오스를 기반으로 전략 금속 가공, 산업 원료 회수, 국제 무역 및 장기 투자를 수행합니다.",
+    "description": "싱가포르와 라오스를 기반으로 텅스텐·몰리브덴 함유 원료 가공, 산업 원료 회수, 국제 무역 및 장기 투자를 수행합니다.",
     "footprint": "운영 거점",
-    "singaporeHeadquarters": "싱가포르 본사",
+    "singaporeHeadquarters": "싱가포르 사무소",
     "laosOperations": "라오스 생산 운영",
     "navigate": "바로가기",
     "valueChain": "가치사슬",

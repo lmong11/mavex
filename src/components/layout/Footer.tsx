@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               {t('footer.description')}
             </p>
             <a
-              href="mailto:Business@mavexinvest.com"
+              href="mailto:business@mavexinvest.com"
               className="mt-8 inline-flex items-center gap-3 border-b border-copper/70 pb-2 font-semibold text-white hover:border-copper-light"
             >
               <Mail className="h-4 w-4 text-copper-light" aria-hidden="true" />

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "MAVEX INVESTMENTS - Strategic Metals & Circular Value",
-    "description": "MAVEX INVESTMENTS connects Singapore-based commercial expertise with strategic-metal processing, recovery, and production operations in Laos."
+    "title": "MAVEX INVESTMENTS - Tungsten, Molybdenum & Circular Value",
+    "description": "MAVEX INVESTMENTS connects a Singapore commercial platform with tungsten- and molybdenum-material processing, recovery, and international trade in Laos."
   },
   "language": {
     "select": "Select language"
@@ -23,9 +23,9 @@
     "footerLabel": "Footer navigation"
   },
   "hero": {
-    "label": "Strategic metals · Circular value chains",
+    "label": "Tungsten · Molybdenum · Circular value",
     "title": "From complex materials to strategic value.",
-    "intro": "Singapore-based commercial expertise and a growing industrial platform in Laos for strategic-metal processing, recovery, and international trade.",
+    "intro": "A Singapore commercial platform and Laos industrial operations for tungsten- and molybdenum-material processing, recovery, product conversion, and international trade.",
     "explore": "Explore capabilities",
     "viewFactory": "View the factory",
     "base": "Laos production base",
@@ -54,19 +54,16 @@
     "unit": "tonnes / year",
     "processing": "Metal-bearing material processing",
     "aptCapacity": "Ammonium paratungstate capacity",
-    "ferroalloyCapacity": "Combined ferroalloy capacity",
-    "capacityNote": "Capacity figures reflect the company's current corporate profile and stated production design."
+    "ferroalloyCapacity": "Ferroalloy design capacity",
+    "capacityNote": "Capacity figures indicate stated nameplate and production design, not actual annual output."
   },
   "capabilities": {
-    "label": "Materials & products",
-    "title": "Focused on strategic-metal value.",
-    "intro": "The business is structured around the recovery, processing, and commercialization of tungsten, molybdenum, vanadium, cobalt, and nickel-bearing materials.",
+    "label": "Current processing scope",
+    "title": "Focused on tungsten and molybdenum value.",
+    "intro": "Current contract-processing scope covers tungsten- and molybdenum-bearing materials, with products including APT, ferrotungsten, and ferromolybdenum.",
     "materials": {
-      "tungsten": { "name": "Tungsten", "detail": "APT, ferrotungsten, and tungsten-bearing material recovery" },
-      "molybdenum": { "name": "Molybdenum", "detail": "Molybdenum products and ferromolybdenum" },
-      "vanadium": { "name": "Vanadium", "detail": "Vanadium-bearing catalysts and ferrovanadium" },
-      "cobalt": { "name": "Cobalt", "detail": "Cobalt-bearing secondary material streams" },
-      "nickel": { "name": "Nickel", "detail": "Nickel-bearing industrial materials" }
+      "tungsten": { "name": "Tungsten", "detail": "APT, ferrotungsten, and recovery of tungsten-bearing materials" },
+      "molybdenum": { "name": "Molybdenum", "detail": "Ferromolybdenum and processing of molybdenum-bearing materials" }
     },
     "conceptAlt": "Conceptual arrangement of strategic metal materials",
     "conceptCaption": "Conceptual material visualization",
@@ -74,8 +71,7 @@
     "ferroalloy": "Ferroalloy",
     "apt": "Ammonium paratungstate",
     "ferrotungsten": "Ferrotungsten",
-    "ferromolybdenum": "Ferromolybdenum",
-    "ferrovanadium": "Ferrovanadium"
+    "ferromolybdenum": "Ferromolybdenum"
   },
   "valueChain": {
     "label": "Value chain",
@@ -86,12 +82,12 @@
     "steps": {
       "review": { "title": "Feedstock review", "text": "Evaluate material composition, documentation, and commercial suitability before processing." },
       "recovery": { "title": "Separation & recovery", "text": "Apply controlled process routes to separate and recover strategic-metal values from complex materials." },
-      "conversion": { "title": "Product conversion", "text": "Convert recovered material into products such as APT, ferrotungsten, ferromolybdenum, and ferrovanadium." },
+      "conversion": { "title": "Product conversion", "text": "Convert recovered material into products such as APT, ferrotungsten, and ferromolybdenum." },
       "delivery": { "title": "Commercial delivery", "text": "Coordinate quality, documentation, and international delivery through the Singapore commercial platform." }
     },
     "benefits": {
       "efficiency": { "title": "Resource efficiency", "text": "Recover value from complex secondary materials and support more circular material use." },
-      "sourcing": { "title": "Responsible sourcing", "text": "Build processes around documentation, traceability, and recognized responsible-sourcing principles." },
+      "sourcing": { "title": "Documented material flows", "text": "Maintain batch records, assays, source documentation, and traceability across handling and processing." },
       "coordination": { "title": "Cross-border coordination", "text": "Connect regional operations with customers and partners across international markets." }
     }
   },
@@ -110,7 +106,7 @@
     "openGallery": "Open factory gallery",
     "discuss": "Discuss an opportunity",
     "singapore": "Singapore",
-    "commercialHeadquarters": "Commercial headquarters",
+    "commercialHeadquarters": "Singapore office",
     "laos": "Laos",
     "productionOperations": "Production operations",
     "laosAddress": "Khammouane Province, Laos"
@@ -152,9 +148,9 @@
     }
   },
   "footer": {
-    "description": "Strategic-metal processing, industrial material recovery, international trading, and long-term investment across Singapore and Laos.",
+    "description": "Tungsten- and molybdenum-material processing, industrial material recovery, international trading, and long-term investment across Singapore and Laos.",
     "footprint": "Operating footprint",
-    "singaporeHeadquarters": "Singapore headquarters",
+    "singaporeHeadquarters": "Singapore office",
     "laosOperations": "Laos production operations",
     "navigate": "Navigate",
     "valueChain": "Value chain",

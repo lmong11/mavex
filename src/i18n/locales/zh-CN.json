@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "MAVEX INVESTMENTS｜战略金属与循环价值",
-    "description": "MAVEX INVESTMENTS 连接新加坡商业专长与老挝的战略金属加工、回收和生产运营。"
+    "title": "MAVEX INVESTMENTS｜钨、钼与循环价值",
+    "description": "MAVEX INVESTMENTS 连接新加坡商业平台与老挝的含钨、含钼物料加工、回收及国际贸易。"
   },
   "language": { "select": "选择语言" },
   "accessibility": { "skip": "跳转至主要内容" },
@@ -19,9 +19,9 @@
     "footerLabel": "页脚导航"
   },
   "hero": {
-    "label": "战略金属 · 循环价值链",
+    "label": "钨 · 钼 · 循环价值",
     "title": "从复杂物料到战略价值。",
-    "intro": "以新加坡商业专长为支点，依托不断发展的老挝工业平台，开展战略金属加工、回收与国际贸易。",
+    "intro": "连接新加坡商业平台与老挝工业运营，开展含钨、含钼物料加工、回收、产品转化与国际贸易。",
     "explore": "了解业务能力",
     "viewFactory": "查看工厂实景",
     "base": "老挝生产基地",
@@ -50,19 +50,16 @@
     "unit": "吨 / 年",
     "processing": "含金属物料处理能力",
     "aptCapacity": "仲钨酸铵产能",
-    "ferroalloyCapacity": "铁合金综合产能",
-    "capacityNote": "产能数据依据公司现有资料及所述生产设计。"
+    "ferroalloyCapacity": "铁合金设计产能",
+    "capacityNote": "产能数据为公司资料所述的名义及设计产能，不代表实际年度产量。"
   },
   "capabilities": {
-    "label": "材料与产品",
-    "title": "聚焦战略金属价值。",
-    "intro": "业务围绕含钨、钼、钒、钴及镍物料的回收、加工与商业化展开。",
+    "label": "当前加工范围",
+    "title": "聚焦钨、钼价值链。",
+    "intro": "当前委托加工范围涵盖含钨、含钼物料，产品包括仲钨酸铵（APT）、钨铁和钼铁。",
     "materials": {
-      "tungsten": { "name": "钨", "detail": "仲钨酸铵、钨铁及含钨物料回收" },
-      "molybdenum": { "name": "钼", "detail": "钼产品与钼铁" },
-      "vanadium": { "name": "钒", "detail": "含钒催化剂与钒铁" },
-      "cobalt": { "name": "钴", "detail": "含钴二次物料" },
-      "nickel": { "name": "镍", "detail": "含镍工业物料" }
+      "tungsten": { "name": "钨", "detail": "仲钨酸铵（APT）、钨铁及含钨物料回收" },
+      "molybdenum": { "name": "钼", "detail": "钼铁及含钼物料加工" }
     },
     "conceptAlt": "战略金属材料概念陈列图",
     "conceptCaption": "材料概念视觉图",
@@ -70,8 +67,7 @@
     "ferroalloy": "铁合金",
     "apt": "仲钨酸铵",
     "ferrotungsten": "钨铁",
-    "ferromolybdenum": "钼铁",
-    "ferrovanadium": "钒铁"
+    "ferromolybdenum": "钼铁"
   },
   "valueChain": {
     "label": "价值链",
@@ -82,12 +78,12 @@
     "steps": {
       "review": { "title": "原料评估", "text": "在加工前评估物料成分、文件资料及商业适配性。" },
       "recovery": { "title": "分离与回收", "text": "采用受控工艺路线，从复杂物料中分离并回收战略金属价值。" },
-      "conversion": { "title": "产品转化", "text": "将回收物料转化为仲钨酸铵、钨铁、钼铁和钒铁等产品。" },
+      "conversion": { "title": "产品转化", "text": "将回收物料转化为仲钨酸铵、钨铁和钼铁等产品。" },
       "delivery": { "title": "商业交付", "text": "通过新加坡商业平台协调质量、文件和国际交付。" }
     },
     "benefits": {
       "efficiency": { "title": "资源效率", "text": "从复杂二次物料中回收价值，推动材料更充分地循环利用。" },
-      "sourcing": { "title": "负责任采购", "text": "围绕文件管理、可追溯性和公认的负责任采购原则建立流程。" },
+      "sourcing": { "title": "可追溯的物料管理", "text": "在物料处理和加工过程中维护批次记录、化验结果、来源文件与可追溯信息。" },
       "coordination": { "title": "跨境协同", "text": "连接区域运营与国际市场中的客户和合作伙伴。" }
     }
   },
@@ -106,7 +102,7 @@
     "openGallery": "打开工厂相册",
     "discuss": "洽谈合作机会",
     "singapore": "新加坡",
-    "commercialHeadquarters": "商业总部",
+    "commercialHeadquarters": "新加坡办公室",
     "laos": "老挝",
     "productionOperations": "生产运营",
     "laosAddress": "老挝甘蒙省"
@@ -148,9 +144,9 @@
     }
   },
   "footer": {
-    "description": "立足新加坡与老挝，开展战略金属加工、工业物料回收、国际贸易与长期投资。",
+    "description": "立足新加坡与老挝，开展含钨、含钼物料加工、工业物料回收、国际贸易与长期投资。",
     "footprint": "运营布局",
-    "singaporeHeadquarters": "新加坡总部",
+    "singaporeHeadquarters": "新加坡办公室",
     "laosOperations": "老挝生产运营",
     "navigate": "导航",
     "valueChain": "价值链",
