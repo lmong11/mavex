@@ -1,30 +1,25 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   scrolled: boolean;
 }
 
+const navigationItems = [
+  { name: 'Home', href: '/' },
+  { name: 'Gallery', href: '/gallery' },
+];
 const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  
+  const [isOpen, setIsOpen] = React.useState(false);
+  const location = useLocation();
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  
-  const toggleServices = () => {
-    setServicesOpen(!servicesOpen);
-  };
-  
-  const closeMenu = () => {
-    setIsOpen(false);
-    setServicesOpen(false);
-  };
-  
+
   return (
-    <header 
+    <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled ? 'nav-scrolled' : 'bg-transparent'
       }`}
@@ -32,85 +27,29 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center" onClick={closeMenu}>
-            <span className="text-2xl font-bold font-montserrat text-white">MAVEX</span>
-            <span className="ml-2 text-sm text-copper font-medium tracking-wider">INVESTMENTS</span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/images/mavex-logo.png"
+              alt="MAVEX Investments"
+              className="h-12 w-auto"
+            />
           </Link>
-          
+
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-1">
-            <NavLink 
-              to="/" 
-              className={({ isActive }) => 
-                `navbar-link-light ${isActive ? 'bg-slate-light bg-opacity-30' : ''}`
-              }
-            >
-              Home
-            </NavLink>
-            <NavLink 
-              to="/about" 
-              className={({ isActive }) => 
-                `navbar-link-light ${isActive ? 'bg-slate-light bg-opacity-30' : ''}`
-              }
-            >
-              About Us
-            </NavLink>
-            <div className="relative group">
-              <button 
-                className="navbar-link-light flex items-center"
-                onClick={toggleServices}
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navigationItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`navbar-link-light ${
+                  location.pathname === item.href ? 'text-copper' : ''
+                }`}
               >
-                Services <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white py-1 hidden group-hover:block">
-                <Link 
-                  to="/services#recycling" 
-                  className="block px-4 py-2 text-sm text-slate-dark hover:bg-gray-100"
-                  onClick={closeMenu}
-                >
-                  Recycling & Processing
-                </Link>
-                <Link 
-                  to="/services#trading" 
-                  className="block px-4 py-2 text-sm text-slate-dark hover:bg-gray-100"
-                  onClick={closeMenu}
-                >
-                  Global Trade & Logistics
-                </Link>
-                <Link 
-                  to="/services#consulting" 
-                  className="block px-4 py-2 text-sm text-slate-dark hover:bg-gray-100"
-                  onClick={closeMenu}
-                >
-                  Consulting & Investment
-                </Link>
-              </div>
-            </div>
-            <NavLink 
-              to="/blog" 
-              className={({ isActive }) => 
-                `navbar-link-light ${isActive ? 'bg-slate-light bg-opacity-30' : ''}`
-              }
-            >
-              Blog
-            </NavLink>
-            <NavLink 
-              to="/contact" 
-              className={({ isActive }) => 
-                `navbar-link-light ${isActive ? 'bg-slate-light bg-opacity-30' : ''}`
-              }
-            >
-              Contact
-            </NavLink>
+                {item.name}
+              </Link>
+            ))}
           </nav>
-          
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Link to="/contact" className="btn-primary">
-              Get a Quote
-            </Link>
-          </div>
-          
+
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button
@@ -128,103 +67,28 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
             </button>
           </div>
         </div>
-      </div>
-      
-      {/* Mobile Menu */}
-      <div 
-        className={`lg:hidden bg-slate-dark ${
-          isOpen ? 'block' : 'hidden'
-        }`}
-      >
-        <div className="px-2 pt-2 pb-4 space-y-1">
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => 
-              `block px-3 py-2 rounded-md text-white font-medium ${
-                isActive ? 'bg-slate-light' : 'hover:bg-slate-light hover:bg-opacity-30'
-              }`
-            }
-            onClick={closeMenu}
-          >
-            Home
-          </NavLink>
-          <NavLink 
-            to="/about" 
-            className={({ isActive }) => 
-              `block px-3 py-2 rounded-md text-white font-medium ${
-                isActive ? 'bg-slate-light' : 'hover:bg-slate-light hover:bg-opacity-30'
-              }`
-            }
-            onClick={closeMenu}
-          >
-            About Us
-          </NavLink>
-          <div>
-            <button 
-              className="flex justify-between items-center w-full px-3 py-2 rounded-md text-white font-medium hover:bg-slate-light hover:bg-opacity-30"
-              onClick={toggleServices}
-            >
-              <span>Services</span>
-              <ChevronDown className={`h-5 w-5 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
-            </button>
-            {servicesOpen && (
-              <div className="pl-4 space-y-1 mt-1">
-                <Link 
-                  to="/services#recycling" 
-                  className="block px-3 py-2 rounded-md text-white font-medium hover:bg-slate-light hover:bg-opacity-30"
-                  onClick={closeMenu}
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="lg:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-slate-dark bg-opacity-95 backdrop-blur-sm rounded-lg mt-2">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`block px-3 py-2 text-base font-medium text-white rounded-md transition-colors ${
+                    location.pathname === item.href
+                      ? 'bg-copper text-white'
+                      : 'hover:bg-slate-light'
+                  }`}
+                  onClick={() => setIsOpen(false)}
                 >
-                  Recycling & Processing
+                  {item.name}
                 </Link>
-                <Link 
-                  to="/services#trading" 
-                  className="block px-3 py-2 rounded-md text-white font-medium hover:bg-slate-light hover:bg-opacity-30"
-                  onClick={closeMenu}
-                >
-                  Global Trade & Logistics
-                </Link>
-                <Link 
-                  to="/services#consulting" 
-                  className="block px-3 py-2 rounded-md text-white font-medium hover:bg-slate-light hover:bg-opacity-30"
-                  onClick={closeMenu}
-                >
-                  Consulting & Investment
-                </Link>
-              </div>
-            )}
+              ))}
+            </div>
           </div>
-          <NavLink 
-            to="/blog" 
-            className={({ isActive }) => 
-              `block px-3 py-2 rounded-md text-white font-medium ${
-                isActive ? 'bg-slate-light' : 'hover:bg-slate-light hover:bg-opacity-30'
-              }`
-            }
-            onClick={closeMenu}
-          >
-            Blog
-          </NavLink>
-          <NavLink 
-            to="/contact" 
-            className={({ isActive }) => 
-              `block px-3 py-2 rounded-md text-white font-medium ${
-                isActive ? 'bg-slate-light' : 'hover:bg-slate-light hover:bg-opacity-30'
-              }`
-            }
-            onClick={closeMenu}
-          >
-            Contact
-          </NavLink>
-          <div className="pt-2">
-            <Link 
-              to="/contact" 
-              className="block w-full text-center btn-primary"
-              onClick={closeMenu}
-            >
-              Get a Quote
-            </Link>
-          </div>
-        </div>
+        )}
       </div>
     </header>
   );

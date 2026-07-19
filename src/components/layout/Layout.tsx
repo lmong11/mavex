@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const Layout: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 20;
@@ -13,14 +13,14 @@ const Layout: React.FC = () => {
         setScrolled(isScrolled);
       }
     };
-    
+
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [scrolled]);
-  
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar scrolled={scrolled} />

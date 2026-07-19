@@ -6,31 +6,31 @@
   html {
     @apply scroll-smooth;
   }
-  
+
   body {
     @apply text-slate-dark bg-white;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-montserrat font-bold;
   }
-  
+
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl;
   }
-  
+
   h2 {
     @apply text-3xl md:text-4xl;
   }
-  
+
   h3 {
     @apply text-2xl md:text-3xl;
   }
-  
+
   h4 {
     @apply text-xl md:text-2xl;
   }
-  
+
   p {
     @apply leading-relaxed;
   }
@@ -40,43 +40,43 @@
   .container-custom {
     @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
   }
-  
+
   .btn {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
-  
+
   .btn-primary {
     @apply btn bg-copper text-white hover:bg-copper-dark focus:ring-copper;
   }
-  
+
   .btn-secondary {
     @apply btn bg-slate-dark text-white hover:bg-slate-light focus:ring-slate-dark;
   }
-  
+
   .btn-outline {
     @apply btn border-2 border-copper text-copper hover:bg-copper hover:text-white focus:ring-copper;
   }
-  
+
   .section {
     @apply py-16 md:py-24;
   }
-  
+
   .card {
     @apply bg-white rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-lg;
   }
-  
+
   .card-hover {
     @apply transition-all duration-300 transform hover:-translate-y-1;
   }
-  
+
   .navbar-link {
     @apply px-3 py-2 text-base font-medium rounded-md transition-colors duration-200;
   }
-  
+
   .navbar-link-light {
     @apply navbar-link text-white opacity-80 hover:opacity-100;
   }
-  
+
   .navbar-link-dark {
     @apply navbar-link text-slate-dark hover:text-copper;
   }
@@ -84,15 +84,15 @@
   .timeline-item {
     @apply relative pl-8 pb-8 border-l-2 border-copper last:border-transparent;
   }
-  
+
   .timeline-dot {
     @apply absolute -left-2.5 top-0 h-5 w-5 rounded-full bg-copper;
   }
-  
+
   .section-heading {
     @apply relative mb-16 text-center;
   }
-  
+
   .section-heading::after {
     content: '';
     @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-copper mt-2;
