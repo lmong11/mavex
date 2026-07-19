@@ -7,7 +7,9 @@ interface NavbarProps {
 }
 
 const navigationItems = [
-  { name: 'Home', href: '/' },
+  { name: 'Company', href: '/#company-profile' },
+  { name: 'Capabilities', href: '/#capabilities' },
+  { name: 'Operations', href: '/#operations' },
   { name: 'Gallery', href: '/gallery' },
 ];
 const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
@@ -47,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
               alt=""
               className="h-12 w-auto"
             />
-            <span className="hidden sm:block text-[0.68rem] font-montserrat font-semibold uppercase tracking-[0.2em] text-white/85">
+            <span className="hidden sm:block text-[0.68rem] font-body font-semibold uppercase tracking-[0.2em] text-white/85">
               Investments
             </span>
           </Link>
@@ -59,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
                 key={item.name}
                 to={item.href}
                 className={`navbar-link-light ${
-                  location.pathname === item.href ? 'text-copper' : ''
+                  (item.href === '/gallery' && location.pathname === '/gallery') ? 'text-copper-light' : ''
                 }`}
               >
                 {item.name}

@@ -1,169 +1,351 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { ArrowUpRight, Award, Building2, Factory, Globe, Mail, Recycle } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Building2,
+  Factory,
+  FlaskConical,
+  Globe2,
+  Leaf,
+  Mail,
+  PackageCheck,
+  Recycle,
+  ShieldCheck,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
+
+const capacityMetrics = [
+  {
+    value: '20,000',
+    unit: 'tonnes / year',
+    label: 'Metal-bearing material processing',
+  },
+  {
+    value: '2,000',
+    unit: 'tonnes / year',
+    label: 'Ammonium paratungstate capacity',
+  },
+  {
+    value: '1,000',
+    unit: 'tonnes / year',
+    label: 'Combined ferroalloy capacity',
+  },
+  {
+    value: '2025',
+    unit: 'regional platform',
+    label: 'Singapore and Laos entities established',
+  },
+];
+
+const materials = [
+  { symbol: 'W', name: 'Tungsten', detail: 'APT and tungsten-bearing material recovery' },
+  { symbol: 'Mo', name: 'Molybdenum', detail: 'Molybdenum products and ferromolybdenum' },
+  { symbol: 'V', name: 'Vanadium', detail: 'Vanadium-bearing catalysts and ferrovanadium' },
+  { symbol: 'Co', name: 'Cobalt', detail: 'Cobalt-bearing secondary material streams' },
+  { symbol: 'Ni', name: 'Nickel', detail: 'Nickel-bearing industrial materials' },
+];
+
+const valueChain = [
+  {
+    number: '01',
+    icon: ShieldCheck,
+    title: 'Feedstock review',
+    text: 'Evaluate material composition, documentation, and commercial suitability before processing.',
+  },
+  {
+    number: '02',
+    icon: Recycle,
+    title: 'Separation & recovery',
+    text: 'Apply controlled process routes to separate and recover strategic-metal values from complex materials.',
+  },
+  {
+    number: '03',
+    icon: FlaskConical,
+    title: 'Product conversion',
+    text: 'Convert recovered material into products such as APT, ferromolybdenum, and ferrovanadium.',
+  },
+  {
+    number: '04',
+    icon: PackageCheck,
+    title: 'Commercial delivery',
+    text: 'Coordinate quality, documentation, and international delivery through the Singapore commercial platform.',
+  },
+];
 
 const CompanyProfile: React.FC = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.08,
   });
 
-  const keyHighlights = [
-    {
-      icon: Factory,
-      title: 'Annual Processing',
-      value: '20,000 tons',
-      subtitle: 'Tungsten, molybdenum, vanadium waste catalysts',
-      color: 'text-copper'
-    },
-    {
-      icon: Recycle,
-      title: 'APT Production',
-      value: '2,000 tons',
-      subtitle: 'Ammonium paratungstate annually',
-      color: 'text-forest'
-    },
-    {
-      icon: Globe,
-      title: 'Alloy Production',
-      value: '1,000 tons',
-      subtitle: 'Ferromolybdenum and ferrovanadium annually',
-      color: 'text-copper'
-    },
-    {
-      icon: Award,
-      title: 'OECD Compliant',
-      value: 'Certified',
-      subtitle: 'Conflict Minerals Initiative compliant',
-      color: 'text-forest'
-    },
-  ];
-
-  const locations = [
-    {
-      icon: Building2,
-      title: 'Singapore Headquarters',
-      company: 'MAVEX INVESTMENTS PTE. LTD.',
-      address: '112 Robinson Road, #03-01 Singapore'
-    },
-    {
-      icon: Factory,
-      title: 'Laos Production Base',
-      company: 'Zhongyu International Metal Materials Industrial Co., Ltd.',
-      address: 'Yapotash International Industrial Park, Thakhek County, Khammouane Province, Laos'
-    }
-  ];
-
   return (
-    <section id="company-profile" className="section bg-ivory scroll-mt-20">
-      <div className="container-custom">
-        <div
-          ref={ref}
-          className={`transform transition-all duration-1000 ${
-            inView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-          }`}
-        >
-          <div className="mb-16 grid grid-cols-1 gap-8 border-b border-slate-dark/15 pb-12 lg:grid-cols-12 lg:items-end">
+    <div ref={ref} className={inView ? 'opacity-100' : 'opacity-0'}>
+      <section id="company-profile" className="section scroll-mt-20 bg-warm-stone">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-5">
-              <p className="eyebrow">Company profile</p>
-              <h2 className="mt-4 text-4xl leading-tight text-slate-dark md:text-5xl">Material expertise.<br />Regional reach.</h2>
+              <p className="section-label text-copper-dark">Company platform</p>
+              <h2 className="mt-5 max-w-xl text-5xl font-semibold uppercase leading-[0.92] text-graphite md:text-6xl">
+                Commercial reach. Industrial depth.
+              </h2>
             </div>
-            <p className="max-w-2xl text-lg text-steel-gray lg:col-span-6 lg:col-start-7">
-              MAVEX combines Singapore-based commercial operations with an industrial footprint in Laos, focusing on the responsible recovery and utilization of tungsten, molybdenum, cobalt, nickel, and vanadium resources.
-            </p>
-          </div>
-
-          <div className="mb-20 grid grid-cols-1 gap-10 lg:grid-cols-12">
-            <article className="border-l-4 border-copper bg-white p-8 md:p-10 lg:col-span-7">
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-copper-dark">01 — Company overview</p>
-              <h3 className="mb-6 text-3xl text-slate-dark">A cross-border platform for strategic metals</h3>
-              <div className="space-y-5 text-steel-gray">
-                <p>
-                  Mavex Investments Pte. Ltd. is a company specializing in the processing, trading, and investment of rare and precious metals. Its wholly-owned subsidiary, Zhongyu International Metal Materials Industrial Co., Ltd., is located in the Yapotash International Industrial Park, Thakhek County, Khammouane Province, Laos.
-                </p>
-                <p>
-                  The company focuses on the comprehensive utilization of rare and precious metal resources such as tungsten, molybdenum, cobalt, nickel, and vanadium.
-                </p>
-              </div>
-            </article>
-
-            <div className="space-y-10 lg:col-span-5 lg:pl-6">
-              <article className="border-t border-slate-dark/20 pt-6">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-copper-dark">02 — Production</p>
-                <h3 className="mb-4 text-2xl text-slate-dark">Production capabilities</h3>
-                <p>
-                  It has established a production line with an annual capacity of processing 20,000 tons of tungsten, molybdenum, and vanadium waste catalysts, producing tungsten and molybdenum products. The line is capable of producing 2,000 tons of ammonium paratungstate (APT) and 1,000 tons of ferromolybdenum and ferrovanadium annually.
-                </p>
-              </article>
-
-              <article className="border-t border-slate-dark/20 pt-6">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-copper-dark">03 — Products</p>
-                <h3 className="mb-4 text-2xl text-slate-dark">Main products</h3>
-                <p>
-                  Its main products include ammonium paratungstate (APT), ferromolybdenum, and ferrovanadium. Raw materials cover tungsten-molybdenum-cobalt waste alloys, as well as waste catalysts containing tungsten, molybdenum, and vanadium from the petrochemical industry.
-                </p>
-              </article>
-
-              <article className="border-t border-slate-dark/20 pt-6">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-copper-dark">04 — Responsibility</p>
-                <h3 className="mb-4 text-2xl text-slate-dark">Environmental commitment</h3>
-                <p>
-                  The company adopts advanced production processes, advocates green environmental protection, and follows the development concepts promoted by the OECD Conflict Minerals Initiative. It is positioned as a global leader in the recycling and utilization of tungsten, molybdenum, and vanadium.
-                </p>
-              </article>
+            <div className="lg:col-span-6 lg:col-start-7">
+              <p className="text-xl leading-relaxed text-steel-gray">
+                MAVEX INVESTMENTS PTE. LTD. is a Singapore-incorporated company active in industrial chemical wholesaling and strategic investment. Its regional operating footprint connects international trade with metal-material processing in Laos.
+              </p>
             </div>
           </div>
 
-          <div className="mb-20 overflow-hidden bg-slate-dark text-white">
-            <div className="grid grid-cols-2 lg:grid-cols-4">
-              {keyHighlights.map((highlight) => (
-                <div key={highlight.title} className="border-b border-r border-white/10 p-6 last:border-r-0 md:p-8 lg:border-b-0">
-                  <highlight.icon className={`mb-8 h-6 w-6 ${highlight.color}`} aria-hidden="true" />
-                  <div className="font-montserrat text-3xl font-bold md:text-4xl">{highlight.value}</div>
-                  <div className="mt-2 text-sm font-semibold text-white/85">{highlight.title}</div>
-                  <div className="mt-2 text-xs leading-relaxed text-white/50">{highlight.subtitle}</div>
+          <div className="mt-16 grid grid-cols-1 gap-0 lg:grid-cols-12">
+            <figure className="image-frame relative min-h-[420px] overflow-hidden lg:col-span-7">
+              <img
+                src="/images/factory/factory-main-gate.jpg"
+                alt="Main entrance to the Zhongyu production base in Laos"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <figcaption className="absolute bottom-0 left-0 bg-graphite px-5 py-3 text-xs uppercase tracking-[0.16em] text-white/70">
+                Zhongyu production base · Laos
+              </figcaption>
+            </figure>
+            <div className="bg-white p-8 md:p-12 lg:col-span-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-jade-dark">Registered commercial hub</p>
+              <h3 className="mt-4 text-3xl font-semibold uppercase text-graphite">MAVEX Investments</h3>
+              <p className="mt-5 text-steel-gray">
+                Incorporated in Singapore on 26 February 2025 as a private company limited by shares, with wholesale of basic industrial chemicals as its primary registered activity.
+              </p>
+              <dl className="mt-8 border-t border-graphite/[0.15]">
+                <div className="grid grid-cols-[7rem_1fr] gap-4 border-b border-graphite/[0.15] py-4">
+                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">UEN</dt>
+                  <dd className="font-medium text-graphite">202508354H</dd>
                 </div>
-              ))}
+                <div className="grid grid-cols-[7rem_1fr] gap-4 border-b border-graphite/[0.15] py-4">
+                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">Status</dt>
+                  <dd className="font-medium text-graphite">Live company</dd>
+                </div>
+                <div className="grid grid-cols-[7rem_1fr] gap-4 py-4">
+                  <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-gray">Office</dt>
+                  <dd className="font-medium text-graphite">112 Robinson Road, #03-01, Singapore 068902</dd>
+                </div>
+              </dl>
             </div>
           </div>
 
-          <div className="mb-20 grid grid-cols-1 gap-8 lg:grid-cols-12">
-            <div className="lg:col-span-4">
-              <p className="eyebrow">Operating footprint</p>
-              <h3 className="mt-4 text-3xl text-slate-dark">Connected across Southeast Asia</h3>
+          <div className="mt-12 grid grid-cols-2 gap-px bg-graphite/[0.15] lg:grid-cols-4">
+            {capacityMetrics.map((metric) => (
+              <div key={metric.label} className="bg-warm-stone p-6 md:p-8">
+                <div className="font-display text-5xl font-semibold text-graphite md:text-6xl">{metric.value}</div>
+                <div className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-copper-dark">{metric.unit}</div>
+                <p className="mt-5 text-sm text-steel-gray">{metric.label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-xs text-steel-gray/70">Capacity figures reflect the company&apos;s current corporate profile and stated production design.</p>
+        </div>
+      </section>
+
+      <section id="capabilities" className="section scroll-mt-20 overflow-hidden bg-graphite text-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:items-start">
+            <div className="lg:col-span-5">
+              <p className="section-label text-copper-light">Materials & products</p>
+              <h2 className="mt-5 text-5xl font-semibold uppercase leading-[0.92] md:text-6xl">Focused on strategic-metal value.</h2>
+              <p className="mt-7 max-w-xl text-lg text-white/[0.65]">
+                The business is structured around the recovery, processing, and commercialization of tungsten, molybdenum, vanadium, cobalt, and nickel-bearing materials.
+              </p>
+
+              <div className="mt-10 grid grid-cols-1 gap-px bg-white/[0.12] sm:grid-cols-2">
+                {materials.map((material, index) => (
+                  <article key={material.symbol} className={`bg-graphite p-5 ${index === materials.length - 1 ? 'sm:col-span-2' : ''}`}>
+                    <div className="flex items-start gap-4">
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center border border-jade/[0.45] font-display text-2xl font-semibold text-jade-light">
+                        {material.symbol}
+                      </span>
+                      <div>
+                        <h3 className="text-xl font-semibold uppercase">{material.name}</h3>
+                        <p className="mt-1 text-sm text-white/[0.48]">{material.detail}</p>
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
-            <div className="grid grid-cols-1 gap-px bg-slate-dark/15 md:grid-cols-2 lg:col-span-8">
-              {locations.map((location) => (
-                <article key={location.title} className="bg-white p-8">
-                  <location.icon className="mb-10 h-8 w-8 text-copper" aria-hidden="true" />
-                  <h4 className="text-xl text-slate-dark">{location.title}</h4>
-                  <p className="mt-3 font-semibold text-steel-gray">{location.company}</p>
-                  <p className="mt-2 text-sm text-steel-gray">{location.address}</p>
+
+            <figure className="lg:col-span-7 lg:pl-8">
+              <div className="relative overflow-hidden border border-white/[0.12]">
+                <img
+                  src="/images/concepts/strategic-metals.jpg"
+                  alt="Conceptual arrangement of strategic metal materials"
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[16/10] w-full object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-graphite via-graphite/75 to-transparent px-6 pb-5 pt-16">
+                  <p className="text-xs uppercase tracking-[0.16em] text-white/60">Conceptual material visualization</p>
+                </div>
+              </div>
+              <div className="mt-6 grid grid-cols-1 gap-px bg-white/[0.12] sm:grid-cols-3">
+                <div className="bg-steel px-5 py-6">
+                  <span className="text-xs uppercase tracking-[0.16em] text-copper-light">Primary product</span>
+                  <p className="mt-2 font-semibold">Ammonium paratungstate</p>
+                </div>
+                <div className="bg-steel px-5 py-6">
+                  <span className="text-xs uppercase tracking-[0.16em] text-copper-light">Ferroalloy</span>
+                  <p className="mt-2 font-semibold">Ferromolybdenum</p>
+                </div>
+                <div className="bg-steel px-5 py-6">
+                  <span className="text-xs uppercase tracking-[0.16em] text-copper-light">Ferroalloy</span>
+                  <p className="mt-2 font-semibold">Ferrovanadium</p>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="value-chain" className="section scroll-mt-20 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-5">
+              <p className="section-label text-copper-dark">Value chain</p>
+              <h2 className="mt-5 text-5xl font-semibold uppercase leading-[0.92] text-graphite md:text-6xl">Recover. Convert. Deliver.</h2>
+            </div>
+            <div className="lg:col-span-6 lg:col-start-7">
+              <p className="text-lg text-steel-gray">
+                A connected workflow links commercial qualification, controlled processing, product conversion, and international delivery.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-0 lg:grid-cols-12">
+            <figure className="relative overflow-hidden bg-graphite lg:col-span-6">
+              <img
+                src="/images/concepts/circular-material-flow.jpg"
+                alt="Conceptual progression from industrial metal-bearing material to refined products"
+                loading="lazy"
+                decoding="async"
+                className="h-full min-h-[440px] w-full object-cover"
+              />
+              <figcaption className="absolute bottom-0 left-0 bg-graphite px-5 py-3 text-xs uppercase tracking-[0.16em] text-white/60">
+                Conceptual circular-material flow
+              </figcaption>
+            </figure>
+            <div className="grid grid-cols-1 gap-px bg-graphite/[0.15] sm:grid-cols-2 lg:col-span-6">
+              {valueChain.map((step) => (
+                <article key={step.number} className="bg-warm-stone p-7 md:p-8">
+                  <div className="flex items-center justify-between">
+                    <span className="font-display text-3xl font-semibold text-copper">{step.number}</span>
+                    <step.icon className="h-6 w-6 text-jade-dark" aria-hidden="true" />
+                  </div>
+                  <h3 className="mt-12 text-2xl font-semibold uppercase text-graphite">{step.title}</h3>
+                  <p className="mt-4 text-sm text-steel-gray">{step.text}</p>
                 </article>
               ))}
             </div>
           </div>
 
-          <div className="grid grid-cols-1 bg-copper text-white lg:grid-cols-12">
-            <div className="p-8 md:p-10 lg:col-span-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">Work with MAVEX</p>
-              <h3 className="mt-4 max-w-2xl text-3xl leading-tight md:text-4xl">Discuss metal processing, supply, or investment opportunities with our team.</h3>
-            </div>
-            <div className="flex flex-col justify-center gap-3 border-t border-white/20 p-8 lg:col-span-4 lg:border-l lg:border-t-0">
-              <a href="mailto:Business@mavexinvest.com" className="inline-flex items-center justify-between border-b border-white/35 py-3 font-semibold hover:border-white">
-                Contact our team
-                <Mail className="h-5 w-5" aria-hidden="true" />
-              </a>
-              <Link to="/gallery" className="inline-flex items-center justify-between border-b border-white/35 py-3 font-semibold hover:border-white">
-                View company gallery
-                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
-              </Link>
-            </div>
+          <div className="mt-12 grid grid-cols-1 gap-px bg-graphite/[0.15] md:grid-cols-3">
+            <article className="bg-white p-7">
+              <Leaf className="h-7 w-7 text-jade-dark" aria-hidden="true" />
+              <h3 className="mt-7 text-2xl font-semibold uppercase text-graphite">Resource efficiency</h3>
+              <p className="mt-3 text-steel-gray">Recover value from complex secondary materials and support more circular material use.</p>
+            </article>
+            <article className="bg-white p-7">
+              <ShieldCheck className="h-7 w-7 text-jade-dark" aria-hidden="true" />
+              <h3 className="mt-7 text-2xl font-semibold uppercase text-graphite">Responsible sourcing</h3>
+              <p className="mt-3 text-steel-gray">Build processes around documentation, traceability, and recognized responsible-sourcing principles.</p>
+            </article>
+            <article className="bg-white p-7">
+              <Globe2 className="h-7 w-7 text-jade-dark" aria-hidden="true" />
+              <h3 className="mt-7 text-2xl font-semibold uppercase text-graphite">Cross-border coordination</h3>
+              <p className="mt-3 text-steel-gray">Connect regional operations with customers and partners across international markets.</p>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="operations" className="section scroll-mt-20 bg-warm-stone">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-6">
+              <p className="section-label text-copper-dark">Real operations</p>
+              <h2 className="mt-5 text-5xl font-semibold uppercase leading-[0.92] text-graphite md:text-6xl">Built for industrial execution.</h2>
+            </div>
+            <div className="lg:col-span-5 lg:col-start-8">
+              <p className="text-lg text-steel-gray">
+                The Laos production base brings together processing halls, reaction systems, separation equipment, supporting utilities, and campus infrastructure.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-3 md:grid-cols-12">
+            <figure className="group relative min-h-[480px] overflow-hidden md:col-span-8 md:row-span-2">
+              <img
+                src="/images/factory/production-line-wide.jpg"
+                alt="Wide view of the production line inside the Laos factory"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+              />
+              <figcaption className="absolute bottom-0 left-0 bg-graphite px-5 py-3 text-xs uppercase tracking-[0.16em] text-white/70">Integrated processing line</figcaption>
+            </figure>
+            <figure className="group relative min-h-[232px] overflow-hidden md:col-span-4">
+              <img
+                src="/images/factory/factory-reception.jpg"
+                alt="MAVEX reception at the Laos production base"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              />
+              <figcaption className="absolute bottom-0 left-0 bg-graphite px-4 py-2 text-xs uppercase tracking-[0.14em] text-white/70">Factory reception</figcaption>
+            </figure>
+            <figure className="group relative min-h-[232px] overflow-hidden md:col-span-4">
+              <img
+                src="/images/factory/water-treatment.jpg"
+                alt="Water treatment infrastructure at the production facility"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              />
+              <figcaption className="absolute bottom-0 left-0 bg-graphite px-4 py-2 text-xs uppercase tracking-[0.14em] text-white/70">Supporting infrastructure</figcaption>
+            </figure>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 bg-copper text-white lg:grid-cols-12">
+            <div className="p-8 md:p-10 lg:col-span-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">Explore the facility</p>
+              <h3 className="mt-4 max-w-2xl text-4xl font-semibold uppercase leading-[0.95] md:text-5xl">See the production campus, equipment, and supporting infrastructure.</h3>
+            </div>
+            <div className="flex flex-col justify-center gap-3 border-t border-white/20 p-8 lg:col-span-4 lg:border-l lg:border-t-0">
+              <Link to="/gallery" className="inline-flex items-center justify-between border-b border-white/40 py-3 font-semibold hover:border-white">
+                Open factory gallery
+                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+              </Link>
+              <a href="mailto:Business@mavexinvest.com" className="inline-flex items-center justify-between border-b border-white/40 py-3 font-semibold hover:border-white">
+                Discuss an opportunity
+                <Mail className="h-5 w-5" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 gap-px bg-graphite/15 md:grid-cols-2">
+            <article className="bg-white p-8">
+              <Building2 className="h-7 w-7 text-copper" aria-hidden="true" />
+              <p className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-copper-dark">Singapore</p>
+              <h3 className="mt-2 text-2xl font-semibold uppercase text-graphite">Commercial headquarters</h3>
+              <p className="mt-4 text-steel-gray">MAVEX INVESTMENTS PTE. LTD.<br />112 Robinson Road, #03-01, Singapore 068902</p>
+            </article>
+            <article className="bg-white p-8">
+              <Factory className="h-7 w-7 text-jade-dark" aria-hidden="true" />
+              <p className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-jade-dark">Laos</p>
+              <h3 className="mt-2 text-2xl font-semibold uppercase text-graphite">Production operations</h3>
+              <p className="mt-4 text-steel-gray">Zhongyu International Metal Materials Industry Co., Ltd.<br />Khammouane Province, Laos</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 };
 

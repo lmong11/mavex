@@ -8,11 +8,11 @@
   }
 
   body {
-    @apply bg-white font-body text-slate-dark antialiased;
+    @apply bg-white font-body text-graphite antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-montserrat font-bold;
+    @apply font-display font-semibold tracking-[-0.01em];
   }
 
   h1 {
@@ -36,7 +36,7 @@
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-copper ring-offset-2;
+    @apply outline-none ring-2 ring-copper ring-offset-2 ring-offset-warm-stone;
   }
 }
 
@@ -46,11 +46,11 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply inline-flex items-center justify-center border px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
 
   .btn-primary {
-    @apply btn bg-copper text-white hover:bg-copper-dark focus:ring-copper;
+    @apply btn border-copper bg-copper text-white hover:border-copper-dark hover:bg-copper-dark focus:ring-copper;
   }
 
   .section {
@@ -58,15 +58,24 @@
   }
 
   .navbar-link {
-    @apply px-3 py-2 text-base font-medium rounded-md transition-colors duration-200;
+    @apply px-2 py-2 text-xs font-semibold uppercase tracking-[0.12em] transition-colors duration-200;
   }
 
   .navbar-link-light {
-    @apply navbar-link text-white opacity-80 hover:opacity-100;
+    @apply navbar-link text-white/[0.72] hover:text-white;
   }
 
   .eyebrow {
     @apply text-xs font-semibold uppercase tracking-[0.22em] text-copper-dark;
+  }
+
+  .section-label {
+    @apply flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em];
+  }
+
+  .section-label::before {
+    content: '';
+    @apply block h-px w-10 bg-current opacity-70;
   }
 
   .skip-link {
@@ -77,8 +86,24 @@
 
 .nav-scrolled {
   backdrop-filter: blur(12px);
-  background-color: rgba(15, 23, 42, 0.94);
+  background-color: rgba(11, 17, 24, 0.94);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.industrial-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+}
+
+.image-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

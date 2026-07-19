@@ -1,63 +1,30 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import {
+  galleryCategories,
+  galleryImages,
+  type GalleryCategory,
+  type GalleryImage,
+} from '../data/company';
 
-interface GalleryImage {
-  id: string;
-  src: string;
-  title: string;
-  description: string;
-}
-
-const galleryImages: GalleryImage[] = [
-  {
-    id: "company-image-1",
-    src: "/images/Weixin Image_20250821210338_440_23.jpg",
-    title: "Old Factory Operations",
-    description: "Laos old factory production facility operations"
-  },
-  {
-    id: "company-image-2",
-    src: "/images/Weixin Image_20250821210340_441_23.jpg",
-    title: "Production Facilities",
-    description: "Laos old factory metal processing and production facilities"
-  },
-  {
-    id: "company-image-3",
-    src: "/images/Weixin Image_20250821210342_442_23.jpg",
-    title: "Industrial Operations",
-    description: "Laos old factory advanced metal processing and recycling operations"
-  },
-  {
-    id: "company-image-4",
-    src: "/images/Weixin Image_20250822084257_460_23.jpg",
-    title: "Processing Equipment",
-    description: "Laos old factory advanced processing equipment and machinery"
-  },
-  {
-    id: "company-image-5",
-    src: "/images/Weixin Image_20250822084259_461_23.jpg",
-    title: "Manufacturing Process",
-    description: "Laos old factory metal recycling and manufacturing processes"
-  },
-  {
-    id: "company-storefront",
-    src: "/images/mavex-storefront.jpg",
-    title: "MAVEX Singapore Office",
-    description: "MAVEX Singapore company office and storefront"
-  }
-];
+type GalleryFilter = 'All' | GalleryCategory;
 
 const GalleryPage: React.FC = () => {
+  const [activeCategory, setActiveCategory] = useState<GalleryFilter>('All');
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const modalRef = useRef<HTMLDivElement | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const isModalOpen = selectedImage !== null;
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
+
+  const visibleImages = useMemo(
+    () => activeCategory === 'All'
+      ? galleryImages
+      : galleryImages.filter((image) => image.category === activeCategory),
+    [activeCategory],
+  );
 
   const openModal = (image: GalleryImage, trigger: HTMLButtonElement) => {
     triggerRef.current = trigger;
@@ -72,12 +39,12 @@ const GalleryPage: React.FC = () => {
   const navigateImage = useCallback((direction: 'prev' | 'next') => {
     setSelectedImage((current) => {
       if (!current) return current;
-      const currentIndex = galleryImages.findIndex((image) => image.id === current.id);
+      const currentIndex = visibleImages.findIndex((image) => image.id === current.id);
       const offset = direction === 'prev' ? -1 : 1;
-      const newIndex = (currentIndex + offset + galleryImages.length) % galleryImages.length;
-      return galleryImages[newIndex];
+      const newIndex = (currentIndex + offset + visibleImages.length) % visibleImages.length;
+      return visibleImages[newIndex];
     });
-  }, []);
+  }, [visibleImages]);
 
   useEffect(() => {
     if (!isModalOpen) return;
@@ -113,56 +80,85 @@ const GalleryPage: React.FC = () => {
   }, [closeModal, isModalOpen, navigateImage]);
 
   return (
-    <div className="pb-20 pt-20">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-slate-dark py-20 text-white md:py-28">
-        <div className="absolute inset-y-0 right-0 w-1/3 border-l border-white/10 bg-copper/10" aria-hidden="true" />
-        <div className="container-custom">
-          <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
+    <div className="bg-warm-stone pb-20 pt-20">
+      <section className="relative min-h-[520px] overflow-hidden bg-graphite text-white">
+        <img
+          src="/images/factory/factory-main-gate.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,17,24,0.96)_0%,rgba(11,17,24,0.82)_48%,rgba(11,17,24,0.25)_100%)]" aria-hidden="true" />
+        <div className="industrial-grid absolute inset-0 opacity-20" aria-hidden="true" />
+        <div className="container-custom relative flex min-h-[520px] items-end py-16 md:py-20">
+          <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-7">
-              <p className="eyebrow text-copper-light">Company gallery</p>
-              <h1 className="mt-4 text-5xl leading-tight md:text-6xl">Inside our operations</h1>
+              <p className="section-label text-copper-light">Factory gallery · 2026</p>
+              <h1 className="mt-5 text-6xl font-semibold uppercase leading-[0.88] md:text-8xl">Inside the production base.</h1>
             </div>
-            <p className="max-w-xl text-lg text-white/70 lg:col-span-4 lg:col-start-9">
-              Laos Factory - Old Production Facility (New Factory Under Construction)
-            </p>
+            <div className="lg:col-span-4 lg:col-start-9">
+              <p className="border-l border-copper pl-5 text-lg text-white/[0.68]">
+                New imagery from the Zhongyu production campus, processing halls, equipment systems, and supporting infrastructure in Laos.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Gallery Grid */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container-custom">
-          <div
-            ref={ref}
-            className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3"
-          >
-            {galleryImages.map((image, index) => (
+          <div className="mb-10 flex flex-col gap-6 border-b border-graphite/[0.15] pb-8 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <p className="section-label text-copper-dark">Browse by area</p>
+              <p className="mt-3 text-sm text-steel-gray">{visibleImages.length} photographs</p>
+            </div>
+            <div className="flex flex-wrap gap-2" aria-label="Filter gallery by area">
+              {galleryCategories.map((category) => (
+                <button
+                  key={category}
+                  type="button"
+                  onClick={() => setActiveCategory(category)}
+                  aria-pressed={activeCategory === category}
+                  className={`border px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] transition-colors ${
+                    activeCategory === category
+                      ? 'border-graphite bg-graphite text-white'
+                      : 'border-graphite/20 text-steel-gray hover:border-copper hover:text-copper-dark'
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div ref={ref} className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-12">
+            {visibleImages.map((image, index) => (
               <button
                 type="button"
                 key={image.id}
-                className={`group relative overflow-hidden bg-slate-dark text-left transform transition-all duration-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-copper/45 ${
-                  inView
-                    ? 'translate-y-0 opacity-100'
-                    : 'translate-y-10 opacity-0'
-                }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
+                className={`group relative overflow-hidden bg-graphite text-left transition-all duration-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-copper/45 ${
+                  image.featured ? 'lg:col-span-8' : 'lg:col-span-4'
+                } ${inView ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                style={{ transitionDelay: `${Math.min(index * 60, 360)}ms` }}
                 onClick={(event) => openModal(image, event.currentTarget)}
                 aria-label={`Open image: ${image.title}`}
               >
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className={image.featured ? 'aspect-[16/9] overflow-hidden' : 'aspect-[4/3] overflow-hidden'}>
                   <img
-                    src={image.src}
+                    src={image.thumbnailSrc}
                     alt={image.title}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-dark via-slate-dark/15 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
-                <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
-                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-copper-light">{String(index + 1).padStart(2, '0')}</span>
-                  <h2 className="mt-1 text-xl font-semibold">{image.title}</h2>
+                <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/5 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
+                <div className="absolute inset-x-0 bottom-0 p-5 text-white md:p-6">
+                  <div className="flex items-center justify-between gap-4">
+                    <span className="text-xs font-semibold uppercase tracking-[0.18em] text-copper-light">{image.category}</span>
+                    <span className="font-display text-2xl text-white/50">{String(index + 1).padStart(2, '0')}</span>
+                  </div>
+                  <h2 className="mt-2 text-2xl font-semibold uppercase">{image.title}</h2>
                 </div>
               </button>
             ))}
@@ -170,7 +166,6 @@ const GalleryPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Modal */}
       {selectedImage && (
         <div
           ref={modalRef}
@@ -182,44 +177,45 @@ const GalleryPage: React.FC = () => {
             if (event.target === event.currentTarget) closeModal();
           }}
         >
-          <figure className="relative max-h-full max-w-5xl">
+          <figure className="relative max-h-full max-w-6xl">
             <button
               ref={closeButtonRef}
               type="button"
               onClick={closeModal}
-              className="absolute top-4 right-4 z-10 p-2 bg-white bg-opacity-20 rounded-full text-white hover:bg-opacity-30 transition-all"
+              className="absolute right-4 top-4 z-10 border border-white/30 bg-graphite/70 p-3 text-white backdrop-blur-md transition-colors hover:bg-copper"
               aria-label="Close image viewer"
             >
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6" aria-hidden="true" />
             </button>
 
             <button
               type="button"
               onClick={() => navigateImage('prev')}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white bg-opacity-20 rounded-full text-white hover:bg-opacity-30 transition-all"
+              className="absolute left-4 top-1/2 z-10 -translate-y-1/2 border border-white/30 bg-graphite/70 p-3 text-white backdrop-blur-md transition-colors hover:bg-copper"
               aria-label="Previous image"
             >
-              <ChevronLeft className="h-6 w-6" />
+              <ChevronLeft className="h-6 w-6" aria-hidden="true" />
             </button>
 
             <button
               type="button"
               onClick={() => navigateImage('next')}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white bg-opacity-20 rounded-full text-white hover:bg-opacity-30 transition-all"
+              className="absolute right-4 top-1/2 z-10 -translate-y-1/2 border border-white/30 bg-graphite/70 p-3 text-white backdrop-blur-md transition-colors hover:bg-copper"
               aria-label="Next image"
             >
-              <ChevronRight className="h-6 w-6" />
+              <ChevronRight className="h-6 w-6" aria-hidden="true" />
             </button>
 
             <img
               src={selectedImage.src}
               alt={selectedImage.title}
-              className="max-h-[85vh] max-w-full object-contain"
+              className="max-h-[88vh] max-w-full object-contain"
             />
 
-            <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/75 to-transparent p-6 pt-16 text-white">
-              <h2 id="gallery-dialog-title" className="text-xl font-bold mb-2">{selectedImage.title}</h2>
-              <p className="opacity-90">{selectedImage.description}</p>
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 pt-20 text-white md:p-8 md:pt-24">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-copper-light">{selectedImage.category} · Laos production base</p>
+              <h2 id="gallery-dialog-title" className="mt-2 text-3xl font-semibold uppercase">{selectedImage.title}</h2>
+              <p className="mt-2 max-w-2xl text-white/70">{selectedImage.description}</p>
             </figcaption>
           </figure>
         </div>
