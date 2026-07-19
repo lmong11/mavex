@@ -14,7 +14,6 @@ const Hero: React.FC = () => {
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,17,24,0.97)_0%,rgba(11,17,24,0.88)_43%,rgba(11,17,24,0.28)_78%,rgba(11,17,24,0.12)_100%)]" aria-hidden="true" />
       <div className="industrial-grid absolute inset-0 opacity-25" aria-hidden="true" />
-      <div className="absolute inset-y-0 left-[58%] hidden w-px bg-white/20 lg:block" aria-hidden="true" />
 
       <div className="relative flex h-full items-center pt-20">
         <div className="container-custom">
