@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "MAVEX INVESTMENTS｜戦略金属と循環型価値",
+    "description": "MAVEX INVESTMENTSは、シンガポールの商業ノウハウとラオスにおける戦略金属の加工・回収・生産事業を結びます。"
+  },
+  "language": { "select": "言語を選択" },
+  "accessibility": { "skip": "メインコンテンツへ移動" },
+  "navigation": {
+    "company": "会社情報",
+    "capabilities": "事業領域",
+    "operations": "生産事業",
+    "gallery": "ギャラリー",
+    "contact": "お問い合わせ",
+    "open": "ナビゲーションを開く",
+    "close": "ナビゲーションを閉じる",
+    "homeLabel": "MAVEX Investments ホーム",
+    "primaryLabel": "メインナビゲーション",
+    "mobileLabel": "モバイルナビゲーション",
+    "footerLabel": "フッターナビゲーション"
+  },
+  "hero": {
+    "label": "戦略金属 · 循環型バリューチェーン",
+    "title": "複雑な原料を、戦略的価値へ。",
+    "intro": "シンガポールを拠点とする商業ノウハウと、ラオスで成長を続ける産業基盤を通じて、戦略金属の加工・回収・国際取引を展開します。",
+    "explore": "事業領域を見る",
+    "viewFactory": "工場を見る",
+    "base": "ラオス生産拠点",
+    "processingLabel": "設計処理能力",
+    "processingUnit": "トン / 年",
+    "footprintLabel": "事業拠点",
+    "footprintValue": "SG · LA",
+    "footprintDetail": "商業 + 産業",
+    "imageNote": "本サイトの施設画像は、当社のラオス事業拠点で撮影されたものです。"
+  },
+  "company": {
+    "label": "企業プラットフォーム",
+    "title": "グローバルな商流。確かな産業基盤。",
+    "intro": "MAVEX INVESTMENTS PTE. LTD.はシンガポール法人として、工業化学品の卸売および戦略投資を展開しています。地域事業基盤を通じて、国際取引とラオスでの金属材料加工を結びます。",
+    "conceptAlt": "商業物流と戦略金属加工を結ぶコンセプトビジュアル",
+    "conceptCaption": "地域プラットフォームのコンセプト · シンガポール + ラオス",
+    "platformLabel": "地域商業プラットフォーム",
+    "platformTitle": "MAVEX Investments",
+    "platformDescription": "シンガポールを拠点に、戦略金属バリューチェーンにおける国際取引、戦略投資、国境を越えた連携を支援します。",
+    "roleLabel": "役割",
+    "roleValue": "国際取引・投資",
+    "networkLabel": "ネットワーク",
+    "networkValue": "シンガポール · ラオス · 国際市場",
+    "focusLabel": "注力領域",
+    "focusValue": "戦略金属と循環型価値",
+    "unit": "トン / 年",
+    "processing": "金属含有原料の処理能力",
+    "aptCapacity": "パラタングステン酸アンモニウム生産能力",
+    "ferroalloyCapacity": "フェロアロイ総合生産能力",
+    "capacityNote": "生産能力は、当社の現行企業資料および記載された生産設計に基づきます。"
+  },
+  "capabilities": {
+    "label": "原料と製品",
+    "title": "戦略金属の価値に集中。",
+    "intro": "タングステン、モリブデン、バナジウム、コバルト、ニッケル含有原料の回収・加工・事業化を中心に展開しています。",
+    "materials": {
+      "tungsten": { "name": "タングステン", "detail": "APT、フェロタングステン、タングステン含有原料の回収" },
+      "molybdenum": { "name": "モリブデン", "detail": "モリブデン製品およびフェロモリブデン" },
+      "vanadium": { "name": "バナジウム", "detail": "バナジウム含有触媒およびフェロバナジウム" },
+      "cobalt": { "name": "コバルト", "detail": "コバルト含有二次原料" },
+      "nickel": { "name": "ニッケル", "detail": "ニッケル含有産業原料" }
+    },
+    "conceptAlt": "戦略金属材料のコンセプト配置",
+    "conceptCaption": "材料コンセプトビジュアル",
+    "primaryProduct": "主要製品",
+    "ferroalloy": "フェロアロイ",
+    "apt": "パラタングステン酸アンモニウム",
+    "ferrotungsten": "フェロタングステン",
+    "ferromolybdenum": "フェロモリブデン",
+    "ferrovanadium": "フェロバナジウム"
+  },
+  "valueChain": {
+    "label": "バリューチェーン",
+    "title": "回収。転換。供給。",
+    "intro": "商業評価、管理された加工、製品転換、国際供給を一つの流れで結びます。",
+    "conceptAlt": "金属含有産業原料から精製製品までのコンセプト工程",
+    "conceptCaption": "循環型マテリアルフローのコンセプト",
+    "steps": {
+      "review": { "title": "原料評価", "text": "加工前に、原料組成、関連書類、商業適合性を評価します。" },
+      "recovery": { "title": "分離・回収", "text": "管理されたプロセスにより、複雑な原料から戦略金属の価値を分離・回収します。" },
+      "conversion": { "title": "製品転換", "text": "回収原料をAPT、フェロタングステン、フェロモリブデン、フェロバナジウムなどの製品へ転換します。" },
+      "delivery": { "title": "商業供給", "text": "シンガポールの商業プラットフォームを通じて、品質、書類、国際供給を調整します。" }
+    },
+    "benefits": {
+      "efficiency": { "title": "資源効率", "text": "複雑な二次原料から価値を回収し、より循環的な資源利用を支えます。" },
+      "sourcing": { "title": "責任ある調達", "text": "書類管理、トレーサビリティ、国際的に認められた責任ある調達原則に沿ってプロセスを構築します。" },
+      "coordination": { "title": "国境を越えた連携", "text": "地域事業を国際市場の顧客・パートナーと結びます。" }
+    }
+  },
+  "operations": {
+    "label": "実際の生産現場",
+    "title": "産業オペレーションを実行する基盤。",
+    "intro": "ラオス生産拠点には、加工棟、反応システム、分離設備、ユーティリティ、構内インフラが集約されています。",
+    "lineAlt": "ラオス工場内の生産ライン全景",
+    "lineCaption": "統合加工ライン",
+    "receptionAlt": "ラオス生産拠点のMAVEX受付",
+    "receptionCaption": "工場受付",
+    "waterAlt": "生産施設の水処理インフラ",
+    "waterCaption": "支援インフラ",
+    "exploreLabel": "施設を見る",
+    "exploreTitle": "生産構内、設備、支援インフラをご覧ください。",
+    "openGallery": "工場ギャラリーを開く",
+    "discuss": "事業機会を相談する",
+    "singapore": "シンガポール",
+    "commercialHeadquarters": "商業本社",
+    "laos": "ラオス",
+    "productionOperations": "生産事業",
+    "laosAddress": "ラオス・カムムアン県"
+  },
+  "gallery": {
+    "label": "工場ギャラリー · 2026",
+    "title": "生産拠点の内側へ。",
+    "intro": "ラオスの中裕生産構内、加工棟、設備システム、支援インフラの最新画像をご紹介します。",
+    "browse": "エリア別に見る",
+    "photoCount": "写真 {{count}} 点",
+    "filterLabel": "エリアで工場画像を絞り込む",
+    "openImage": "画像を開く：{{title}}",
+    "close": "画像ビューアを閉じる",
+    "previous": "前の画像",
+    "next": "次の画像",
+    "base": "ラオス生産拠点",
+    "categories": {
+      "all": "すべて",
+      "campus": "構内",
+      "operations": "操業",
+      "processing": "加工",
+      "infrastructure": "インフラ"
+    },
+    "images": {
+      "factory-overview": { "title": "生産構内全景", "description": "ラオスの生産構内と連結するユーティリティ回廊を広く見渡した景観です。" },
+      "factory-entrance-sign": { "title": "中裕生産拠点", "description": "中裕国際金属材料工業有限公司の入口サインです。" },
+      "factory-main-gate": { "title": "工場正門", "description": "管理区域と生産区域を結ぶ主要アクセス地点です。" },
+      "factory-reception": { "title": "MAVEX受付", "description": "ラオス生産拠点の受付エリアです。" },
+      "administration-building": { "title": "管理棟", "description": "生産構内を支える管理施設です。" },
+      "production-line-wide": { "title": "統合加工ライン", "description": "高架加工ラインと回収システムの全景です。" },
+      "reaction-vessels": { "title": "反応槽ライン", "description": "加工棟内に並ぶ産業用反応槽です。" },
+      "separation-platform": { "title": "分離プラットフォーム", "description": "原料分離と工程管理を支える高架設備です。" },
+      "reactor-line": { "title": "工程設備ライン", "description": "管理された産業原料処理のために配置された工程設備です。" },
+      "processing-hall": { "title": "加工棟", "description": "タンク、配管、ユーティリティシステムを備えた主要加工棟です。" },
+      "process-tanks": { "title": "プロセスタンク区域", "description": "ポンプと移送ラインに接続された大容量プロセスタンクです。" },
+      "material-handling-hall": { "title": "原料取扱棟", "description": "原料の一時保管と作業取扱いを支える屋内区域です。" },
+      "water-treatment": { "title": "水処理システム", "description": "生産施設内の支援処理インフラです。" },
+      "production-campus": { "title": "生産建屋群", "description": "工場構内で連結された専用産業建屋です。" }
+    }
+  },
+  "footer": {
+    "description": "シンガポールとラオスを基盤に、戦略金属加工、産業原料回収、国際取引、長期投資を展開します。",
+    "footprint": "事業拠点",
+    "singaporeHeadquarters": "シンガポール本社",
+    "laosOperations": "ラオス生産事業",
+    "navigate": "ナビゲーション",
+    "valueChain": "バリューチェーン",
+    "factoryGallery": "工場ギャラリー",
+    "markets": "シンガポール · ラオス · 国際市場"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは削除、名称変更、または一時的に利用できない可能性があります。",
+    "home": "ホームへ戻る"
+  }
+}

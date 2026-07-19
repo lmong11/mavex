@@ -98,12 +98,125 @@
   mask-image: linear-gradient(to bottom, black, transparent 86%);
 }
 
+#hero-title {
+  text-wrap: balance;
+}
+
+@media (max-width: 639px) {
+  .section-label {
+    display: block;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+
+  .section-label::before {
+    display: inline-block;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+  }
+}
+
 .image-frame::after {
   content: '';
   position: absolute;
   inset: 0;
   border: 1px solid rgba(255, 255, 255, 0.15);
   pointer-events: none;
+}
+
+html:lang(zh-CN) body,
+html:lang(zh-CN) .font-body {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+html:lang(zh-CN) h1,
+html:lang(zh-CN) h2,
+html:lang(zh-CN) h3,
+html:lang(zh-CN) h4,
+html:lang(zh-CN) h5,
+html:lang(zh-CN) h6,
+html:lang(zh-CN) .font-display {
+  font-family: 'Noto Sans SC', sans-serif;
+  letter-spacing: 0;
+}
+
+html:lang(ja) body,
+html:lang(ja) .font-body,
+html:lang(ja) h1,
+html:lang(ja) h2,
+html:lang(ja) h3,
+html:lang(ja) h4,
+html:lang(ja) h5,
+html:lang(ja) h6,
+html:lang(ja) .font-display {
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0;
+}
+
+html:lang(ko) body,
+html:lang(ko) .font-body,
+html:lang(ko) h1,
+html:lang(ko) h2,
+html:lang(ko) h3,
+html:lang(ko) h4,
+html:lang(ko) h5,
+html:lang(ko) h6,
+html:lang(ko) .font-display {
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 0;
+}
+
+html:lang(ko) body {
+  word-break: keep-all;
+}
+
+html:lang(th) body,
+html:lang(th) .font-body,
+html:lang(th) h1,
+html:lang(th) h2,
+html:lang(th) h3,
+html:lang(th) h4,
+html:lang(th) h5,
+html:lang(th) h6,
+html:lang(th) .font-display {
+  font-family: 'Noto Sans Thai', sans-serif;
+  letter-spacing: 0;
+}
+
+html:lang(zh-CN) h1,
+html:lang(ja) h1,
+html:lang(ko) h1,
+html:lang(th) h1 {
+  line-height: 1.08;
+}
+
+@media (min-width: 1024px) {
+  html:lang(zh-CN) #hero-title {
+    font-size: 4.75rem;
+  }
+
+  html:lang(ja) #hero-title,
+  html:lang(ko) #hero-title,
+  html:lang(vi) #hero-title {
+    font-size: 4.25rem;
+    line-height: 1.05;
+  }
+
+  html:lang(th) #hero-title {
+    font-size: 3.75rem;
+    line-height: 1.12;
+  }
+}
+
+html:lang(zh-CN) h2,
+html:lang(ja) h2,
+html:lang(ko) h2,
+html:lang(th) h2,
+html:lang(zh-CN) h3,
+html:lang(ja) h3,
+html:lang(ko) h3,
+html:lang(th) h3 {
+  line-height: 1.2;
 }
 
 @media (prefers-reduced-motion: reduce) {

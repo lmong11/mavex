@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "MAVEX INVESTMENTS | 전략 금속과 순환 가치",
+    "description": "MAVEX INVESTMENTS는 싱가포르의 상업 전문성과 라오스의 전략 금속 가공·회수·생산 운영을 연결합니다."
+  },
+  "language": { "select": "언어 선택" },
+  "accessibility": { "skip": "본문으로 건너뛰기" },
+  "navigation": {
+    "company": "회사 소개",
+    "capabilities": "사업 역량",
+    "operations": "생산 운영",
+    "gallery": "갤러리",
+    "contact": "문의하기",
+    "open": "내비게이션 열기",
+    "close": "내비게이션 닫기",
+    "homeLabel": "MAVEX Investments 홈",
+    "primaryLabel": "주요 내비게이션",
+    "mobileLabel": "모바일 내비게이션",
+    "footerLabel": "푸터 내비게이션"
+  },
+  "hero": {
+    "label": "전략 금속 · 순환 가치사슬",
+    "title": "복합 원료를 전략적 가치로.",
+    "intro": "싱가포르 기반의 상업 전문성과 라오스에서 성장하는 산업 플랫폼을 통해 전략 금속 가공, 회수 및 국제 무역을 수행합니다.",
+    "explore": "사업 역량 보기",
+    "viewFactory": "공장 보기",
+    "base": "라오스 생산기지",
+    "processingLabel": "설계 처리 능력",
+    "processingUnit": "톤 / 연",
+    "footprintLabel": "운영 거점",
+    "footprintValue": "SG · LA",
+    "footprintDetail": "상업 + 산업",
+    "imageNote": "본 웹사이트의 시설 이미지는 회사의 라오스 운영 현장에서 촬영되었습니다."
+  },
+  "company": {
+    "label": "기업 플랫폼",
+    "title": "글로벌 상업 역량. 견고한 산업 기반.",
+    "intro": "MAVEX INVESTMENTS PTE. LTD.는 싱가포르 법인으로서 산업용 화학제품 도매와 전략적 투자를 수행합니다. 지역 운영 기반을 통해 국제 무역과 라오스의 금속 소재 가공을 연결합니다.",
+    "conceptAlt": "상업 물류와 전략 금속 가공을 연결하는 콘셉트 이미지",
+    "conceptCaption": "지역 플랫폼 콘셉트 · 싱가포르 + 라오스",
+    "platformLabel": "지역 상업 플랫폼",
+    "platformTitle": "MAVEX Investments",
+    "platformDescription": "MAVEX는 싱가포르를 기반으로 전략 금속 가치사슬 전반의 국제 무역, 전략적 투자 및 국경 간 협업을 지원합니다.",
+    "roleLabel": "역할",
+    "roleValue": "국제 무역 및 투자",
+    "networkLabel": "네트워크",
+    "networkValue": "싱가포르 · 라오스 · 국제 시장",
+    "focusLabel": "중점 분야",
+    "focusValue": "전략 금속 및 순환 가치",
+    "unit": "톤 / 연",
+    "processing": "금속 함유 원료 처리 능력",
+    "aptCapacity": "파라텅스텐산암모늄 생산 능력",
+    "ferroalloyCapacity": "합금철 종합 생산 능력",
+    "capacityNote": "생산 능력 수치는 회사의 최신 기업 자료와 명시된 생산 설계를 기준으로 합니다."
+  },
+  "capabilities": {
+    "label": "소재 및 제품",
+    "title": "전략 금속 가치에 집중합니다.",
+    "intro": "텅스텐, 몰리브덴, 바나듐, 코발트 및 니켈 함유 원료의 회수, 가공, 상용화를 중심으로 사업을 구성합니다.",
+    "materials": {
+      "tungsten": { "name": "텅스텐", "detail": "APT, 페로텅스텐 및 텅스텐 함유 원료 회수" },
+      "molybdenum": { "name": "몰리브덴", "detail": "몰리브덴 제품 및 페로몰리브덴" },
+      "vanadium": { "name": "바나듐", "detail": "바나듐 함유 촉매 및 페로바나듐" },
+      "cobalt": { "name": "코발트", "detail": "코발트 함유 2차 원료" },
+      "nickel": { "name": "니켈", "detail": "니켈 함유 산업 원료" }
+    },
+    "conceptAlt": "전략 금속 소재의 콘셉트 배치",
+    "conceptCaption": "소재 콘셉트 이미지",
+    "primaryProduct": "주요 제품",
+    "ferroalloy": "합금철",
+    "apt": "파라텅스텐산암모늄",
+    "ferrotungsten": "페로텅스텐",
+    "ferromolybdenum": "페로몰리브덴",
+    "ferrovanadium": "페로바나듐"
+  },
+  "valueChain": {
+    "label": "가치사슬",
+    "title": "회수. 전환. 공급.",
+    "intro": "상업성 평가, 통제된 가공, 제품 전환, 국제 공급을 하나의 연결된 흐름으로 통합합니다.",
+    "conceptAlt": "금속 함유 산업 원료에서 정제 제품까지의 콘셉트 과정",
+    "conceptCaption": "순환 소재 흐름 콘셉트",
+    "steps": {
+      "review": { "title": "원료 검토", "text": "가공 전 원료 구성, 관련 문서 및 상업적 적합성을 평가합니다." },
+      "recovery": { "title": "분리 및 회수", "text": "통제된 공정을 적용해 복합 원료에서 전략 금속의 가치를 분리하고 회수합니다." },
+      "conversion": { "title": "제품 전환", "text": "회수 원료를 APT, 페로텅스텐, 페로몰리브덴, 페로바나듐 등의 제품으로 전환합니다." },
+      "delivery": { "title": "상업 공급", "text": "싱가포르 상업 플랫폼을 통해 품질, 문서 및 국제 공급을 조율합니다." }
+    },
+    "benefits": {
+      "efficiency": { "title": "자원 효율성", "text": "복합 2차 원료에서 가치를 회수하고 보다 순환적인 소재 활용을 지원합니다." },
+      "sourcing": { "title": "책임 있는 조달", "text": "문서화, 추적성 및 공인된 책임 조달 원칙을 중심으로 프로세스를 구축합니다." },
+      "coordination": { "title": "국경 간 협업", "text": "지역 운영을 국제 시장의 고객 및 파트너와 연결합니다." }
+    }
+  },
+  "operations": {
+    "label": "실제 생산 현장",
+    "title": "산업 실행을 위한 기반.",
+    "intro": "라오스 생산기지는 가공동, 반응 시스템, 분리 장비, 유틸리티 및 단지 인프라를 통합합니다.",
+    "lineAlt": "라오스 공장 내부 생산라인 전경",
+    "lineCaption": "통합 가공라인",
+    "receptionAlt": "라오스 생산기지의 MAVEX 리셉션",
+    "receptionCaption": "공장 리셉션",
+    "waterAlt": "생산시설의 수처리 인프라",
+    "waterCaption": "지원 인프라",
+    "exploreLabel": "시설 둘러보기",
+    "exploreTitle": "생산 단지, 장비 및 지원 인프라를 확인해 보십시오.",
+    "openGallery": "공장 갤러리 열기",
+    "discuss": "사업 기회 문의",
+    "singapore": "싱가포르",
+    "commercialHeadquarters": "상업 본사",
+    "laos": "라오스",
+    "productionOperations": "생산 운영",
+    "laosAddress": "라오스 캄무안주"
+  },
+  "gallery": {
+    "label": "공장 갤러리 · 2026",
+    "title": "생산기지의 현장.",
+    "intro": "라오스 중위 생산 단지, 가공동, 장비 시스템 및 지원 인프라의 최신 이미지를 소개합니다.",
+    "browse": "구역별 보기",
+    "photoCount": "사진 {{count}}장",
+    "filterLabel": "구역별 공장 이미지 필터",
+    "openImage": "이미지 열기: {{title}}",
+    "close": "이미지 뷰어 닫기",
+    "previous": "이전 이미지",
+    "next": "다음 이미지",
+    "base": "라오스 생산기지",
+    "categories": {
+      "all": "전체",
+      "campus": "단지",
+      "operations": "운영",
+      "processing": "가공",
+      "infrastructure": "인프라"
+    },
+    "images": {
+      "factory-overview": { "title": "생산 단지 전경", "description": "라오스 생산 단지와 연결된 유틸리티 통로를 넓게 조망한 모습입니다." },
+      "factory-entrance-sign": { "title": "중위 생산기지", "description": "중위 국제금속소재산업유한회사의 입구 표지입니다." },
+      "factory-main-gate": { "title": "공장 정문", "description": "관리 구역과 생산 구역을 연결하는 주요 출입구입니다." },
+      "factory-reception": { "title": "MAVEX 리셉션", "description": "라오스 생산기지의 안내 및 접수 공간입니다." },
+      "administration-building": { "title": "관리동", "description": "생산 단지를 지원하는 관리 시설입니다." },
+      "production-line-wide": { "title": "통합 가공라인", "description": "고가 가공라인과 집진·회수 시스템의 전경입니다." },
+      "reaction-vessels": { "title": "반응 용기 라인", "description": "가공동 내부에 연속 배치된 산업용 반응 용기입니다." },
+      "separation-platform": { "title": "분리 플랫폼", "description": "원료 분리와 공정 제어를 지원하는 고가 장비입니다." },
+      "reactor-line": { "title": "공정 장비 라인", "description": "통제된 산업 원료 처리를 위해 배치된 공정 장비입니다." },
+      "processing-hall": { "title": "가공동", "description": "탱크, 배관 및 유틸리티 시스템을 갖춘 주요 가공동입니다." },
+      "process-tanks": { "title": "공정 탱크 구역", "description": "펌프 및 이송 라인과 통합된 대용량 공정 탱크입니다." },
+      "material-handling-hall": { "title": "원료 취급동", "description": "원료 적치와 작업 처리를 지원하는 실내 공간입니다." },
+      "water-treatment": { "title": "수처리 시스템", "description": "생산시설 내 지원 처리 인프라입니다." },
+      "production-campus": { "title": "생산 건물군", "description": "공장 단지 전반에 연결된 목적형 산업 건물입니다." }
+    }
+  },
+  "footer": {
+    "description": "싱가포르와 라오스를 기반으로 전략 금속 가공, 산업 원료 회수, 국제 무역 및 장기 투자를 수행합니다.",
+    "footprint": "운영 거점",
+    "singaporeHeadquarters": "싱가포르 본사",
+    "laosOperations": "라오스 생산 운영",
+    "navigate": "바로가기",
+    "valueChain": "가치사슬",
+    "factoryGallery": "공장 갤러리",
+    "markets": "싱가포르 · 라오스 · 국제 시장"
+  },
+  "notFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "description": "찾으시는 페이지가 삭제되었거나 이름이 변경되었거나 일시적으로 이용할 수 없습니다.",
+    "home": "홈으로 돌아가기"
+  }
+}

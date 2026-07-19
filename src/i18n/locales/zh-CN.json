@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "MAVEX INVESTMENTS｜战略金属与循环价值",
+    "description": "MAVEX INVESTMENTS 连接新加坡商业专长与老挝的战略金属加工、回收和生产运营。"
+  },
+  "language": { "select": "选择语言" },
+  "accessibility": { "skip": "跳转至主要内容" },
+  "navigation": {
+    "company": "公司",
+    "capabilities": "业务能力",
+    "operations": "生产运营",
+    "gallery": "工厂实景",
+    "contact": "联系我们",
+    "open": "打开导航菜单",
+    "close": "关闭导航菜单",
+    "homeLabel": "MAVEX Investments 首页",
+    "primaryLabel": "主导航",
+    "mobileLabel": "移动端导航",
+    "footerLabel": "页脚导航"
+  },
+  "hero": {
+    "label": "战略金属 · 循环价值链",
+    "title": "从复杂物料到战略价值。",
+    "intro": "以新加坡商业专长为支点，依托不断发展的老挝工业平台，开展战略金属加工、回收与国际贸易。",
+    "explore": "了解业务能力",
+    "viewFactory": "查看工厂实景",
+    "base": "老挝生产基地",
+    "processingLabel": "设计处理能力",
+    "processingUnit": "吨 / 年",
+    "footprintLabel": "运营布局",
+    "footprintValue": "SG · LA",
+    "footprintDetail": "商业 + 工业",
+    "imageNote": "本网站展示的厂区图片均来自公司在老挝的生产运营。"
+  },
+  "company": {
+    "label": "公司平台",
+    "title": "商业触达全球，产业扎根实体。",
+    "intro": "MAVEX INVESTMENTS PTE. LTD. 是一家注册于新加坡的公司，业务涵盖工业化学品批发与战略投资。公司的区域运营布局将国际贸易与老挝的金属材料加工连接起来。",
+    "conceptAlt": "连接商业物流与战略金属加工的概念视觉图",
+    "conceptCaption": "区域平台概念图 · 新加坡 + 老挝",
+    "platformLabel": "区域商业平台",
+    "platformTitle": "MAVEX Investments",
+    "platformDescription": "MAVEX 以新加坡为基地，为战略金属价值链提供国际贸易、战略投资和跨境协同支持。",
+    "roleLabel": "职能",
+    "roleValue": "国际贸易与投资",
+    "networkLabel": "网络",
+    "networkValue": "新加坡 · 老挝 · 国际市场",
+    "focusLabel": "重点",
+    "focusValue": "战略金属与循环价值",
+    "unit": "吨 / 年",
+    "processing": "含金属物料处理能力",
+    "aptCapacity": "仲钨酸铵产能",
+    "ferroalloyCapacity": "铁合金综合产能",
+    "capacityNote": "产能数据依据公司现有资料及所述生产设计。"
+  },
+  "capabilities": {
+    "label": "材料与产品",
+    "title": "聚焦战略金属价值。",
+    "intro": "业务围绕含钨、钼、钒、钴及镍物料的回收、加工与商业化展开。",
+    "materials": {
+      "tungsten": { "name": "钨", "detail": "仲钨酸铵、钨铁及含钨物料回收" },
+      "molybdenum": { "name": "钼", "detail": "钼产品与钼铁" },
+      "vanadium": { "name": "钒", "detail": "含钒催化剂与钒铁" },
+      "cobalt": { "name": "钴", "detail": "含钴二次物料" },
+      "nickel": { "name": "镍", "detail": "含镍工业物料" }
+    },
+    "conceptAlt": "战略金属材料概念陈列图",
+    "conceptCaption": "材料概念视觉图",
+    "primaryProduct": "主要产品",
+    "ferroalloy": "铁合金",
+    "apt": "仲钨酸铵",
+    "ferrotungsten": "钨铁",
+    "ferromolybdenum": "钼铁",
+    "ferrovanadium": "钒铁"
+  },
+  "valueChain": {
+    "label": "价值链",
+    "title": "回收 · 转化 · 交付。",
+    "intro": "一体化流程贯通商业评估、受控加工、产品转化和国际交付。",
+    "conceptAlt": "从含金属工业物料到精制产品的概念流程图",
+    "conceptCaption": "循环材料流概念图",
+    "steps": {
+      "review": { "title": "原料评估", "text": "在加工前评估物料成分、文件资料及商业适配性。" },
+      "recovery": { "title": "分离与回收", "text": "采用受控工艺路线，从复杂物料中分离并回收战略金属价值。" },
+      "conversion": { "title": "产品转化", "text": "将回收物料转化为仲钨酸铵、钨铁、钼铁和钒铁等产品。" },
+      "delivery": { "title": "商业交付", "text": "通过新加坡商业平台协调质量、文件和国际交付。" }
+    },
+    "benefits": {
+      "efficiency": { "title": "资源效率", "text": "从复杂二次物料中回收价值，推动材料更充分地循环利用。" },
+      "sourcing": { "title": "负责任采购", "text": "围绕文件管理、可追溯性和公认的负责任采购原则建立流程。" },
+      "coordination": { "title": "跨境协同", "text": "连接区域运营与国际市场中的客户和合作伙伴。" }
+    }
+  },
+  "operations": {
+    "label": "实体运营",
+    "title": "为工业执行而建。",
+    "intro": "老挝生产基地集成加工厂房、反应系统、分离设备、公用工程及园区基础设施。",
+    "lineAlt": "老挝工厂生产线全景",
+    "lineCaption": "一体化加工线",
+    "receptionAlt": "老挝生产基地的 MAVEX 接待区",
+    "receptionCaption": "工厂接待区",
+    "waterAlt": "生产设施内的水处理基础设施",
+    "waterCaption": "配套基础设施",
+    "exploreLabel": "走进生产基地",
+    "exploreTitle": "查看生产园区、设备与配套基础设施。",
+    "openGallery": "打开工厂相册",
+    "discuss": "洽谈合作机会",
+    "singapore": "新加坡",
+    "commercialHeadquarters": "商业总部",
+    "laos": "老挝",
+    "productionOperations": "生产运营",
+    "laosAddress": "老挝甘蒙省"
+  },
+  "gallery": {
+    "label": "工厂实景 · 2026",
+    "title": "走进生产基地。",
+    "intro": "展示老挝中裕生产园区、加工厂房、设备系统及配套基础设施的最新影像。",
+    "browse": "按区域浏览",
+    "photoCount": "共 {{count}} 张照片",
+    "filterLabel": "按区域筛选工厂图片",
+    "openImage": "打开图片：{{title}}",
+    "close": "关闭图片查看器",
+    "previous": "上一张图片",
+    "next": "下一张图片",
+    "base": "老挝生产基地",
+    "categories": {
+      "all": "全部",
+      "campus": "厂区",
+      "operations": "运营",
+      "processing": "加工",
+      "infrastructure": "基础设施"
+    },
+    "images": {
+      "factory-overview": { "title": "生产园区全景", "description": "从宽阔视角展示老挝生产园区及相连的公用工程管廊。" },
+      "factory-entrance-sign": { "title": "中裕生产基地", "description": "中裕国际金属材料工业有限公司的入口标识。" },
+      "factory-main-gate": { "title": "工厂主入口", "description": "连接行政区域与生产区域的主要出入口。" },
+      "factory-reception": { "title": "MAVEX 接待区", "description": "老挝生产基地的接待区域。" },
+      "administration-building": { "title": "行政办公楼", "description": "为生产园区提供运营支持的行政设施。" },
+      "production-line-wide": { "title": "一体化加工线", "description": "高位加工线及收集系统的全景。" },
+      "reaction-vessels": { "title": "反应容器生产线", "description": "加工厂房内连续布置的工业反应容器。" },
+      "separation-platform": { "title": "分离作业平台", "description": "用于物料分离和过程控制的高位设备。" },
+      "reactor-line": { "title": "工艺设备线", "description": "按受控工业物料处理流程布置的工艺设备。" },
+      "processing-hall": { "title": "加工厂房", "description": "配有罐体、管线和公用工程系统的主要加工厂房。" },
+      "process-tanks": { "title": "工艺罐区", "description": "与泵组和输送管线集成的大容量工艺罐。" },
+      "material-handling-hall": { "title": "物料处理车间", "description": "用于物料暂存和作业处理的室内区域。" },
+      "water-treatment": { "title": "水处理系统", "description": "生产设施内的配套处理基础设施。" },
+      "production-campus": { "title": "生产建筑群", "description": "在厂区内互联的专业工业建筑。" }
+    }
+  },
+  "footer": {
+    "description": "立足新加坡与老挝，开展战略金属加工、工业物料回收、国际贸易与长期投资。",
+    "footprint": "运营布局",
+    "singaporeHeadquarters": "新加坡总部",
+    "laosOperations": "老挝生产运营",
+    "navigate": "导航",
+    "valueChain": "价值链",
+    "factoryGallery": "工厂实景",
+    "markets": "新加坡 · 老挝 · 国际市场"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "您访问的页面可能已被删除、更名或暂时无法使用。",
+    "home": "返回首页"
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 import {
   galleryCategories,
   galleryImages,
@@ -10,7 +11,16 @@ import {
 
 type GalleryFilter = 'All' | GalleryCategory;
 
+const categoryKeys: Record<GalleryFilter, string> = {
+  All: 'all',
+  Campus: 'campus',
+  Operations: 'operations',
+  Processing: 'processing',
+  Infrastructure: 'infrastructure',
+};
+
 const GalleryPage: React.FC = () => {
+  const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState<GalleryFilter>('All');
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
@@ -93,12 +103,12 @@ const GalleryPage: React.FC = () => {
         <div className="container-custom relative flex min-h-[520px] items-end py-16 md:py-20">
           <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-7">
-              <p className="section-label text-copper-light">Factory gallery · 2026</p>
-              <h1 className="mt-5 text-6xl font-semibold uppercase leading-[0.88] md:text-8xl">Inside the production base.</h1>
+              <p className="section-label text-copper-light">{t('gallery.label')}</p>
+              <h1 className="mt-5 text-6xl font-semibold uppercase leading-[0.88] md:text-8xl">{t('gallery.title')}</h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="border-l border-copper pl-5 text-lg text-white/[0.68]">
-                New imagery from the Zhongyu production campus, processing halls, equipment systems, and supporting infrastructure in Laos.
+                {t('gallery.intro')}
               </p>
             </div>
           </div>
@@ -109,10 +119,10 @@ const GalleryPage: React.FC = () => {
         <div className="container-custom">
           <div className="mb-10 flex flex-col gap-6 border-b border-graphite/[0.15] pb-8 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <p className="section-label text-copper-dark">Browse by area</p>
-              <p className="mt-3 text-sm text-steel-gray">{visibleImages.length} photographs</p>
+              <p className="section-label text-copper-dark">{t('gallery.browse')}</p>
+              <p className="mt-3 text-sm text-steel-gray">{t('gallery.photoCount', { count: visibleImages.length })}</p>
             </div>
-            <div className="flex flex-wrap gap-2" aria-label="Filter gallery by area">
+            <div className="flex flex-wrap gap-2" aria-label={t('gallery.filterLabel')}>
               {galleryCategories.map((category) => (
                 <button
                   key={category}
@@ -125,7 +135,7 @@ const GalleryPage: React.FC = () => {
                       : 'border-graphite/20 text-steel-gray hover:border-copper hover:text-copper-dark'
                   }`}
                 >
-                  {category}
+                  {t(`gallery.categories.${categoryKeys[category]}`)}
                 </button>
               ))}
             </div>
@@ -141,12 +151,12 @@ const GalleryPage: React.FC = () => {
                 } ${inView ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
                 style={{ transitionDelay: `${Math.min(index * 60, 360)}ms` }}
                 onClick={(event) => openModal(image, event.currentTarget)}
-                aria-label={`Open image: ${image.title}`}
+                aria-label={t('gallery.openImage', { title: t(`gallery.images.${image.id}.title`) })}
               >
                 <div className={image.featured ? 'aspect-[16/9] overflow-hidden' : 'aspect-[4/3] overflow-hidden'}>
                   <img
                     src={image.thumbnailSrc}
-                    alt={image.title}
+                    alt={t(`gallery.images.${image.id}.title`)}
                     loading="lazy"
                     decoding="async"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
@@ -155,10 +165,10 @@ const GalleryPage: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/5 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
                 <div className="absolute inset-x-0 bottom-0 p-5 text-white md:p-6">
                   <div className="flex items-center justify-between gap-4">
-                    <span className="text-xs font-semibold uppercase tracking-[0.18em] text-copper-light">{image.category}</span>
+                    <span className="text-xs font-semibold uppercase tracking-[0.18em] text-copper-light">{t(`gallery.categories.${categoryKeys[image.category]}`)}</span>
                     <span className="font-display text-2xl text-white/50">{String(index + 1).padStart(2, '0')}</span>
                   </div>
-                  <h2 className="mt-2 text-2xl font-semibold uppercase">{image.title}</h2>
+                  <h2 className="mt-2 text-2xl font-semibold uppercase">{t(`gallery.images.${image.id}.title`)}</h2>
                 </div>
               </button>
             ))}
@@ -183,7 +193,7 @@ const GalleryPage: React.FC = () => {
               type="button"
               onClick={closeModal}
               className="absolute right-4 top-4 z-10 border border-white/30 bg-graphite/70 p-3 text-white backdrop-blur-md transition-colors hover:bg-copper"
-              aria-label="Close image viewer"
+              aria-label={t('gallery.close')}
             >
               <X className="h-6 w-6" aria-hidden="true" />
             </button>
@@ -192,7 +202,7 @@ const GalleryPage: React.FC = () => {
               type="button"
               onClick={() => navigateImage('prev')}
               className="absolute left-4 top-1/2 z-10 -translate-y-1/2 border border-white/30 bg-graphite/70 p-3 text-white backdrop-blur-md transition-colors hover:bg-copper"
-              aria-label="Previous image"
+              aria-label={t('gallery.previous')}
             >
               <ChevronLeft className="h-6 w-6" aria-hidden="true" />
             </button>
@@ -201,21 +211,21 @@ const GalleryPage: React.FC = () => {
               type="button"
               onClick={() => navigateImage('next')}
               className="absolute right-4 top-1/2 z-10 -translate-y-1/2 border border-white/30 bg-graphite/70 p-3 text-white backdrop-blur-md transition-colors hover:bg-copper"
-              aria-label="Next image"
+              aria-label={t('gallery.next')}
             >
               <ChevronRight className="h-6 w-6" aria-hidden="true" />
             </button>
 
             <img
               src={selectedImage.src}
-              alt={selectedImage.title}
+              alt={t(`gallery.images.${selectedImage.id}.title`)}
               className="max-h-[88vh] max-w-full object-contain"
             />
 
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 pt-20 text-white md:p-8 md:pt-24">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-copper-light">{selectedImage.category} · Laos production base</p>
-              <h2 id="gallery-dialog-title" className="mt-2 text-3xl font-semibold uppercase">{selectedImage.title}</h2>
-              <p className="mt-2 max-w-2xl text-white/70">{selectedImage.description}</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-copper-light">{t(`gallery.categories.${categoryKeys[selectedImage.category]}`)} · {t('gallery.base')}</p>
+              <h2 id="gallery-dialog-title" className="mt-2 text-3xl font-semibold uppercase">{t(`gallery.images.${selectedImage.id}.title`)}</h2>
+              <p className="mt-2 max-w-2xl text-white/70">{t(`gallery.images.${selectedImage.id}.description`)}</p>
             </figcaption>
           </figure>
         </div>

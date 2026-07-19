@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "MAVEX INVESTMENTS | Kim loại chiến lược & Giá trị tuần hoàn",
+    "description": "MAVEX INVESTMENTS kết nối chuyên môn thương mại tại Singapore với hoạt động chế biến, thu hồi và sản xuất kim loại chiến lược tại Lào."
+  },
+  "language": { "select": "Chọn ngôn ngữ" },
+  "accessibility": { "skip": "Chuyển đến nội dung chính" },
+  "navigation": {
+    "company": "Công ty",
+    "capabilities": "Năng lực",
+    "operations": "Vận hành",
+    "gallery": "Hình ảnh",
+    "contact": "Liên hệ",
+    "open": "Mở menu điều hướng",
+    "close": "Đóng menu điều hướng",
+    "homeLabel": "Trang chủ MAVEX Investments",
+    "primaryLabel": "Điều hướng chính",
+    "mobileLabel": "Điều hướng di động",
+    "footerLabel": "Điều hướng chân trang"
+  },
+  "hero": {
+    "label": "Kim loại chiến lược · Chuỗi giá trị tuần hoàn",
+    "title": "Từ vật liệu phức tạp đến giá trị chiến lược.",
+    "intro": "Kết hợp chuyên môn thương mại tại Singapore với nền tảng công nghiệp đang phát triển ở Lào để chế biến, thu hồi và giao thương quốc tế kim loại chiến lược.",
+    "explore": "Khám phá năng lực",
+    "viewFactory": "Xem nhà máy",
+    "base": "Cơ sở sản xuất tại Lào",
+    "processingLabel": "Công suất xử lý thiết kế",
+    "processingUnit": "tấn / năm",
+    "footprintLabel": "Phạm vi hoạt động",
+    "footprintValue": "SG · LA",
+    "footprintDetail": "thương mại + công nghiệp",
+    "imageNote": "Hình ảnh cơ sở trên website này được chụp từ hoạt động của công ty tại Lào."
+  },
+  "company": {
+    "label": "Nền tảng doanh nghiệp",
+    "title": "Tầm vươn thương mại. Chiều sâu công nghiệp.",
+    "intro": "MAVEX INVESTMENTS PTE. LTD. là công ty được thành lập tại Singapore, hoạt động trong lĩnh vực bán buôn hóa chất công nghiệp và đầu tư chiến lược. Mạng lưới khu vực của công ty kết nối thương mại quốc tế với chế biến vật liệu kim loại tại Lào.",
+    "conceptAlt": "Hình ảnh ý tưởng kết nối logistics thương mại với chế biến kim loại chiến lược",
+    "conceptCaption": "Nền tảng khu vực theo ý tưởng · Singapore + Lào",
+    "platformLabel": "Nền tảng thương mại khu vực",
+    "platformTitle": "MAVEX Investments",
+    "platformDescription": "Đặt tại Singapore, MAVEX hỗ trợ thương mại quốc tế, đầu tư chiến lược và phối hợp xuyên biên giới trong chuỗi giá trị kim loại chiến lược.",
+    "roleLabel": "Vai trò",
+    "roleValue": "Thương mại quốc tế & đầu tư",
+    "networkLabel": "Mạng lưới",
+    "networkValue": "Singapore · Lào · Thị trường quốc tế",
+    "focusLabel": "Trọng tâm",
+    "focusValue": "Kim loại chiến lược & giá trị tuần hoàn",
+    "unit": "tấn / năm",
+    "processing": "Công suất xử lý vật liệu chứa kim loại",
+    "aptCapacity": "Công suất amoni paratungstat",
+    "ferroalloyCapacity": "Tổng công suất hợp kim sắt",
+    "capacityNote": "Các số liệu công suất phản ánh hồ sơ hiện tại của công ty và thiết kế sản xuất đã công bố."
+  },
+  "capabilities": {
+    "label": "Vật liệu & sản phẩm",
+    "title": "Tập trung vào giá trị kim loại chiến lược.",
+    "intro": "Hoạt động kinh doanh tập trung vào thu hồi, chế biến và thương mại hóa các vật liệu chứa vonfram, molypden, vanadi, coban và niken.",
+    "materials": {
+      "tungsten": { "name": "Vonfram", "detail": "APT, ferrovonfram và thu hồi vật liệu chứa vonfram" },
+      "molybdenum": { "name": "Molypden", "detail": "Sản phẩm molypden và ferromolypden" },
+      "vanadium": { "name": "Vanadi", "detail": "Xúc tác chứa vanadi và ferrovanadi" },
+      "cobalt": { "name": "Coban", "detail": "Các dòng vật liệu thứ cấp chứa coban" },
+      "nickel": { "name": "Niken", "detail": "Vật liệu công nghiệp chứa niken" }
+    },
+    "conceptAlt": "Bố cục ý tưởng về các vật liệu kim loại chiến lược",
+    "conceptCaption": "Hình ảnh ý tưởng về vật liệu",
+    "primaryProduct": "Sản phẩm chính",
+    "ferroalloy": "Hợp kim sắt",
+    "apt": "Amoni paratungstat",
+    "ferrotungsten": "Ferrovonfram",
+    "ferromolybdenum": "Ferromolypden",
+    "ferrovanadium": "Ferrovanadi"
+  },
+  "valueChain": {
+    "label": "Chuỗi giá trị",
+    "title": "Thu hồi. Chuyển đổi. Cung ứng.",
+    "intro": "Một quy trình liên kết đánh giá thương mại, chế biến có kiểm soát, chuyển đổi sản phẩm và giao hàng quốc tế.",
+    "conceptAlt": "Tiến trình ý tưởng từ vật liệu công nghiệp chứa kim loại đến sản phẩm tinh chế",
+    "conceptCaption": "Dòng vật liệu tuần hoàn theo ý tưởng",
+    "steps": {
+      "review": { "title": "Đánh giá nguyên liệu", "text": "Đánh giá thành phần vật liệu, hồ sơ và mức độ phù hợp thương mại trước khi chế biến." },
+      "recovery": { "title": "Phân tách & thu hồi", "text": "Áp dụng các quy trình có kiểm soát để phân tách và thu hồi giá trị kim loại chiến lược từ vật liệu phức tạp." },
+      "conversion": { "title": "Chuyển đổi sản phẩm", "text": "Chuyển vật liệu thu hồi thành các sản phẩm như APT, ferrovonfram, ferromolypden và ferrovanadi." },
+      "delivery": { "title": "Cung ứng thương mại", "text": "Điều phối chất lượng, hồ sơ và giao hàng quốc tế thông qua nền tảng thương mại tại Singapore." }
+    },
+    "benefits": {
+      "efficiency": { "title": "Hiệu quả tài nguyên", "text": "Thu hồi giá trị từ vật liệu thứ cấp phức tạp và hỗ trợ sử dụng vật liệu theo hướng tuần hoàn hơn." },
+      "sourcing": { "title": "Nguồn cung có trách nhiệm", "text": "Xây dựng quy trình dựa trên hồ sơ, khả năng truy xuất và các nguyên tắc nguồn cung có trách nhiệm được công nhận." },
+      "coordination": { "title": "Phối hợp xuyên biên giới", "text": "Kết nối hoạt động khu vực với khách hàng và đối tác trên các thị trường quốc tế." }
+    }
+  },
+  "operations": {
+    "label": "Hoạt động thực tế",
+    "title": "Được xây dựng để vận hành công nghiệp.",
+    "intro": "Cơ sở sản xuất tại Lào tập hợp các xưởng chế biến, hệ thống phản ứng, thiết bị phân tách, tiện ích hỗ trợ và hạ tầng khuôn viên.",
+    "lineAlt": "Toàn cảnh dây chuyền sản xuất bên trong nhà máy tại Lào",
+    "lineCaption": "Dây chuyền chế biến tích hợp",
+    "receptionAlt": "Khu lễ tân MAVEX tại cơ sở sản xuất ở Lào",
+    "receptionCaption": "Lễ tân nhà máy",
+    "waterAlt": "Hạ tầng xử lý nước tại cơ sở sản xuất",
+    "waterCaption": "Hạ tầng hỗ trợ",
+    "exploreLabel": "Khám phá cơ sở",
+    "exploreTitle": "Xem khuôn viên sản xuất, thiết bị và hạ tầng hỗ trợ.",
+    "openGallery": "Mở thư viện nhà máy",
+    "discuss": "Trao đổi cơ hội hợp tác",
+    "singapore": "Singapore",
+    "commercialHeadquarters": "Trụ sở thương mại",
+    "laos": "Lào",
+    "productionOperations": "Hoạt động sản xuất",
+    "laosAddress": "Tỉnh Khammouane, Lào"
+  },
+  "gallery": {
+    "label": "Hình ảnh nhà máy · 2026",
+    "title": "Bên trong cơ sở sản xuất.",
+    "intro": "Hình ảnh mới từ khuôn viên sản xuất Zhongyu, các xưởng chế biến, hệ thống thiết bị và hạ tầng hỗ trợ tại Lào.",
+    "browse": "Xem theo khu vực",
+    "photoCount": "{{count}} hình ảnh",
+    "filterLabel": "Lọc hình ảnh nhà máy theo khu vực",
+    "openImage": "Mở hình ảnh: {{title}}",
+    "close": "Đóng trình xem hình ảnh",
+    "previous": "Hình ảnh trước",
+    "next": "Hình ảnh tiếp theo",
+    "base": "Cơ sở sản xuất tại Lào",
+    "categories": {
+      "all": "Tất cả",
+      "campus": "Khuôn viên",
+      "operations": "Vận hành",
+      "processing": "Chế biến",
+      "infrastructure": "Hạ tầng"
+    },
+    "images": {
+      "factory-overview": { "title": "Toàn cảnh khuôn viên sản xuất", "description": "Góc nhìn rộng bao quát khuôn viên sản xuất và các hành lang tiện ích kết nối tại Lào." },
+      "factory-entrance-sign": { "title": "Cơ sở sản xuất Zhongyu", "description": "Biển hiệu lối vào của Zhongyu International Metal Materials Industry Co., Ltd." },
+      "factory-main-gate": { "title": "Cổng chính nhà máy", "description": "Điểm tiếp cận chính kết nối khu hành chính và khu sản xuất." },
+      "factory-reception": { "title": "Lễ tân MAVEX", "description": "Khu vực lễ tân tại cơ sở sản xuất ở Lào." },
+      "administration-building": { "title": "Tòa nhà hành chính", "description": "Cơ sở hành chính hỗ trợ khuôn viên sản xuất." },
+      "production-line-wide": { "title": "Dây chuyền chế biến tích hợp", "description": "Toàn cảnh dây chuyền chế biến trên cao và hệ thống thu gom." },
+      "reaction-vessels": { "title": "Dây chuyền thiết bị phản ứng", "description": "Chuỗi thiết bị phản ứng công nghiệp trong xưởng chế biến." },
+      "separation-platform": { "title": "Sàn phân tách", "description": "Thiết bị trên cao hỗ trợ phân tách vật liệu và kiểm soát quy trình." },
+      "reactor-line": { "title": "Dây chuyền thiết bị quy trình", "description": "Thiết bị được bố trí để xử lý vật liệu công nghiệp có kiểm soát." },
+      "processing-hall": { "title": "Xưởng chế biến", "description": "Xưởng chế biến chính với bồn chứa, đường ống và hệ thống tiện ích." },
+      "process-tanks": { "title": "Khu bồn quy trình", "description": "Các bồn quy trình dung tích lớn được tích hợp với bơm và đường chuyển tải." },
+      "material-handling-hall": { "title": "Xưởng xử lý vật liệu", "description": "Khu vực trong nhà hỗ trợ tập kết và xử lý vật liệu trong vận hành." },
+      "water-treatment": { "title": "Hệ thống xử lý nước", "description": "Hạ tầng xử lý hỗ trợ trong cơ sở sản xuất." },
+      "production-campus": { "title": "Các tòa nhà sản xuất", "description": "Các tòa nhà công nghiệp chuyên dụng được kết nối trong toàn khuôn viên nhà máy." }
+    }
+  },
+  "footer": {
+    "description": "Chế biến kim loại chiến lược, thu hồi vật liệu công nghiệp, thương mại quốc tế và đầu tư dài hạn tại Singapore và Lào.",
+    "footprint": "Phạm vi hoạt động",
+    "singaporeHeadquarters": "Trụ sở Singapore",
+    "laosOperations": "Sản xuất tại Lào",
+    "navigate": "Điều hướng",
+    "valueChain": "Chuỗi giá trị",
+    "factoryGallery": "Hình ảnh nhà máy",
+    "markets": "Singapore · Lào · Thị trường quốc tế"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Trang bạn đang tìm có thể đã bị xóa, đổi tên hoặc tạm thời không khả dụng.",
+    "home": "Về trang chủ"
+  }
+}

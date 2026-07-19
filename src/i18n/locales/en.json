@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "MAVEX INVESTMENTS - Strategic Metals & Circular Value",
+    "description": "MAVEX INVESTMENTS connects Singapore-based commercial expertise with strategic-metal processing, recovery, and production operations in Laos."
+  },
+  "language": {
+    "select": "Select language"
+  },
+  "accessibility": {
+    "skip": "Skip to main content"
+  },
+  "navigation": {
+    "company": "Company",
+    "capabilities": "Capabilities",
+    "operations": "Operations",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "open": "Open navigation",
+    "close": "Close navigation",
+    "homeLabel": "MAVEX Investments home",
+    "primaryLabel": "Primary navigation",
+    "mobileLabel": "Mobile navigation",
+    "footerLabel": "Footer navigation"
+  },
+  "hero": {
+    "label": "Strategic metals · Circular value chains",
+    "title": "From complex materials to strategic value.",
+    "intro": "Singapore-based commercial expertise and a growing industrial platform in Laos for strategic-metal processing, recovery, and international trade.",
+    "explore": "Explore capabilities",
+    "viewFactory": "View the factory",
+    "base": "Laos production base",
+    "processingLabel": "Nameplate processing",
+    "processingUnit": "tonnes / year",
+    "footprintLabel": "Operating footprint",
+    "footprintValue": "SG · LA",
+    "footprintDetail": "commercial + industrial",
+    "imageNote": "Facility imagery shown on this website is from the company's Laos operations."
+  },
+  "company": {
+    "label": "Company platform",
+    "title": "Commercial reach. Industrial depth.",
+    "intro": "MAVEX INVESTMENTS PTE. LTD. is a Singapore-incorporated company active in industrial chemical wholesaling and strategic investment. Its regional operating footprint connects international trade with metal-material processing in Laos.",
+    "conceptAlt": "Conceptual visualization connecting commercial logistics with strategic-metal processing",
+    "conceptCaption": "Conceptual regional platform · Singapore + Laos",
+    "platformLabel": "Regional commercial platform",
+    "platformTitle": "MAVEX Investments",
+    "platformDescription": "Based in Singapore, MAVEX supports international trading, strategic investment, and cross-border coordination across strategic-metal value chains.",
+    "roleLabel": "Role",
+    "roleValue": "International trading & investment",
+    "networkLabel": "Network",
+    "networkValue": "Singapore · Laos · International markets",
+    "focusLabel": "Focus",
+    "focusValue": "Strategic metals & circular value",
+    "unit": "tonnes / year",
+    "processing": "Metal-bearing material processing",
+    "aptCapacity": "Ammonium paratungstate capacity",
+    "ferroalloyCapacity": "Combined ferroalloy capacity",
+    "capacityNote": "Capacity figures reflect the company's current corporate profile and stated production design."
+  },
+  "capabilities": {
+    "label": "Materials & products",
+    "title": "Focused on strategic-metal value.",
+    "intro": "The business is structured around the recovery, processing, and commercialization of tungsten, molybdenum, vanadium, cobalt, and nickel-bearing materials.",
+    "materials": {
+      "tungsten": { "name": "Tungsten", "detail": "APT, ferrotungsten, and tungsten-bearing material recovery" },
+      "molybdenum": { "name": "Molybdenum", "detail": "Molybdenum products and ferromolybdenum" },
+      "vanadium": { "name": "Vanadium", "detail": "Vanadium-bearing catalysts and ferrovanadium" },
+      "cobalt": { "name": "Cobalt", "detail": "Cobalt-bearing secondary material streams" },
+      "nickel": { "name": "Nickel", "detail": "Nickel-bearing industrial materials" }
+    },
+    "conceptAlt": "Conceptual arrangement of strategic metal materials",
+    "conceptCaption": "Conceptual material visualization",
+    "primaryProduct": "Primary product",
+    "ferroalloy": "Ferroalloy",
+    "apt": "Ammonium paratungstate",
+    "ferrotungsten": "Ferrotungsten",
+    "ferromolybdenum": "Ferromolybdenum",
+    "ferrovanadium": "Ferrovanadium"
+  },
+  "valueChain": {
+    "label": "Value chain",
+    "title": "Recover. Convert. Deliver.",
+    "intro": "A connected workflow links commercial qualification, controlled processing, product conversion, and international delivery.",
+    "conceptAlt": "Conceptual progression from industrial metal-bearing material to refined products",
+    "conceptCaption": "Conceptual circular-material flow",
+    "steps": {
+      "review": { "title": "Feedstock review", "text": "Evaluate material composition, documentation, and commercial suitability before processing." },
+      "recovery": { "title": "Separation & recovery", "text": "Apply controlled process routes to separate and recover strategic-metal values from complex materials." },
+      "conversion": { "title": "Product conversion", "text": "Convert recovered material into products such as APT, ferrotungsten, ferromolybdenum, and ferrovanadium." },
+      "delivery": { "title": "Commercial delivery", "text": "Coordinate quality, documentation, and international delivery through the Singapore commercial platform." }
+    },
+    "benefits": {
+      "efficiency": { "title": "Resource efficiency", "text": "Recover value from complex secondary materials and support more circular material use." },
+      "sourcing": { "title": "Responsible sourcing", "text": "Build processes around documentation, traceability, and recognized responsible-sourcing principles." },
+      "coordination": { "title": "Cross-border coordination", "text": "Connect regional operations with customers and partners across international markets." }
+    }
+  },
+  "operations": {
+    "label": "Real operations",
+    "title": "Built for industrial execution.",
+    "intro": "The Laos production base brings together processing halls, reaction systems, separation equipment, supporting utilities, and campus infrastructure.",
+    "lineAlt": "Wide view of the production line inside the Laos factory",
+    "lineCaption": "Integrated processing line",
+    "receptionAlt": "MAVEX reception at the Laos production base",
+    "receptionCaption": "Factory reception",
+    "waterAlt": "Water treatment infrastructure at the production facility",
+    "waterCaption": "Supporting infrastructure",
+    "exploreLabel": "Explore the facility",
+    "exploreTitle": "See the production campus, equipment, and supporting infrastructure.",
+    "openGallery": "Open factory gallery",
+    "discuss": "Discuss an opportunity",
+    "singapore": "Singapore",
+    "commercialHeadquarters": "Commercial headquarters",
+    "laos": "Laos",
+    "productionOperations": "Production operations",
+    "laosAddress": "Khammouane Province, Laos"
+  },
+  "gallery": {
+    "label": "Factory gallery · 2026",
+    "title": "Inside the production base.",
+    "intro": "New imagery from the Zhongyu production campus, processing halls, equipment systems, and supporting infrastructure in Laos.",
+    "browse": "Browse by area",
+    "photoCount": "{{count}} photographs",
+    "filterLabel": "Filter gallery by area",
+    "openImage": "Open image: {{title}}",
+    "close": "Close image viewer",
+    "previous": "Previous image",
+    "next": "Next image",
+    "base": "Laos production base",
+    "categories": {
+      "all": "All",
+      "campus": "Campus",
+      "operations": "Operations",
+      "processing": "Processing",
+      "infrastructure": "Infrastructure"
+    },
+    "images": {
+      "factory-overview": { "title": "Production Campus Overview", "description": "A wide view across the production campus and its connected utility corridors in Laos." },
+      "factory-entrance-sign": { "title": "Zhongyu Production Base", "description": "The entrance signage for Zhongyu International Metal Materials Industry Co., Ltd." },
+      "factory-main-gate": { "title": "Main Factory Entrance", "description": "The main access point connecting administration and production areas." },
+      "factory-reception": { "title": "MAVEX Reception", "description": "The reception area at the Laos production base." },
+      "administration-building": { "title": "Administration Building", "description": "Administrative facilities supporting the production campus." },
+      "production-line-wide": { "title": "Integrated Processing Line", "description": "A wide view of the elevated processing line and collection system." },
+      "reaction-vessels": { "title": "Reaction Vessel Line", "description": "A sequence of industrial reaction vessels within the processing hall." },
+      "separation-platform": { "title": "Separation Platform", "description": "Elevated equipment supporting material separation and process control." },
+      "reactor-line": { "title": "Process Equipment Line", "description": "Process equipment arranged for controlled industrial material treatment." },
+      "processing-hall": { "title": "Processing Hall", "description": "The main processing hall with tanks, piping, and utility systems." },
+      "process-tanks": { "title": "Process Tank Area", "description": "Large-volume process tanks integrated with pumps and transfer lines." },
+      "material-handling-hall": { "title": "Material Handling Hall", "description": "An indoor area supporting material staging and operational handling." },
+      "water-treatment": { "title": "Water Treatment System", "description": "Supporting treatment infrastructure within the production facility." },
+      "production-campus": { "title": "Production Buildings", "description": "Purpose-built industrial buildings connected across the factory campus." }
+    }
+  },
+  "footer": {
+    "description": "Strategic-metal processing, industrial material recovery, international trading, and long-term investment across Singapore and Laos.",
+    "footprint": "Operating footprint",
+    "singaporeHeadquarters": "Singapore headquarters",
+    "laosOperations": "Laos production operations",
+    "navigate": "Navigate",
+    "valueChain": "Value chain",
+    "factoryGallery": "Factory gallery",
+    "markets": "Singapore · Laos · International markets"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "home": "Back to Home"
+  }
+}
