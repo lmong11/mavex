@@ -99,14 +99,14 @@ const CompanyProfile: React.FC = () => {
           <div className="mt-16 grid grid-cols-1 gap-0 lg:grid-cols-12">
             <figure className="image-frame relative min-h-[420px] overflow-hidden lg:col-span-7">
               <img
-                src="/images/factory/factory-main-gate.jpg"
-                alt="Main entrance to the Zhongyu production base in Laos"
+                src="/images/concepts/regional-platform.jpg"
+                alt="Conceptual visualization connecting commercial logistics with strategic-metal processing"
                 loading="lazy"
                 decoding="async"
                 className="absolute inset-0 h-full w-full object-cover"
               />
               <figcaption className="absolute bottom-0 left-0 bg-graphite px-5 py-3 text-xs uppercase tracking-[0.16em] text-white/70">
-                Zhongyu production base · Laos
+                Conceptual regional platform · Singapore + Laos
               </figcaption>
             </figure>
             <div className="bg-white p-8 md:p-12 lg:col-span-5">
