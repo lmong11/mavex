@@ -1,6 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Factory, Globe, Recycle, Award, Building2 } from 'lucide-react';
+import { ArrowUpRight, Award, Building2, Factory, Globe, Mail, Recycle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CompanyProfile: React.FC = () => {
   const { ref, inView } = useInView({
@@ -14,14 +15,14 @@ const CompanyProfile: React.FC = () => {
       title: 'Annual Processing',
       value: '20,000 tons',
       subtitle: 'Tungsten, molybdenum, vanadium waste catalysts',
-      color: 'text-blue-600'
+      color: 'text-copper'
     },
     {
       icon: Recycle,
       title: 'APT Production',
       value: '2,000 tons',
       subtitle: 'Ammonium paratungstate annually',
-      color: 'text-green-600'
+      color: 'text-forest'
     },
     {
       icon: Globe,
@@ -35,7 +36,7 @@ const CompanyProfile: React.FC = () => {
       title: 'OECD Compliant',
       value: 'Certified',
       subtitle: 'Conflict Minerals Initiative compliant',
-      color: 'text-purple-600'
+      color: 'text-forest'
     },
   ];
 
@@ -55,7 +56,7 @@ const CompanyProfile: React.FC = () => {
   ];
 
   return (
-    <section className="section bg-gray-50">
+    <section id="company-profile" className="section bg-ivory scroll-mt-20">
       <div className="container-custom">
         <div
           ref={ref}
@@ -63,18 +64,21 @@ const CompanyProfile: React.FC = () => {
             inView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="section-heading">Company Profile</h2>
-            <p className="text-xl text-steel-gray mt-4">Specializing in rare and precious metals processing, trading, and investment</p>
+          <div className="mb-16 grid grid-cols-1 gap-8 border-b border-slate-dark/15 pb-12 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-5">
+              <p className="eyebrow">Company profile</p>
+              <h2 className="mt-4 text-4xl leading-tight text-slate-dark md:text-5xl">Material expertise.<br />Regional reach.</h2>
+            </div>
+            <p className="max-w-2xl text-lg text-steel-gray lg:col-span-6 lg:col-start-7">
+              MAVEX combines Singapore-based commercial operations with an industrial footprint in Laos, focusing on the responsible recovery and utilization of tungsten, molybdenum, cobalt, nickel, and vanadium resources.
+            </p>
           </div>
 
-          {/* Company Overview Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {/* Company Introduction */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-slate-dark mb-6">Company Overview</h3>
-              <div className="space-y-4 text-steel-gray">
+          <div className="mb-20 grid grid-cols-1 gap-10 lg:grid-cols-12">
+            <article className="border-l-4 border-copper bg-white p-8 md:p-10 lg:col-span-7">
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-copper-dark">01 — Company overview</p>
+              <h3 className="mb-6 text-3xl text-slate-dark">A cross-border platform for strategic metals</h3>
+              <div className="space-y-5 text-steel-gray">
                 <p>
                   Mavex Investments Pte. Ltd. is a company specializing in the processing, trading, and investment of rare and precious metals. Its wholly-owned subsidiary, Zhongyu International Metal Materials Industrial Co., Ltd., is located in the Yapotash International Industrial Park, Thakhek County, Khammouane Province, Laos.
                 </p>
@@ -82,76 +86,80 @@ const CompanyProfile: React.FC = () => {
                   The company focuses on the comprehensive utilization of rare and precious metal resources such as tungsten, molybdenum, cobalt, nickel, and vanadium.
                 </p>
               </div>
-            </div>
+            </article>
 
-            {/* Production Capabilities */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-slate-dark mb-6">Production Capabilities</h3>
-              <div className="space-y-4 text-steel-gray">
+            <div className="space-y-10 lg:col-span-5 lg:pl-6">
+              <article className="border-t border-slate-dark/20 pt-6">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-copper-dark">02 — Production</p>
+                <h3 className="mb-4 text-2xl text-slate-dark">Production capabilities</h3>
                 <p>
                   It has established a production line with an annual capacity of processing 20,000 tons of tungsten, molybdenum, and vanadium waste catalysts, producing tungsten and molybdenum products. The line is capable of producing 2,000 tons of ammonium paratungstate (APT) and 1,000 tons of ferromolybdenum and ferrovanadium annually.
                 </p>
-              </div>
-            </div>
+              </article>
 
-            {/* Products & Materials */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-slate-dark mb-6">Main Products</h3>
-              <div className="space-y-4 text-steel-gray">
+              <article className="border-t border-slate-dark/20 pt-6">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-copper-dark">03 — Products</p>
+                <h3 className="mb-4 text-2xl text-slate-dark">Main products</h3>
                 <p>
                   Its main products include ammonium paratungstate (APT), ferromolybdenum, and ferrovanadium. Raw materials cover tungsten-molybdenum-cobalt waste alloys, as well as waste catalysts containing tungsten, molybdenum, and vanadium from the petrochemical industry.
                 </p>
-              </div>
-            </div>
+              </article>
 
-            {/* Environmental Commitment */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-slate-dark mb-6">Environmental Commitment</h3>
-              <div className="space-y-4 text-steel-gray">
+              <article className="border-t border-slate-dark/20 pt-6">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-copper-dark">04 — Responsibility</p>
+                <h3 className="mb-4 text-2xl text-slate-dark">Environmental commitment</h3>
                 <p>
                   The company adopts advanced production processes, advocates green environmental protection, and follows the development concepts promoted by the OECD Conflict Minerals Initiative. It is positioned as a global leader in the recycling and utilization of tungsten, molybdenum, and vanadium.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
 
-          {/* Global Locations */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-slate-dark text-center mb-8">Global Locations</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {locations.map((location, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-copper bg-opacity-10 mb-4">
-                    <location.icon className="h-8 w-8 text-copper" />
-                  </div>
-                  <h4 className="text-xl font-bold text-slate-dark mb-2">{location.title}</h4>
-                  <p className="font-semibold text-steel-gray mb-2">{location.company}</p>
-                  <p className="text-steel-gray text-sm">{location.address}</p>
+          <div className="mb-20 overflow-hidden bg-slate-dark text-white">
+            <div className="grid grid-cols-2 lg:grid-cols-4">
+              {keyHighlights.map((highlight) => (
+                <div key={highlight.title} className="border-b border-r border-white/10 p-6 last:border-r-0 md:p-8 lg:border-b-0">
+                  <highlight.icon className={`mb-8 h-6 w-6 ${highlight.color}`} aria-hidden="true" />
+                  <div className="font-montserrat text-3xl font-bold md:text-4xl">{highlight.value}</div>
+                  <div className="mt-2 text-sm font-semibold text-white/85">{highlight.title}</div>
+                  <div className="mt-2 text-xs leading-relaxed text-white/50">{highlight.subtitle}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Key Highlights */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {keyHighlights.map((highlight, index) => (
-              <div
-                key={index}
-                className={`text-center transform transition-all duration-700 ${
-                  inView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                }`}
-                style={{ transitionDelay: `${index * 200}ms` }}
-              >
-                <div className="bg-white rounded-lg shadow-md p-6 card-hover">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4 ${highlight.color}`}>
-                    <highlight.icon className="h-8 w-8" />
-                  </div>
-                  <div className="text-lg font-semibold text-slate-dark mb-1">{highlight.title}</div>
-                  <div className="text-2xl font-bold text-copper mb-2">{highlight.value}</div>
-                  <div className="text-steel-gray text-sm">{highlight.subtitle}</div>
-                </div>
-              </div>
-            ))}
+          <div className="mb-20 grid grid-cols-1 gap-8 lg:grid-cols-12">
+            <div className="lg:col-span-4">
+              <p className="eyebrow">Operating footprint</p>
+              <h3 className="mt-4 text-3xl text-slate-dark">Connected across Southeast Asia</h3>
+            </div>
+            <div className="grid grid-cols-1 gap-px bg-slate-dark/15 md:grid-cols-2 lg:col-span-8">
+              {locations.map((location) => (
+                <article key={location.title} className="bg-white p-8">
+                  <location.icon className="mb-10 h-8 w-8 text-copper" aria-hidden="true" />
+                  <h4 className="text-xl text-slate-dark">{location.title}</h4>
+                  <p className="mt-3 font-semibold text-steel-gray">{location.company}</p>
+                  <p className="mt-2 text-sm text-steel-gray">{location.address}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 bg-copper text-white lg:grid-cols-12">
+            <div className="p-8 md:p-10 lg:col-span-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">Work with MAVEX</p>
+              <h3 className="mt-4 max-w-2xl text-3xl leading-tight md:text-4xl">Discuss metal processing, supply, or investment opportunities with our team.</h3>
+            </div>
+            <div className="flex flex-col justify-center gap-3 border-t border-white/20 p-8 lg:col-span-4 lg:border-l lg:border-t-0">
+              <a href="mailto:Business@mavexinvest.com" className="inline-flex items-center justify-between border-b border-white/35 py-3 font-semibold hover:border-white">
+                Contact our team
+                <Mail className="h-5 w-5" aria-hidden="true" />
+              </a>
+              <Link to="/gallery" className="inline-flex items-center justify-between border-b border-white/35 py-3 font-semibold hover:border-white">
+                View company gallery
+                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

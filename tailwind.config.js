@@ -4,16 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        'slate-dark': '#2C3E50',
-        'steel-gray': '#7F8C8D',
+        'slate-dark': '#0F172A',
+        'steel-gray': '#475569',
         'copper': '#B87333',
         'copper-light': '#D49A66',
         'copper-dark': '#8E5A27',
-        'slate-light': '#3D5266',
+        'slate-light': '#1E293B',
+        'ivory': '#F8F5EF',
+        'forest': '#2F6B4F',
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
-        'inter': ['Inter', 'sans-serif'],
+        'body': ['Open Sans', 'sans-serif'],
       },
       spacing: {
         '18': '4.5rem',

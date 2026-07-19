@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                 />
               </Link>
             </div>
-            <p className="text-gray-300">
+            <p className="max-w-sm text-gray-300">
               MAVEX INVESTMENTS PTE. LTD. - Specializing in the processing, trading, and investment of rare and precious metals.
             </p>
           </div>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 text-copper shrink-0" />
-                <a href="mailto:Business@mavexinvest.com" className="text-gray-300 hover:text-white">Business@mavexinvest.com</a>
+                <a href="mailto:Business@mavexinvest.com" className="text-gray-300 hover:text-white">business@mavexinvest.com</a>
               </li>
             </ul>
           </div>
@@ -71,10 +71,11 @@ const Footer: React.FC = () => {
 
         <hr className="border-gray-700 my-8" />
 
-        <div className="text-center">
-          <p className="text-gray-400 text-sm">
+        <div className="flex flex-col gap-3 text-sm text-gray-400 md:flex-row md:items-center md:justify-between">
+          <p>
             &copy; {new Date().getFullYear()} MAVEX INVESTMENTS PTE. LTD. All rights reserved.
           </p>
+          <p>Singapore · Laos · International markets</p>
         </div>
       </div>
     </footer>

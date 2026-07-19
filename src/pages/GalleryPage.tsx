@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -50,45 +50,80 @@ const galleryImages: GalleryImage[] = [
 
 const GalleryPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
+  const isModalOpen = selectedImage !== null;
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
-  const openModal = (image: GalleryImage) => {
+  const openModal = (image: GalleryImage, trigger: HTMLButtonElement) => {
+    triggerRef.current = trigger;
     setSelectedImage(image);
-    document.body.style.overflow = 'hidden';
   };
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setSelectedImage(null);
-    document.body.style.overflow = 'unset';
-  };
+    window.requestAnimationFrame(() => triggerRef.current?.focus());
+  }, []);
 
-  const navigateImage = (direction: 'prev' | 'next') => {
-    if (!selectedImage) return;
+  const navigateImage = useCallback((direction: 'prev' | 'next') => {
+    setSelectedImage((current) => {
+      if (!current) return current;
+      const currentIndex = galleryImages.findIndex((image) => image.id === current.id);
+      const offset = direction === 'prev' ? -1 : 1;
+      const newIndex = (currentIndex + offset + galleryImages.length) % galleryImages.length;
+      return galleryImages[newIndex];
+    });
+  }, []);
 
-    const currentIndex = galleryImages.findIndex(img => img.id === selectedImage.id);
-    let newIndex;
+  useEffect(() => {
+    if (!isModalOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.requestAnimationFrame(() => closeButtonRef.current?.focus());
 
-    if (direction === 'prev') {
-      newIndex = currentIndex > 0 ? currentIndex - 1 : galleryImages.length - 1;
-    } else {
-      newIndex = currentIndex < galleryImages.length - 1 ? currentIndex + 1 : 0;
-    }
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') closeModal();
+      if (event.key === 'ArrowLeft') navigateImage('prev');
+      if (event.key === 'ArrowRight') navigateImage('next');
+      if (event.key === 'Tab') {
+        const focusableElements = modalRef.current?.querySelectorAll<HTMLButtonElement>('button');
+        if (!focusableElements?.length) return;
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
 
-    setSelectedImage(galleryImages[newIndex]);
-  };
+        if (event.shiftKey && document.activeElement === firstElement) {
+          event.preventDefault();
+          lastElement.focus();
+        } else if (!event.shiftKey && document.activeElement === lastElement) {
+          event.preventDefault();
+          firstElement.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [closeModal, isModalOpen, navigateImage]);
 
   return (
-    <div className="pt-32 pb-20">
+    <div className="pb-20 pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-slate-dark text-white">
+      <section className="relative overflow-hidden bg-slate-dark py-20 text-white md:py-28">
+        <div className="absolute inset-y-0 right-0 w-1/3 border-l border-white/10 bg-copper/10" aria-hidden="true" />
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Company Gallery</h1>
-            <div className="w-20 h-1 bg-copper mx-auto mb-6"></div>
-            <p className="text-xl opacity-90">
+          <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="eyebrow text-copper-light">Company gallery</p>
+              <h1 className="mt-4 text-5xl leading-tight md:text-6xl">Inside our operations</h1>
+            </div>
+            <p className="max-w-xl text-lg text-white/70 lg:col-span-4 lg:col-start-9">
               Laos Factory - Old Production Facility (New Factory Under Construction)
             </p>
           </div>
@@ -100,31 +135,36 @@ const GalleryPage: React.FC = () => {
         <div className="container-custom">
           <div
             ref={ref}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3"
           >
             {galleryImages.map((image, index) => (
-              <div
+              <button
+                type="button"
                 key={image.id}
-                className={`group relative overflow-hidden rounded-lg cursor-pointer transform transition-all duration-700 ${
+                className={`group relative overflow-hidden bg-slate-dark text-left transform transition-all duration-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-copper/45 ${
                   inView
                     ? 'translate-y-0 opacity-100'
                     : 'translate-y-10 opacity-0'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
-                onClick={() => openModal(image)}
+                onClick={(event) => openModal(image, event.currentTarget)}
+                aria-label={`Open image: ${image.title}`}
               >
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={image.src}
                     alt={image.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-dark via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="font-semibold">{image.title}</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-dark via-slate-dark/15 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-copper-light">{String(index + 1).padStart(2, '0')}</span>
+                  <h2 className="mt-1 text-xl font-semibold">{image.title}</h2>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
@@ -132,25 +172,41 @@ const GalleryPage: React.FC = () => {
 
       {/* Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
-          <div className="relative max-w-4xl max-h-full">
+        <div
+          ref={modalRef}
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/95 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="gallery-dialog-title"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) closeModal();
+          }}
+        >
+          <figure className="relative max-h-full max-w-5xl">
             <button
+              ref={closeButtonRef}
+              type="button"
               onClick={closeModal}
               className="absolute top-4 right-4 z-10 p-2 bg-white bg-opacity-20 rounded-full text-white hover:bg-opacity-30 transition-all"
+              aria-label="Close image viewer"
             >
               <X className="h-6 w-6" />
             </button>
 
             <button
+              type="button"
               onClick={() => navigateImage('prev')}
               className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white bg-opacity-20 rounded-full text-white hover:bg-opacity-30 transition-all"
+              aria-label="Previous image"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
 
             <button
+              type="button"
               onClick={() => navigateImage('next')}
               className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-white bg-opacity-20 rounded-full text-white hover:bg-opacity-30 transition-all"
+              aria-label="Next image"
             >
               <ChevronRight className="h-6 w-6" />
             </button>
@@ -158,14 +214,14 @@ const GalleryPage: React.FC = () => {
             <img
               src={selectedImage.src}
               alt={selectedImage.title}
-              className="max-w-full max-h-full object-contain rounded-lg"
+              className="max-h-[85vh] max-w-full object-contain"
             />
 
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 text-white">
-              <h3 className="text-xl font-bold mb-2">{selectedImage.title}</h3>
+            <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/75 to-transparent p-6 pt-16 text-white">
+              <h2 id="gallery-dialog-title" className="text-xl font-bold mb-2">{selectedImage.title}</h2>
               <p className="opacity-90">{selectedImage.description}</p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
       )}
     </div>

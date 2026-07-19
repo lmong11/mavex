@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Mail, Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   scrolled: boolean;
@@ -13,6 +13,20 @@ const navigationItems = [
 const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const location = useLocation();
+  const solidNavigation = scrolled || location.pathname !== '/' || isOpen;
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsOpen(false);
+    };
+
+    document.addEventListener('keydown', closeOnEscape);
+    return () => document.removeEventListener('keydown', closeOnEscape);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -21,22 +35,25 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'nav-scrolled' : 'bg-transparent'
+        solidNavigation ? 'nav-scrolled' : 'bg-transparent'
       }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-3" aria-label="MAVEX Investments home">
             <img
               src="/images/mavex-logo.png"
-              alt="MAVEX Investments"
+              alt=""
               className="h-12 w-auto"
             />
+            <span className="hidden sm:block text-[0.68rem] font-montserrat font-semibold uppercase tracking-[0.2em] text-white/85">
+              Investments
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center gap-8" aria-label="Primary navigation">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
@@ -48,6 +65,13 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
                 {item.name}
               </Link>
             ))}
+            <a
+              href="mailto:Business@mavexinvest.com"
+              className="inline-flex items-center gap-2 border border-white/30 px-4 py-2 text-sm font-semibold text-white transition-colors hover:border-copper hover:bg-copper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-light"
+            >
+              <Mail className="h-4 w-4" aria-hidden="true" />
+              Contact
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -57,7 +81,8 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
               className="text-white p-2"
               onClick={toggleMenu}
               aria-expanded={isOpen}
-              aria-label="Toggle navigation"
+              aria-controls="mobile-navigation"
+              aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -70,8 +95,8 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-slate-dark bg-opacity-95 backdrop-blur-sm rounded-lg mt-2">
+          <div id="mobile-navigation" className="lg:hidden pb-4">
+            <nav className="space-y-1 border border-white/10 bg-slate-dark/95 p-2 backdrop-blur-md" aria-label="Mobile navigation">
               {navigationItems.map((item) => (
                 <Link
                   key={item.name}
@@ -86,7 +111,14 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
                   {item.name}
                 </Link>
               ))}
-            </div>
+              <a
+                href="mailto:Business@mavexinvest.com"
+                className="flex items-center gap-2 rounded-md px-3 py-3 text-base font-medium text-white hover:bg-slate-light"
+              >
+                <Mail className="h-5 w-5 text-copper-light" aria-hidden="true" />
+                Business@mavexinvest.com
+              </a>
+            </nav>
           </div>
         )}
       </div>
