@@ -18,6 +18,19 @@
     "mobileLabel": "Điều hướng di động",
     "footerLabel": "Điều hướng chân trang"
   },
+  "contactDialog": {
+    "label": "Liên hệ kinh doanh",
+    "title": "Liên hệ MAVEX",
+    "description": "Gửi email cho đội ngũ thương mại của chúng tôi để trao đổi về vật liệu, gia công, thương mại hoặc cơ hội hợp tác.",
+    "emailLabel": "Email kinh doanh",
+    "copy": "Sao chép email",
+    "copied": "Đã sao chép",
+    "copyFailed": "Không thể tự động sao chép. Vui lòng chọn và sao chép địa chỉ email ở trên.",
+    "openMail": "Mở ứng dụng email",
+    "close": "Đóng cửa sổ liên hệ",
+    "note": "Nếu ứng dụng email không mở, hãy sao chép địa chỉ và sử dụng dịch vụ email bạn thường dùng.",
+    "subject": "Trao đổi kinh doanh với MAVEX"
+  },
   "hero": {
     "label": "Vonfram · Molypden · Giá trị tuần hoàn",
     "title": "Từ vật liệu phức tạp đến giá trị chiến lược.",

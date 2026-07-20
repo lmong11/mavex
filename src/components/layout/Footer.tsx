@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowUpRight, Building2, Factory, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import ContactButton from '../contact/ContactButton';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -26,13 +27,12 @@ const Footer: React.FC = () => {
             <p className="mt-7 max-w-sm text-white/[0.58]">
               {t('footer.description')}
             </p>
-            <a
-              href="mailto:business@mavexinvest.com"
+            <ContactButton
               className="mt-8 inline-flex items-center gap-3 border-b border-copper/70 pb-2 font-semibold text-white hover:border-copper-light"
             >
               <Mail className="h-4 w-4 text-copper-light" aria-hidden="true" />
               business@mavexinvest.com
-            </a>
+            </ContactButton>
           </div>
 
           <div className="lg:col-span-3 lg:col-start-6">

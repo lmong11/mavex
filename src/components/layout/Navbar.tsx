@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Mail, Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import ContactButton from '../contact/ContactButton';
 import LanguageSwitcher from './LanguageSwitcher';
 
 interface NavbarProps {
@@ -71,13 +72,12 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
               </Link>
             ))}
             <LanguageSwitcher />
-            <a
-              href="mailto:business@mavexinvest.com"
+            <ContactButton
               className="inline-flex items-center gap-2 border border-white/30 px-4 py-2 text-sm font-semibold text-white transition-colors hover:border-copper hover:bg-copper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-light"
             >
               <Mail className="h-4 w-4" aria-hidden="true" />
               {t('navigation.contact')}
-            </a>
+            </ContactButton>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -118,13 +118,13 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
                   {t(item.key)}
                 </Link>
               ))}
-              <a
-                href="mailto:business@mavexinvest.com"
+              <ContactButton
+                onOpen={() => setIsOpen(false)}
                 className="flex items-center gap-2 rounded-md px-3 py-3 text-base font-medium text-white hover:bg-slate-light"
               >
                 <Mail className="h-5 w-5 text-copper-light" aria-hidden="true" />
                 business@mavexinvest.com
-              </a>
+              </ContactButton>
             </nav>
           </div>
         )}

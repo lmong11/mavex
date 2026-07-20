@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import ContactButton from '../contact/ContactButton';
 
 const capacityMetrics = [
   {
@@ -309,10 +310,10 @@ const CompanyProfile: React.FC = () => {
                 {t('operations.openGallery')}
                 <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
               </Link>
-              <a href="mailto:business@mavexinvest.com" className="inline-flex items-center justify-between border-b border-white/40 py-3 font-semibold hover:border-white">
+              <ContactButton className="inline-flex items-center justify-between border-b border-white/40 py-3 text-left font-semibold hover:border-white">
                 {t('operations.discuss')}
                 <Mail className="h-5 w-5" aria-hidden="true" />
-              </a>
+              </ContactButton>
             </div>
           </div>
 

@@ -18,6 +18,19 @@
     "mobileLabel": "移动端导航",
     "footerLabel": "页脚导航"
   },
+  "contactDialog": {
+    "label": "商务联系",
+    "title": "联系 MAVEX",
+    "description": "如需洽谈物料、加工、贸易或合作机会，请联系我们的商务团队。",
+    "emailLabel": "商务邮箱",
+    "copy": "复制邮箱",
+    "copied": "邮箱已复制",
+    "copyFailed": "暂时无法自动复制，请选择并复制上方邮箱地址。",
+    "openMail": "打开邮件应用",
+    "close": "关闭联系窗口",
+    "note": "如果邮件应用没有打开，请复制邮箱地址并使用常用邮箱发送。",
+    "subject": "MAVEX 商务咨询"
+  },
   "hero": {
     "label": "钨 · 钼 · 循环价值",
     "title": "从复杂物料到战略价值。",

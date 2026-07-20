@@ -22,6 +22,19 @@
     "mobileLabel": "Mobile navigation",
     "footerLabel": "Footer navigation"
   },
+  "contactDialog": {
+    "label": "Business enquiries",
+    "title": "Contact MAVEX",
+    "description": "Email our commercial team about materials, processing, trade, or partnership opportunities.",
+    "emailLabel": "Business email",
+    "copy": "Copy email",
+    "copied": "Email copied",
+    "copyFailed": "Copying was unavailable. Please select and copy the email address above.",
+    "openMail": "Open email app",
+    "close": "Close contact window",
+    "note": "If no email app opens, copy the address and use your preferred email service.",
+    "subject": "MAVEX business enquiry"
+  },
   "hero": {
     "label": "Tungsten · Molybdenum · Circular value",
     "title": "From complex materials to strategic value.",
