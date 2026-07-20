@@ -110,7 +110,7 @@
   "gallery": {
     "label": "工厂实景 · 2026",
     "title": "走进生产基地。",
-    "intro": "展示老挝中裕生产园区、加工厂房、设备系统及配套基础设施的最新影像。",
+    "intro": "展示老挝中钰生产园区、加工厂房、设备系统及配套基础设施的最新影像。",
     "browse": "按区域浏览",
     "photoCount": "共 {{count}} 张照片",
     "filterLabel": "按区域筛选工厂图片",
@@ -128,7 +128,7 @@
     },
     "images": {
       "factory-overview": { "title": "生产园区全景", "description": "从宽阔视角展示老挝生产园区及相连的公用工程管廊。" },
-      "factory-entrance-sign": { "title": "中裕生产基地", "description": "中裕国际金属材料工业有限公司的入口标识。" },
+      "factory-entrance-sign": { "title": "中钰生产基地", "description": "中钰国际金属材料工业有限公司的入口标识。" },
       "factory-main-gate": { "title": "工厂主入口", "description": "连接行政区域与生产区域的主要出入口。" },
       "factory-reception": { "title": "MAVEX 接待区", "description": "老挝生产基地的接待区域。" },
       "administration-building": { "title": "行政办公楼", "description": "为生产园区提供运营支持的行政设施。" },

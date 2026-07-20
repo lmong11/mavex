@@ -19,14 +19,32 @@ const categoryKeys: Record<GalleryFilter, string> = {
   Infrastructure: 'infrastructure',
 };
 
+const retryImageOnce = (
+  event: React.SyntheticEvent<HTMLImageElement>,
+  fallbackSrc?: string,
+) => {
+  const image = event.currentTarget;
+  if (image.dataset.retryAttempted === 'true') return;
+
+  image.dataset.retryAttempted = 'true';
+  if (fallbackSrc) {
+    image.src = fallbackSrc;
+    return;
+  }
+
+  const originalSrc = image.getAttribute('src') ?? image.src;
+  image.src = `${originalSrc}${originalSrc.includes('?') ? '&' : '?'}retry=1`;
+};
+
 const GalleryPage: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeCategory, setActiveCategory] = useState<GalleryFilter>('All');
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const modalRef = useRef<HTMLDivElement | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const isModalOpen = selectedImage !== null;
+  const localeKey = i18n.resolvedLanguage ?? i18n.language;
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   const visibleImages = useMemo(
@@ -93,9 +111,11 @@ const GalleryPage: React.FC = () => {
     <div className="bg-warm-stone pb-20 pt-20">
       <section className="relative min-h-[520px] overflow-hidden bg-graphite text-white">
         <img
+          key={`gallery-hero-${localeKey}`}
           src="/images/factory/factory-main-gate.jpg"
           alt=""
           aria-hidden="true"
+          onError={retryImageOnce}
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,17,24,0.96)_0%,rgba(11,17,24,0.82)_48%,rgba(11,17,24,0.25)_100%)]" aria-hidden="true" />
@@ -155,10 +175,12 @@ const GalleryPage: React.FC = () => {
               >
                 <div className={image.featured ? 'aspect-[16/9] overflow-hidden' : 'aspect-[4/3] overflow-hidden'}>
                   <img
+                    key={`${localeKey}-${image.id}`}
                     src={image.thumbnailSrc}
                     alt={t(`gallery.images.${image.id}.title`)}
-                    loading="lazy"
+                    loading={index < 3 ? 'eager' : 'lazy'}
                     decoding="async"
+                    onError={(event) => retryImageOnce(event, image.src)}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
                   />
                 </div>
@@ -217,8 +239,10 @@ const GalleryPage: React.FC = () => {
             </button>
 
             <img
+              key={`${localeKey}-${selectedImage.id}`}
               src={selectedImage.src}
               alt={t(`gallery.images.${selectedImage.id}.title`)}
+              onError={retryImageOnce}
               className="max-h-[88vh] max-w-full object-contain"
             />
 

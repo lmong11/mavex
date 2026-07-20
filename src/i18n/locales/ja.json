@@ -110,7 +110,7 @@
   "gallery": {
     "label": "工場ギャラリー · 2026",
     "title": "生産拠点の内側へ。",
-    "intro": "ラオスの中裕生産構内、加工棟、設備システム、支援インフラの最新画像をご紹介します。",
+    "intro": "ラオスの中钰生産構内、加工棟、設備システム、支援インフラの最新画像をご紹介します。",
     "browse": "エリア別に見る",
     "photoCount": "写真 {{count}} 点",
     "filterLabel": "エリアで工場画像を絞り込む",
@@ -128,7 +128,7 @@
     },
     "images": {
       "factory-overview": { "title": "生産構内全景", "description": "ラオスの生産構内と連結するユーティリティ回廊を広く見渡した景観です。" },
-      "factory-entrance-sign": { "title": "中裕生産拠点", "description": "中裕国際金属材料工業有限公司の入口サインです。" },
+      "factory-entrance-sign": { "title": "中钰生産拠点", "description": "中钰国際金属材料工業有限公司の入口サインです。" },
       "factory-main-gate": { "title": "工場正門", "description": "管理区域と生産区域を結ぶ主要アクセス地点です。" },
       "factory-reception": { "title": "MAVEX受付", "description": "ラオス生産拠点の受付エリアです。" },
       "administration-building": { "title": "管理棟", "description": "生産構内を支える管理施設です。" },
