@@ -39,16 +39,20 @@ const Layout: React.FC = () => {
   }, [hash, pathname]);
 
   useEffect(() => {
-    const title = t('meta.title');
-    const description = t('meta.description');
+    const isPolicy = pathname === '/policies/supply-chain';
+    const title = isPolicy ? `${t('policy.title')} | MAVEX INVESTMENTS` : t('meta.title');
+    const description = isPolicy ? t('policy.summary') : t('meta.description');
+    const pageUrl = `https://mavexinvest.com${pathname === '/' ? '/' : pathname}`;
     document.title = title;
+    document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute('href', pageUrl);
+    document.querySelector<HTMLMetaElement>('meta[property="og:url"]')?.setAttribute('content', pageUrl);
     document.querySelector<HTMLMetaElement>('meta[name="description"]')?.setAttribute('content', description);
     document.querySelector<HTMLMetaElement>('meta[property="og:title"]')?.setAttribute('content', title);
     document.querySelector<HTMLMetaElement>('meta[property="og:description"]')?.setAttribute('content', description);
     document.querySelector<HTMLMetaElement>('meta[property="og:locale"]')?.setAttribute('content', openGraphLocales[i18n.resolvedLanguage ?? 'en'] ?? 'en_SG');
     document.querySelector<HTMLMetaElement>('meta[name="twitter:title"]')?.setAttribute('content', title);
     document.querySelector<HTMLMetaElement>('meta[name="twitter:description"]')?.setAttribute('content', description);
-  }, [i18n.resolvedLanguage, t]);
+  }, [i18n.resolvedLanguage, pathname, t]);
 
   return (
     <div className="flex flex-col min-h-screen">

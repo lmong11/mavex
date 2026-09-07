@@ -1,4 +1,37 @@
 {
+  "policy": {
+    "noticeLabel": "方針に関するお知らせ",
+    "title": "Zhongyu サプライチェーン方針",
+    "summary": "責任ある鉱物調達とサプライチェーンのデューデリジェンスに関する当社の方針。",
+    "view": "方針を読む",
+    "footerLabel": "サプライチェーン方針",
+    "dateLabel": "方針の日付",
+    "issuerLabel": "発行者",
+    "originalDocument": "押印済み原本",
+    "documentInfo": "中国語・英語 · 8ページ · PDF · 0.97 MB",
+    "download": "PDFをダウンロード",
+    "openPdf": "原本PDFを開く",
+    "backHome": "ホームに戻る",
+    "contents": "目次",
+    "fullText": "方針の全文",
+    "originalNote": "中国語と英語の原文を全文掲載しています。表示言語を選択するか、押印済みPDFをダウンロードできます。",
+    "readingLanguage": "方針の表示言語",
+    "bilingual": "中英併記",
+    "introduction": "基本方針",
+    "implementation": "実施と発効",
+    "contactTitle": "通報・苦情の連絡先",
+    "contactText": "本方針に違反する可能性のある行為は、方針に記載された窓口までご連絡ください。",
+    "sections": {
+      "1": "重大な人権侵害",
+      "2": "非国家武装集団",
+      "3": "公的・民間の治安部隊",
+      "4": "贈収賄と鉱物原産地",
+      "5": "マネーロンダリング",
+      "6": "税金・手数料・採掘権料",
+      "7": "労働安全衛生",
+      "8": "児童労働"
+    }
+  },
   "meta": {
     "title": "MAVEX INVESTMENTS｜タングステン・モリブデンと循環型価値",
     "description": "MAVEX INVESTMENTSは、シンガポールの商業プラットフォームとラオスにおけるタングステン・モリブデン含有原料の加工、回収、国際取引を結びます。"

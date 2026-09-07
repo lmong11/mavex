@@ -1,4 +1,37 @@
 {
+  "policy": {
+    "noticeLabel": "Thông báo chính sách",
+    "title": "Chính sách chuỗi cung ứng Zhongyu",
+    "summary": "Tìm hiểu cam kết của chúng tôi về thu mua khoáng sản có trách nhiệm và thẩm định chuỗi cung ứng.",
+    "view": "Đọc chính sách",
+    "footerLabel": "Chính sách chuỗi cung ứng",
+    "dateLabel": "Ngày chính sách",
+    "issuerLabel": "Đơn vị ban hành",
+    "originalDocument": "Bản gốc có đóng dấu",
+    "documentInfo": "Tiếng Trung & tiếng Anh · 8 trang · PDF · 0.97 MB",
+    "download": "Tải PDF",
+    "openPdf": "Mở PDF gốc",
+    "backHome": "Về trang chủ",
+    "contents": "Mục lục",
+    "fullText": "Toàn văn chính sách",
+    "originalNote": "Toàn bộ nguyên văn tiếng Trung và tiếng Anh được trình bày bên dưới. Bạn có thể chọn ngôn ngữ đọc hoặc tải bản PDF có đóng dấu.",
+    "readingLanguage": "Ngôn ngữ đọc chính sách",
+    "bilingual": "Song ngữ",
+    "introduction": "Tuyên bố chính sách",
+    "implementation": "Thực hiện & hiệu lực",
+    "contactTitle": "Liên hệ khiếu nại",
+    "contactText": "Vui lòng sử dụng các kênh liên hệ nêu trong chính sách để báo cáo hành vi có thể vi phạm chính sách chuỗi cung ứng này.",
+    "sections": {
+      "1": "Vi phạm nhân quyền nghiêm trọng",
+      "2": "Các nhóm vũ trang phi nhà nước",
+      "3": "Lực lượng an ninh công hoặc tư",
+      "4": "Hối lộ & xuất xứ khoáng sản",
+      "5": "Rửa tiền",
+      "6": "Thuế, phí & tiền bản quyền",
+      "7": "Sức khỏe & an toàn lao động",
+      "8": "Lao động trẻ em"
+    }
+  },
   "meta": {
     "title": "MAVEX INVESTMENTS | Vonfram, Molypden & Giá trị tuần hoàn",
     "description": "MAVEX INVESTMENTS kết nối nền tảng thương mại tại Singapore với hoạt động gia công, thu hồi và thương mại quốc tế vật liệu chứa vonfram và molypden tại Lào."

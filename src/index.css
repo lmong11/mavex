@@ -124,6 +124,20 @@
   pointer-events: none;
 }
 
+/* Policy text retains its source-language typography in every site locale. */
+.policy-copy[lang="zh-CN"] {
+  font-family: 'Noto Sans SC', sans-serif;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.policy-copy[lang="en"] {
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
 html:lang(zh-CN) body,
 html:lang(zh-CN) .font-body {
   font-family: 'Noto Sans SC', sans-serif;

@@ -1,0 +1,285 @@
+{
+  "title": {
+    "zh": "供应链政策",
+    "en": "Supply chain policy"
+  },
+  "issuer": {
+    "zh": "中钰国际金属材料实业有限公司",
+    "en": "Zhongyu International Metal Materials Industry Co.,Ltd"
+  },
+  "date": "2026-08-25",
+  "source": {
+    "path": "/documents/zhongyu-supply-chain-policy-2026-08-25.pdf",
+    "sha256": "6d533f43387fd6a05001a96dfe93e933c2dad74a4fb55cb6e38ed8ee50316d79",
+    "pages": 8,
+    "bytes": 970026
+  },
+  "introduction": {
+    "zh": "认识到在受冲突影响和高风险区域从事矿产开采、贸易、处理、出口存在可能形成重大负面影响的风险，并认识到公司有尊重人权、不助长冲突的义务，中钰国际金属材料实业有限公司（以下简称“公司”）承诺采纳并广泛推广如下受冲突影响和高风险区域矿石负责任采购政策，并将其纳入与供应商签订的合同和/或协议之中。这一政策为从开采到终端用户整个过程中的对冲突敏感的采购活动以及供应商的风险意识提供了基本参考。公司承诺不从事任何会为冲突提供资助的活动，承诺遵守联合国相关制裁决议，或者在适用情况下，遵守执行此类决议的国内法律。中钰国际金属材料实业有限公司将结合《经济合作与发展组织关于来自受冲突影响和高风险区域的矿石的负责任供应链尽职调查指南》中关于锡、钽、钨的增补内容的要求,我们将按照该增补内容要求的步骤进行钨供链相关的尽职调查。",
+    "en": "Recognizing the risk that mining trading processing and exporting minerals in conflict-affected and high-risk areas may have significant negative impacts, recognizing we have an obligation to respect human rights and not contribute to conflict, Zhongyu International Metal Materials Co.,Ltd. (hereinafter referred to as “The company”) is committed to adopting and promoting widely the following responsible sourcing policies for minerals in conflict-affected and high-risk areas, including them in contracts and agreements with suppliers. This policy provides a basic reference for conflict-sensitive procurement activities from extraction to end-user and for suppliers' risk awareness. The company undertakes not to engage in any activity that would finance the conflict and is committed to complying with relevant United Nations sanctions resolutions ,also domestic laws implementing such resolutions. The company will comply with the requirements of the update on tin tantalum and tungsten in the organization for Economic Cooperation and Development Guidelines for responsible supply chain due diligence of ores from conflict-affected and high-risk areas, we will conduct due diligence in relation to the tungsten supply chain in accordance with the steps required in this supplement."
+  },
+  "sections": [
+    {
+      "number": 1,
+      "title": {
+        "zh": "与矿产开采、运输、或贸易有关的严重侵权行为",
+        "en": "Infringement relating to the exploitation transportation or trade of minerals."
+      },
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "zh": "在受冲突影响和高风险区域开展采购或经营活动时，公司既不会容忍也不会以任何方式获利于、帮助、协助或便利任何一方实施：",
+          "en": "When conducting procurement or operations in conflict-affected and high-risk areas, the company will neither tolerate nor in any way benefit from assist or facilitate the implementation by either party such as following ."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "i) 任何形式的酷刑，残忍、不人道和有辱人格的待遇；",
+          "en": "Any form of torture cruel inhuman and degrading treatment."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "ii) 任何形式的强迫或强制劳动。强迫或强制劳动是指以惩罚作为威胁榨取的任何个人的、并非该人自愿提供的劳动或服务；",
+          "en": "Any form of forced or compulsory labor. Forced or compulsory labour is any labour or service which is extracted from an individual under the threat of punishment and which is not voluntarily provided by that individual."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "iii) 最恶劣形式的童工；",
+          "en": "The worst form of child labor."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "iv) 其他严重侵犯和践踏人权的行为，如普遍的性暴力行为；",
+          "en": "Other grave violations and abuses of human rights such as widespread sexual violence."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "v) 战争罪或其他严重违反国际人道主义法的行为，反人类罪或种族灭绝罪。",
+          "en": "War crimes or other serious violations of international humanitarian law, crimes against humanity or genocide."
+        },
+        {
+          "kind": "subheading",
+          "zh": "对严重侵权行为的风险管理：",
+          "en": "Concerning risk management for serious infringement"
+        },
+        {
+          "kind": "paragraph",
+          "zh": "如果公司有合理理由认为该风险存在，即上游供应商正从实施第 1 条所规定的严重侵权行为的任何一方进行采购或与该方有关联，公司将立即中止或中断与该供应商的合作。",
+          "en": "If the company has reasonable grounds to believe that such a risk exists, that the upstream supplier is procuring from or is associated with any party that has committed a serious violation under Article 1, the company will immediately suspend or discontinue cooperation with the supplier."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": {
+        "zh": "关于直接或间接支持非国家武装团体：",
+        "en": "Concerning direct or indirect support to non-state armed groups"
+      },
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "zh": "公司不会容忍任何通过矿产开采、运输、贸易、处理或出口为非国家武装团体提供直接或间接的支持。通过矿产开采、运输、贸易、处理或出口为非国家武装团体提供 “直接或间接的支持”包括且不限于从非国家武装团体或其关联方购买矿产，向其进行付款，或以其他方式为其提供后勤支援或设备等。这些武装团体或关联方：",
+          "en": "The company will not tolerate any provision of direct or indirect support to non-state armed groups through mining transport trade processing or export. Providing direct or indirect support to non-state armed groups through mining transport trade processing or export of minerals, including and not limited to the purchase of minerals from non-state armed groups or their associates, make payments to them or otherwise provide them with logistical support or equipment, etc. . These armed groups or associated parties."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "i) 非法控制矿址，或以其他方式控制运输路线、矿产交易点以及供应链的上游行为主体；",
+          "en": "Control of mine sites illegally, or other ways of control of transport routes, mineral trading points and supply chain upstream of the main actors."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "ii) 在矿址入口、运输路线沿线或矿产交易点非法征税或者勒索钱财或矿产；",
+          "en": "Illegal taxation or extortion of money along a transport route or at a mineral exchange or minerals at the entrance to a mine site."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "iii) 对中间商、出口企业、或国际贸易者非法征税或勒索。",
+          "en": "Illegal taxation or extortion of middlemen exporters or international traders."
+        },
+        {
+          "kind": "subheading",
+          "zh": "关于向非国家武装团体提供直接或间接支持的风险管理:",
+          "en": "Concerning risk management for the provision of direct or indirect support to non-state armed groups."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "如果公司有理由认为，上游供应商从向非国家武装团体提供直接或间接支持的任何一方进行采购或与之存在关系，公司将立即中止或中断与该供应商的合作。",
+          "en": "If the company has reason to believe that an upstream supplier procures from or has a relationship with any party that provides direct or indirect support to non-state armed groups, it will immediately suspend or discontinue its cooperation with that supplier."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": {
+        "zh": "关于公共或私人安全武装：",
+        "en": "Concerning the armed forces of public or private security."
+      },
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "zh": "公司杜绝向非法控制矿址、运输路线以及供应链上游行为主体，在矿址入口、运输路线沿线或矿产交易点非法征税或索要钱财或矿产，或者向中间商、出口企业或国际贸易者非法征税或进行勒索的公共或私人安全武装提供直接或间接支持。",
+          "en": "The company refrain from acting as the main parties in the illegal control of mine sites, transport routes and supply chains by illegally taxing or demanding money or minerals at the entrance of mine sites, along transport routes or at mineral trading points, or provide direct or indirect support to public or private security forces engaged in illegal taxation or extortion by intermediaries, export enterprises or international traders."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "公司认可，矿址及/或其周边地区以及/或运输道路沿线的公共或私人安全武装的作用仅是维护法治，包括保障人权、保护矿工、设备和设施安全、保护矿址或运输路线以使合法的开采和贸易不受干扰。",
+          "en": "The company recognize that the role of the public or private security forces at the mine site along the transport routes is solely to maintain the rule of law, these include the protection of human rights, the security of miners, equipment and facilities, and the protection of mine sites or transport routes so that legitimate exploitation and trade are not disrupted."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "在公司或公司供应链上的任何企业与公共或私人安全武装签订了合约的情况下，公司承诺或者将规定，在与这类安全武装进行合作的过程中将遵守《安全与人权自愿原则》的规定。尤其是，公司将会支持或采取措施运用筛查政策，确保已知的实施过严重侵犯人权行为的个人或安全武装单位不被录用。",
+          "en": "The company or any enterprise in its supply chain has entered into a contract with a public or private security force, the company undertakes or will provide, the provisions of the voluntary principles on security and human rights will be respected in cooperation with such security forces. In particular, companies will support or take measures to apply screening policies to ensure that individuals or security forces known to have committed serious human rights violations are not recruited."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "公司将支持或采取措施与中央或地方政府、国际组织和民间社会组织开展合作，共同为如何提高公共安全武装安保费用的透明度、相称性和问责性找到可行的解决方案。",
+          "en": "The company will support or take measures to cooperate with central or local governments, international organizations and civil society organizations, work together to find viable solutions on how to increase the transparency, proportionality and accountability of armed public security costs."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "公司将支持或采取措施与当地政府、国际组织和民间社会组织开展互动，避免或最大限度地降低公共或私人安全武装驻扎在矿址给弱势群体带来的负面影响，尤其是对小作坊矿工的负面影响，在这种情况下，供应链上的矿产是通过小作坊或小规模采矿的方式开采出来的小作坊。",
+          "en": "The company will support or take measures to interact with local governments ,international organizations and civil society organizations, to avoid or minimize the negative impact of the presence of public or private security forces in mining sites on vulnerable groups, this is particularly the case for small-scale miners, where minerals in the supply chain are mined through small-scale or small-scale mining."
+        },
+        {
+          "kind": "subheading",
+          "zh": "对公共或私人安全武装的风险管理：",
+          "en": "Concerning risk management for public or private security forces."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "如果公司发现在一定程度上存在此类风险，将根据企业在供应链上所处的具体位置，立即制定、采用和实施上游供应商及其他利益相关方风险管理计划，从而使第 3 段中所述的为公共或私人安全武装提供直接或间接支持的风险得到遏制或降低。如果风险管理计划实施六个月未起作用，公司将暂时停止或中断与上游供应商的合作。公司发现在一定程度上有可能存在有违第 3 段内容的行为的情况下，将采取同样的应对措施。",
+          "en": "If a company identifies a certain of such risk, it will immediately adopt and implement a risk management plan for upstream suppliers and other stakeholders, based on the specific location of the company in the supply chain, the risk of providing direct or indirect support to public or private security forces described in paragraph 3 is thus contained or reduced. If the risk management plan does not work for six months, the company will temporarily suspend or interrupt the cooperation with upstream suppliers. The company will respond in the same way in cases where it finds that there is a degree of likelihood of conduct contrary to paragraph 3."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": {
+        "zh": "关于行贿受贿及矿产原产地的欺诈性失实陈述：",
+        "en": "Concerning fraudulent misrepresentation of bribery and origin of minerals."
+      },
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "zh": "公司不会提出、承诺、进行或索要任何贿赂，并且抵制诱惑，不会为了掩盖或伪造矿产原产地，虚报矿产开采、贸易、处理、运输、出口等活动应向政府缴纳的税收、费用和特许开采费而行贿。",
+          "en": "The company will not offer promise or demand any bribes, and will resist the temptation to conceal or falsify the origin of the mineral, to pay bribes for stating taxes fees and royalties payable to the government for mineral exploitation trade processing transportation export etc."
+        },
+        {
+          "kind": "subheading",
+          "zh": "对行贿受贿及矿产原产地的欺诈性失实陈述的风险管理:",
+          "en": "Concerning risk management of fraudulent misrepresentation of bribery and origin of minerals."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "如果公司发现供应商存在此类风险，公司暂时停止或中断与该供应商的合作。",
+          "en": "If the company discovers that the supplier has such a risk, the company temporarily suspend or discontinues the cooperation with the supplier."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": {
+        "zh": "关于洗钱",
+        "en": "Concerning money laundering"
+      },
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "zh": "如果公司有理由认为，存在因开采、贸易、处理、运输或出口在矿址入口、运输路线沿线、或上游供应商矿产交易地进行非法征税或勒索而得的矿产所引起或与之相关的洗钱风险，公司将支持或采取措施，为有效消除洗钱行为做出贡献。",
+          "en": "If the company has a reason to believe that existence of a risk of money-laundering arising from or related to the exploitation trade treatment transport or export of minerals derived from the illegal taxation or extortion of minerals at the entrance to the mine site, also along the transport route or at the upstream supplier's mineral exchange, the company will support or adopt measures that contribute to the effective elimination of money-laundering."
+        },
+        {
+          "kind": "subheading",
+          "zh": "对洗钱的风险管理：",
+          "en": "Concerning risk management for money laundering."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "如果公司有理由认为，上游供应商或合作方有洗钱的行为，公司将立即中止或中断与该供应商的合作。",
+          "en": "If the company has a reason to believe that an upstream supplier or partner has engaged in money-laundering, it will immediately suspend or discontinue its cooperation with the supplier."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": {
+        "zh": "关于向政府支付的税收、费用及特许费：",
+        "en": "Concerning taxes fees and royalties paid to the government."
+      },
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "zh": "公司将确保向政府支付所有与受冲突影响和高风险区域矿石开采、贸易、出口相关的合法税收、费用和特许费，并且承诺根据企业在供应链上所处位置依照《采掘行业透明度行动计划》（EITI）中的各项原则对此类支付进行披露。",
+          "en": "The company will ensure payment to the government of all legal taxes fees and royalties related to the mining, trade and export of minerals from conflict-affected and high-risk areas, meanwhile based on the location of the enterprise in the supply chain undertakes to disclose such payments in accordance with the principles of the Extractive Industries Transparency Action Plan by the EITI."
+        },
+        {
+          "kind": "subheading",
+          "zh": "对行贿受贿及矿产原产地的欺诈性失实陈述、洗钱及向政府支付的税收、费用、特许费的风险管理：",
+          "en": "Concerning risk for management of bribery and fraudulent misrepresentation of the origin of minerals, money laundering and taxes, fees and royalties paid to the government."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "根据企业在供应链上所处的具体位置，公司承诺与供应商、中央或地方政府机关、国际组织、民间社会以及受影响的第三方酌情进行合作，本着在合理的时间跨度内采取显著措施防范或降低有负面影响的风险之目的，对绩效进行改善或跟踪。风险降低措施未起作用的，公司将暂时停止或中断与上游供应商的合作。",
+          "en": "Depending on the specific location of the enterprise in the supply chain, the company undertakes to cooperate with suppliers, central or local government authorities, international organizations, civil society and affected third parties as appropriate, improve or track performance with the goal of taking significant steps to prevent or reduce negative impact risks over a reasonable time horizon. If risk reduction measures do not work, the company will temporarily stop or interrupt the cooperation with upstream suppliers."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": {
+        "zh": "关于职业健康与安全：",
+        "en": "Concerning occupational health and safety."
+      },
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "zh": "在高风险地区进行采购或生产时，我们不会获利于、协助、便利于任何为其直接和/或间接雇员和/或在其生产现场的任何人员提供威胁到生命的职业健康与安全环境的一方，或从该方处采购或与之存在关联。",
+          "en": "When purchasing or producing in high-risk areas, we do not benefit assist or facilitate any party that provides a life-threatening occupational health and safety environment to its direct or indirect employees to any person at its production site, procures from or is associated with that party."
+        },
+        {
+          "kind": "subheading",
+          "zh": "关于职业健康与安全的风险管理：",
+          "en": "Concerning risk management for occupational health and safety."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "如果我们有合理理由认为上游供应商提供威胁到生命的职业健康和安全环境的任何一方采购或与之存在关联，我们将立即中止或中断与该供应商的合作。",
+          "en": "If we have reasonable grounds to believe that any party or associated with an upstream supplier providing a life-threatening occupational health and safety environment procures, we will immediately terminate or discontinue our cooperation with the supplier."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": {
+        "zh": "关于童工：",
+        "en": "Concerning management for child labor."
+      },
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "zh": "在高风险区域开展采购或开展经营活动时，我们将不会雇佣、获利于、协助或为低于东道国法律或法规规定的最低工作年龄的儿童就业而提供便利或跟其采购或与其有关联。如果东道国没有相关的法律或法规规定，最低工作年龄为 16 岁。",
+          "en": "When purchasing or conducting business activities in high-risk areas, the company won’t employ assist or facilitate the employment of children below the minimum working age set by the laws or regulations of the host country. The minimum working age is 16 years if there are no relevant laws or regulations in the host country."
+        },
+        {
+          "kind": "subheading",
+          "zh": "关于童工的风险管理：",
+          "en": "Concerning risk management for child labor."
+        },
+        {
+          "kind": "paragraph",
+          "zh": "如果我们有合理理由认为该风险存在，即上游供应商正从任何一方雇佣童工进行采购或与该方有关联，我们将立即中止或中断与该供应商的合作。",
+          "en": "If we have reasonable grounds to believe that there is a risk that an upstream supplier is employing child labour from or associated with either party, we will immediately suspend or discontinue cooperation with the supplier."
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "zh": "公司将本着持续改进的原则，将该政策融入公司管理体系及各相关部门职责，纳入与供应商的合同或协议之中。若有违背行为可与我司申诉机制电话 00856-02059617050 及邮箱 email business@mavexinvest.com 取得联系。公司同时承诺，将加强同行业及有关利益相关方的沟通与合作，广泛传播该政策，并籍此持续提高公司的供应链尽责管理能力。",
+      "en": "We always according with the principle of continuous improvement, the company will integrate this policy into the company management system and the responsibilities of the relevant departments, meanwhile incert to contract or agreement with suppliers. Any non-compliance behaviors can contact with us via 00856-02059617050 or email business@mavexinvest.com .The company also committed to strengthen communication with the industry and relevant stakeholders to disseminate the policy widely, thereby continue to improve the company's supply chain due diligence management capabilities."
+    },
+    {
+      "zh": "该政策自发布之日起生效。",
+      "en": "The policy takes effect from the date of promulgation."
+    }
+  ]
+}

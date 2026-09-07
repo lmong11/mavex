@@ -1,4 +1,37 @@
 {
+  "policy": {
+    "noticeLabel": "政策公告",
+    "title": "中钰供应链政策",
+    "summary": "了解我们的负责任矿产采购与供应链尽职调查承诺。",
+    "view": "查看政策",
+    "footerLabel": "供应链政策",
+    "dateLabel": "政策日期",
+    "issuerLabel": "发布主体",
+    "originalDocument": "盖章原件",
+    "documentInfo": "中英双语 · 8 页 · PDF · 0.97 MB",
+    "download": "下载 PDF",
+    "openPdf": "在线查看原版 PDF",
+    "backHome": "返回首页",
+    "contents": "章节目录",
+    "fullText": "政策全文",
+    "originalNote": "以下为完整中英双语原文，可选择阅读语言，或下载盖章版 PDF。",
+    "readingLanguage": "政策阅读语言",
+    "bilingual": "中英对照",
+    "introduction": "政策声明",
+    "implementation": "实施与生效",
+    "contactTitle": "申诉联系方式",
+    "contactText": "如发现可能违反本供应链政策的行为，可通过政策所列渠道联系公司。",
+    "sections": {
+      "1": "严重侵权行为",
+      "2": "非国家武装团体",
+      "3": "公共或私人安全武装",
+      "4": "贿赂与矿产原产地",
+      "5": "洗钱",
+      "6": "税收、费用及特许费",
+      "7": "职业健康与安全",
+      "8": "童工"
+    }
+  },
   "meta": {
     "title": "MAVEX INVESTMENTS｜钨、钼与循环价值",
     "description": "MAVEX INVESTMENTS 连接新加坡商业平台与老挝的含钨、含钼物料加工、回收及国际贸易。"

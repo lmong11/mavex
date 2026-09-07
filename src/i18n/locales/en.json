@@ -1,4 +1,37 @@
 {
+  "policy": {
+    "noticeLabel": "Policy announcement",
+    "title": "Zhongyu Supply Chain Policy",
+    "summary": "Our commitments to responsible mineral sourcing and supply chain due diligence.",
+    "view": "Read the policy",
+    "footerLabel": "Supply chain policy",
+    "dateLabel": "Policy date",
+    "issuerLabel": "Issued by",
+    "originalDocument": "Stamped original",
+    "documentInfo": "Chinese & English · 8 pages · PDF · 0.97 MB",
+    "download": "Download PDF",
+    "openPdf": "Open original PDF",
+    "backHome": "Back to home",
+    "contents": "On this page",
+    "fullText": "Full policy text",
+    "originalNote": "The complete original text is presented in Chinese and English. Choose a reading language, or download the stamped PDF.",
+    "readingLanguage": "Policy reading language",
+    "bilingual": "Bilingual",
+    "introduction": "Policy statement",
+    "implementation": "Implementation & effective date",
+    "contactTitle": "Grievance contact",
+    "contactText": "Use the channels stated in the policy to report conduct that may breach this supply chain policy.",
+    "sections": {
+      "1": "Human rights",
+      "2": "Non-state armed groups",
+      "3": "Public or private security",
+      "4": "Bribery & mineral origin",
+      "5": "Money laundering",
+      "6": "Taxes, fees & royalties",
+      "7": "Occupational health & safety",
+      "8": "Child labor"
+    }
+  },
   "meta": {
     "title": "MAVEX INVESTMENTS - Tungsten, Molybdenum & Circular Value",
     "description": "MAVEX INVESTMENTS connects a Singapore commercial platform with tungsten- and molybdenum-material processing, recovery, and international trade in Laos."

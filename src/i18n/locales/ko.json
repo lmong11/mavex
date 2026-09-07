@@ -1,4 +1,37 @@
 {
+  "policy": {
+    "noticeLabel": "정책 공지",
+    "title": "Zhongyu 공급망 정책",
+    "summary": "책임 있는 광물 조달과 공급망 실사에 관한 당사의 약속을 확인하세요.",
+    "view": "정책 보기",
+    "footerLabel": "공급망 정책",
+    "dateLabel": "정책 일자",
+    "issuerLabel": "발행 주체",
+    "originalDocument": "날인 원본",
+    "documentInfo": "중국어·영어 · 8페이지 · PDF · 0.97 MB",
+    "download": "PDF 다운로드",
+    "openPdf": "원본 PDF 열기",
+    "backHome": "홈으로 돌아가기",
+    "contents": "목차",
+    "fullText": "정책 전문",
+    "originalNote": "중국어 및 영어 원문 전문을 제공합니다. 읽기 언어를 선택하거나 날인된 PDF를 다운로드할 수 있습니다.",
+    "readingLanguage": "정책 읽기 언어",
+    "bilingual": "중영 병기",
+    "introduction": "정책 선언",
+    "implementation": "이행 및 발효",
+    "contactTitle": "고충 신고 연락처",
+    "contactText": "본 공급망 정책을 위반할 가능성이 있는 행위는 정책에 명시된 연락처로 신고해 주세요.",
+    "sections": {
+      "1": "중대한 인권 침해",
+      "2": "비국가 무장 단체",
+      "3": "공공 또는 민간 보안 조직",
+      "4": "뇌물 및 광물 원산지",
+      "5": "자금 세탁",
+      "6": "세금·수수료·로열티",
+      "7": "산업 보건 및 안전",
+      "8": "아동 노동"
+    }
+  },
   "meta": {
     "title": "MAVEX INVESTMENTS | 텅스텐·몰리브덴과 순환 가치",
     "description": "MAVEX INVESTMENTS는 싱가포르 상업 플랫폼과 라오스의 텅스텐·몰리브덴 함유 원료 가공, 회수 및 국제 무역을 연결합니다."

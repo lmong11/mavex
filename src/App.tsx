@@ -4,6 +4,7 @@ import Layout from './components/layout/Layout';
 import HomePage from './pages/HomePage';
 import GalleryPage from './pages/GalleryPage';
 import NotFoundPage from './pages/NotFoundPage';
+import SupplyChainPolicyPage from './pages/SupplyChainPolicyPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="gallery" element={<GalleryPage />} />
+          <Route path="policies/supply-chain" element={<SupplyChainPolicyPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

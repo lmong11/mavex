@@ -12,6 +12,7 @@ const Footer: React.FC = () => {
     [t('footer.valueChain'), '/#value-chain'],
     [t('navigation.operations'), '/#operations'],
     [t('footer.factoryGallery'), '/gallery'],
+    [t('policy.footerLabel'), '/policies/supply-chain'],
   ];
 
   return (
