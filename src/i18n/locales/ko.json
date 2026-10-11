@@ -95,32 +95,29 @@
     "focusValue": "전략 금속 및 순환 가치",
     "unit": "톤 / 연",
     "processing": "금속 함유 원료 처리 능력",
-    "aptCapacity": "파라텅스텐산암모늄 생산 능력",
-    "ferroalloyCapacity": "합금철 생산 능력"
+    "aptCapacity": "파라텅스텐산암모늄 생산 능력"
   },
   "capabilities": {
     "label": "제품 및 소재",
     "title": "텅스텐과 몰리브덴 가치에 집중합니다.",
-    "intro": "APT를 중심으로 합금철과 금속 회수 부산물을 제공하며, 제품 개발을 통해 산화텅스텐 및 코발트·니켈 소재 분야로 확대하고 있습니다.",
+    "intro": "APT, 황색 산화텅스텐(YTO), 청색 산화텅스텐(BTO)에 집중하며, 금속 회수 부산물과 코발트·니켈 소재 개발로 제품 영역을 넓혀갑니다.",
     "materials": {
       "tungsten": {
         "name": "텅스텐",
-        "detail": "APT, 페로텅스텐 및 텅스텐 함유 원료 회수"
+        "detail": "APT, 황색·청색 산화텅스텐 및 텅스텐 함유 원료 회수"
       },
       "molybdenum": {
         "name": "몰리브덴",
-        "detail": "몰리브덴산, 페로몰리브덴 및 몰리브덴 함유 원료 회수"
+        "detail": "몰리브덴산 및 몰리브덴 함유 원료 회수"
       }
     },
     "conceptAlt": "전략 금속 소재의 콘셉트 배치",
     "conceptCaption": "소재 콘셉트 이미지",
     "primaryProduct": "핵심 제품",
     "apt": "파라텅스텐산암모늄",
-    "ferrotungsten": "페로텅스텐",
-    "ferromolybdenum": "페로몰리브덴",
     "aptDescription": "텅스텐 사업의 핵심인 파라텅스텐산암모늄은 자원 회수와 다운스트림 소재 응용을 연결합니다.",
     "groups": {
-      "alloys": "합금철",
+      "oxides": "산화텅스텐",
       "byproducts": "자원 회수 부산물",
       "development": "제품 개발"
     },
@@ -162,7 +159,7 @@
     "steps": {
       "review": { "title": "원료 검토", "text": "가공 전 원료 구성, 관련 문서 및 상업적 적합성을 평가합니다." },
       "recovery": { "title": "분리 및 회수", "text": "통제된 공정을 적용해 복합 원료에서 전략 금속의 가치를 분리하고 회수합니다." },
-      "conversion": { "title": "제품 전환", "text": "회수 원료를 APT, 페로텅스텐, 페로몰리브덴 등의 제품으로 전환합니다." },
+      "conversion": { "title": "제품 전환", "text": "APT와 산화텅스텐을 중심으로 자원 회수와 다운스트림 소재 응용을 연결합니다." },
       "delivery": { "title": "상업 공급", "text": "싱가포르 상업 플랫폼을 통해 품질, 문서 및 국제 공급을 조율합니다." }
     },
     "benefits": {

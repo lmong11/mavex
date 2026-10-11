@@ -26,10 +26,6 @@ const capacityMetrics = [
     value: '2,000',
     labelKey: 'company.aptCapacity',
   },
-  {
-    value: '1,000',
-    labelKey: 'company.ferroalloyCapacity',
-  },
 ];
 
 const materials = [
@@ -38,9 +34,9 @@ const materials = [
 ];
 
 const productGroups = [
-  { key: 'alloys', products: ['ferrotungsten', 'ferromolybdenum'] },
+  { key: 'oxides', products: ['yto', 'bto'] },
   { key: 'byproducts', products: ['molybdicAcid', 'cobaltResidue', 'nickelResidue'] },
-  { key: 'development', products: ['bto', 'yto', 'cobaltSulfate', 'nickelSulfate'] },
+  { key: 'development', products: ['cobaltSulfate', 'nickelSulfate'] },
 ];
 
 const feedstocks = ['catalysts', 'grinding', 'alloyScrap', 'ore'];
@@ -129,7 +125,7 @@ const CompanyProfile: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-px bg-graphite/[0.15] sm:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-px bg-graphite/[0.15] sm:grid-cols-2">
             {capacityMetrics.map((metric) => (
               <div key={metric.labelKey} className="bg-warm-stone p-6 md:p-8">
                 <div className="font-display text-5xl font-semibold text-graphite md:text-6xl">{metric.value}</div>

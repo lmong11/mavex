@@ -99,32 +99,29 @@
     "focusValue": "Strategic metals & circular value",
     "unit": "tonnes / year",
     "processing": "Metal-bearing material processing",
-    "aptCapacity": "Ammonium paratungstate capacity",
-    "ferroalloyCapacity": "Ferroalloy capacity"
+    "aptCapacity": "Ammonium paratungstate capacity"
   },
   "capabilities": {
     "label": "Products & materials",
     "title": "Focused on tungsten and molybdenum value.",
-    "intro": "APT anchors our product portfolio, complemented by ferroalloys and recovered metal by-products. Our product development extends into tungsten oxides and cobalt and nickel materials.",
+    "intro": "Our tungsten portfolio focuses on APT, yellow tungsten oxide (YTO), and blue tungsten oxide (BTO), complemented by recovered metal by-products and product development in cobalt and nickel materials.",
     "materials": {
       "tungsten": {
         "name": "Tungsten",
-        "detail": "APT, ferrotungsten, and recovery of tungsten-bearing materials"
+        "detail": "APT, yellow and blue tungsten oxides, and recovery of tungsten-bearing materials"
       },
       "molybdenum": {
         "name": "Molybdenum",
-        "detail": "Molybdic acid, ferromolybdenum, and recovery of molybdenum-bearing materials"
+        "detail": "Molybdic acid and recovery of molybdenum-bearing materials"
       }
     },
     "conceptAlt": "Conceptual arrangement of strategic metal materials",
     "conceptCaption": "Conceptual material visualization",
     "primaryProduct": "Core product",
     "apt": "Ammonium paratungstate",
-    "ferrotungsten": "Ferrotungsten",
-    "ferromolybdenum": "Ferromolybdenum",
     "aptDescription": "At the heart of our tungsten business, ammonium paratungstate connects resource recovery with downstream material applications.",
     "groups": {
-      "alloys": "Ferroalloys",
+      "oxides": "Tungsten oxides",
       "byproducts": "Recovery by-products",
       "development": "Product development"
     },
@@ -166,7 +163,7 @@
     "steps": {
       "review": { "title": "Feedstock review", "text": "Evaluate material composition, documentation, and commercial suitability before processing." },
       "recovery": { "title": "Separation & recovery", "text": "Apply controlled process routes to separate and recover strategic-metal values from complex materials." },
-      "conversion": { "title": "Product conversion", "text": "Convert recovered material into products such as APT, ferrotungsten, and ferromolybdenum." },
+      "conversion": { "title": "Product conversion", "text": "Connect resource recovery with downstream material applications through a focus on APT and tungsten oxides." },
       "delivery": { "title": "Commercial delivery", "text": "Coordinate quality, documentation, and international delivery through the Singapore commercial platform." }
     },
     "benefits": {

@@ -95,32 +95,29 @@
     "focusValue": "Kim loại chiến lược & giá trị tuần hoàn",
     "unit": "tấn / năm",
     "processing": "Công suất xử lý vật liệu chứa kim loại",
-    "aptCapacity": "Công suất amoni paratungstat",
-    "ferroalloyCapacity": "Công suất hợp kim sắt"
+    "aptCapacity": "Công suất amoni paratungstat"
   },
   "capabilities": {
     "label": "Sản phẩm & vật liệu",
     "title": "Tập trung vào giá trị vonfram và molypden.",
-    "intro": "APT là sản phẩm cốt lõi, bên cạnh hợp kim sắt và các sản phẩm phụ từ thu hồi kim loại. Hoạt động phát triển sản phẩm mở rộng sang oxit vonfram và vật liệu coban, niken.",
+    "intro": "Tập trung vào APT, oxit vonfram vàng (YTO) và oxit vonfram xanh (BTO), kết hợp với các sản phẩm phụ thu hồi kim loại và phát triển vật liệu coban, niken.",
     "materials": {
       "tungsten": {
         "name": "Vonfram",
-        "detail": "APT, ferrovonfram và thu hồi vật liệu chứa vonfram"
+        "detail": "APT, oxit vonfram vàng và xanh, cùng thu hồi vật liệu chứa vonfram"
       },
       "molybdenum": {
         "name": "Molypden",
-        "detail": "Axit molypdic, ferromolypden và thu hồi vật liệu chứa molypden"
+        "detail": "Axit molypdic và thu hồi vật liệu chứa molypden"
       }
     },
     "conceptAlt": "Bố cục ý tưởng về các vật liệu kim loại chiến lược",
     "conceptCaption": "Hình ảnh ý tưởng về vật liệu",
     "primaryProduct": "Sản phẩm cốt lõi",
     "apt": "Amoni paratungstat",
-    "ferrotungsten": "Ferrovonfram",
-    "ferromolybdenum": "Ferromolypden",
     "aptDescription": "Là trọng tâm của hoạt động kinh doanh vonfram, amoni paratungstat kết nối việc thu hồi tài nguyên với các ứng dụng vật liệu hạ nguồn.",
     "groups": {
-      "alloys": "Hợp kim sắt",
+      "oxides": "Oxit vonfram",
       "byproducts": "Sản phẩm phụ thu hồi",
       "development": "Phát triển sản phẩm"
     },
@@ -162,7 +159,7 @@
     "steps": {
       "review": { "title": "Đánh giá nguyên liệu", "text": "Đánh giá thành phần vật liệu, hồ sơ và mức độ phù hợp thương mại trước khi chế biến." },
       "recovery": { "title": "Phân tách & thu hồi", "text": "Áp dụng các quy trình có kiểm soát để phân tách và thu hồi giá trị kim loại chiến lược từ vật liệu phức tạp." },
-      "conversion": { "title": "Chuyển đổi sản phẩm", "text": "Chuyển vật liệu thu hồi thành các sản phẩm như APT, ferrovonfram và ferromolypden." },
+      "conversion": { "title": "Chuyển đổi sản phẩm", "text": "Kết nối thu hồi tài nguyên với các ứng dụng vật liệu hạ nguồn, tập trung vào APT và oxit vonfram." },
       "delivery": { "title": "Cung ứng thương mại", "text": "Điều phối chất lượng, hồ sơ và giao hàng quốc tế thông qua nền tảng thương mại tại Singapore." }
     },
     "benefits": {

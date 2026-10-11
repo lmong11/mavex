@@ -95,32 +95,29 @@
     "focusValue": "战略金属与循环价值",
     "unit": "吨 / 年",
     "processing": "含金属物料处理能力",
-    "aptCapacity": "仲钨酸铵产能",
-    "ferroalloyCapacity": "铁合金产能"
+    "aptCapacity": "仲钨酸铵产能"
   },
   "capabilities": {
     "label": "产品与材料",
     "title": "聚焦钨、钼价值链。",
-    "intro": "以仲钨酸铵（APT）为核心，结合铁合金产品与金属回收副产品，持续拓展氧化钨及钴、镍材料领域。",
+    "intro": "聚焦仲钨酸铵（APT）、黄钨（YTO）与蓝钨（BTO），结合金属回收副产品，持续拓展钴、镍材料领域。",
     "materials": {
       "tungsten": {
         "name": "钨",
-        "detail": "仲钨酸铵（APT）、钨铁及含钨物料回收"
+        "detail": "仲钨酸铵（APT）、黄钨、蓝钨及含钨物料回收"
       },
       "molybdenum": {
         "name": "钼",
-        "detail": "钼酸、钼铁及含钼物料回收"
+        "detail": "钼酸及含钼物料回收"
       }
     },
     "conceptAlt": "战略金属材料概念陈列图",
     "conceptCaption": "材料概念视觉图",
     "primaryProduct": "核心产品",
     "apt": "仲钨酸铵",
-    "ferrotungsten": "钨铁",
-    "ferromolybdenum": "钼铁",
     "aptDescription": "仲钨酸铵是我们钨业务的核心产品，连接钨资源回收与下游材料应用。",
     "groups": {
-      "alloys": "铁合金产品",
+      "oxides": "氧化钨产品",
       "byproducts": "资源回收副产品",
       "development": "产品拓展"
     },
@@ -162,7 +159,7 @@
     "steps": {
       "review": { "title": "原料评估", "text": "在加工前评估物料成分、文件资料及商业适配性。" },
       "recovery": { "title": "分离与回收", "text": "采用受控工艺路线，从复杂物料中分离并回收战略金属价值。" },
-      "conversion": { "title": "产品转化", "text": "将回收物料转化为仲钨酸铵、钨铁和钼铁等产品。" },
+      "conversion": { "title": "产品转化", "text": "围绕仲钨酸铵与氧化钨产品方向，衔接资源回收和下游材料应用。" },
       "delivery": { "title": "商业交付", "text": "通过新加坡商业平台协调质量、文件和国际交付。" }
     },
     "benefits": {
