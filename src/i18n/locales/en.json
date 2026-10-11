@@ -71,11 +71,11 @@
   "hero": {
     "label": "Tungsten · Molybdenum · Circular value",
     "title": "From complex materials to strategic value.",
-    "intro": "A Singapore commercial platform and Laos industrial operations for tungsten- and molybdenum-material processing, recovery, product conversion, and international trade.",
+    "intro": "Connecting Singapore trade expertise with the Zhongyu production base in Laos to recover tungsten and molybdenum resources and supply APT and metal materials.",
     "explore": "Explore capabilities",
     "viewFactory": "View the factory",
     "base": "Laos production base",
-    "processingLabel": "Nameplate processing",
+    "processingLabel": "Annual processing capacity",
     "processingUnit": "tonnes / year",
     "footprintLabel": "Operating footprint",
     "footprintValue": "SG · LA",
@@ -85,7 +85,7 @@
   "company": {
     "label": "Company platform",
     "title": "Commercial reach. Industrial depth.",
-    "intro": "MAVEX INVESTMENTS PTE. LTD. is a Singapore-incorporated company active in industrial chemical wholesaling and strategic investment. Its regional operating footprint connects international trade with metal-material processing in Laos.",
+    "intro": "MAVEX INVESTMENTS PTE. LTD. connects international trade and commercial coordination in Singapore with the Zhongyu production base in Laos. We focus on tungsten- and molybdenum-material processing, resource recovery, and product supply, with ammonium paratungstate (APT) at the core of our business.",
     "conceptAlt": "Conceptual visualization connecting commercial logistics with strategic-metal processing",
     "conceptCaption": "Conceptual regional platform · Singapore + Laos",
     "platformLabel": "Regional commercial platform",
@@ -100,24 +100,62 @@
     "unit": "tonnes / year",
     "processing": "Metal-bearing material processing",
     "aptCapacity": "Ammonium paratungstate capacity",
-    "ferroalloyCapacity": "Ferroalloy design capacity",
-    "capacityNote": "Capacity figures indicate stated nameplate and production design, not actual annual output."
+    "ferroalloyCapacity": "Ferroalloy capacity"
   },
   "capabilities": {
-    "label": "Current processing scope",
+    "label": "Products & materials",
     "title": "Focused on tungsten and molybdenum value.",
-    "intro": "Current contract-processing scope covers tungsten- and molybdenum-bearing materials, with products including APT, ferrotungsten, and ferromolybdenum.",
+    "intro": "APT anchors our product portfolio, complemented by ferroalloys and recovered metal by-products. Our product development extends into tungsten oxides and cobalt and nickel materials.",
     "materials": {
-      "tungsten": { "name": "Tungsten", "detail": "APT, ferrotungsten, and recovery of tungsten-bearing materials" },
-      "molybdenum": { "name": "Molybdenum", "detail": "Ferromolybdenum and processing of molybdenum-bearing materials" }
+      "tungsten": {
+        "name": "Tungsten",
+        "detail": "APT, ferrotungsten, and recovery of tungsten-bearing materials"
+      },
+      "molybdenum": {
+        "name": "Molybdenum",
+        "detail": "Molybdic acid, ferromolybdenum, and recovery of molybdenum-bearing materials"
+      }
     },
     "conceptAlt": "Conceptual arrangement of strategic metal materials",
     "conceptCaption": "Conceptual material visualization",
-    "primaryProduct": "Primary product",
-    "ferroalloy": "Ferroalloy",
+    "primaryProduct": "Core product",
     "apt": "Ammonium paratungstate",
     "ferrotungsten": "Ferrotungsten",
-    "ferromolybdenum": "Ferromolybdenum"
+    "ferromolybdenum": "Ferromolybdenum",
+    "aptDescription": "At the heart of our tungsten business, ammonium paratungstate connects resource recovery with downstream material applications.",
+    "groups": {
+      "alloys": "Ferroalloys",
+      "byproducts": "Recovery by-products",
+      "development": "Product development"
+    },
+    "feedstocks": {
+      "title": "Feedstock & processing partnerships",
+      "intro": "Connecting diverse tungsten- and molybdenum-bearing feedstocks with resource recovery, processing, and international markets.",
+      "contact": "Discuss materials & processing",
+      "catalysts": {
+        "title": "Spent catalysts",
+        "text": "Tungsten- and molybdenum-bearing catalysts from petroleum refining."
+      },
+      "grinding": {
+        "title": "Carbide grinding residues",
+        "text": "Grinding residues from cemented-carbide manufacturing."
+      },
+      "alloyScrap": {
+        "title": "Alloy scrap",
+        "text": "Metal-bearing alloy scrap for resource recovery."
+      },
+      "ore": {
+        "title": "Low-grade tungsten ore",
+        "text": "Tungsten-bearing mineral feedstocks for processing."
+      }
+    },
+    "molybdicAcid": "Molybdic acid",
+    "cobaltResidue": "Cobalt-bearing residues",
+    "nickelResidue": "Nickel-bearing residues",
+    "bto": "Blue tungsten oxide (BTO)",
+    "yto": "Yellow tungsten oxide (YTO)",
+    "cobaltSulfate": "Cobalt sulfate",
+    "nickelSulfate": "Nickel sulfate"
   },
   "valueChain": {
     "label": "Value chain",

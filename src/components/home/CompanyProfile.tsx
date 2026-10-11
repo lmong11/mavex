@@ -15,6 +15,7 @@ import {
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ContactButton from '../contact/ContactButton';
+import { singaporeOffice } from '../../data/company';
 
 const capacityMetrics = [
   {
@@ -35,6 +36,14 @@ const materials = [
   { symbol: 'W', key: 'tungsten' },
   { symbol: 'Mo', key: 'molybdenum' },
 ];
+
+const productGroups = [
+  { key: 'alloys', products: ['ferrotungsten', 'ferromolybdenum'] },
+  { key: 'byproducts', products: ['molybdicAcid', 'cobaltResidue', 'nickelResidue'] },
+  { key: 'development', products: ['bto', 'yto', 'cobaltSulfate', 'nickelSulfate'] },
+];
+
+const feedstocks = ['catalysts', 'grinding', 'alloyScrap', 'ore'];
 
 const valueChain = [
   {
@@ -129,7 +138,6 @@ const CompanyProfile: React.FC = () => {
               </div>
             ))}
           </div>
-          <p className="mt-4 text-xs text-steel-gray/70">{t('company.capacityNote')}</p>
         </div>
       </section>
 
@@ -160,7 +168,7 @@ const CompanyProfile: React.FC = () => {
               </div>
             </div>
 
-            <figure className="lg:col-span-7 lg:pl-8">
+            <div className="min-w-0 lg:col-span-7 lg:pl-8">
               <div className="relative overflow-hidden border border-white/[0.12]">
                 <img
                   src="/images/concepts/strategic-metals.jpg"
@@ -173,21 +181,53 @@ const CompanyProfile: React.FC = () => {
                   <p className="text-xs uppercase tracking-[0.16em] text-white/60">{t('capabilities.conceptCaption')}</p>
                 </div>
               </div>
-              <div className="mt-6 grid grid-cols-1 gap-px bg-white/[0.12] sm:grid-cols-3">
-                <div className="bg-steel px-5 py-6">
-                  <span className="text-xs uppercase tracking-[0.16em] text-copper-light">{t('capabilities.primaryProduct')}</span>
-                  <p className="mt-2 font-semibold">{t('capabilities.apt')}</p>
+              <article className="mt-6 border-l-2 border-copper bg-steel p-6 sm:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-copper-light">{t('capabilities.primaryProduct')}</p>
+                <div className="mt-4 flex flex-wrap items-baseline gap-x-5 gap-y-2">
+                  <span className="font-display text-6xl font-semibold text-white">APT</span>
+                  <h3 className="min-w-0 text-xl font-semibold">{t('capabilities.apt')}</h3>
                 </div>
-                <div className="bg-steel px-5 py-6">
-                  <span className="text-xs uppercase tracking-[0.16em] text-copper-light">{t('capabilities.ferroalloy')}</span>
-                  <p className="mt-2 font-semibold">{t('capabilities.ferrotungsten')}</p>
-                </div>
-                <div className="bg-steel px-5 py-6">
-                  <span className="text-xs uppercase tracking-[0.16em] text-copper-light">{t('capabilities.ferroalloy')}</span>
-                  <p className="mt-2 font-semibold">{t('capabilities.ferromolybdenum')}</p>
-                </div>
+                <p className="mt-4 text-sm leading-relaxed text-white/65">{t('capabilities.aptDescription')}</p>
+              </article>
+            </div>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 gap-px bg-white/[0.12] md:grid-cols-3">
+            {productGroups.map((group) => (
+              <article key={group.key} className="min-w-0 bg-steel p-6 md:p-8">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-copper-light">{t(`capabilities.groups.${group.key}`)}</h3>
+                <ul className="mt-5 space-y-3">
+                  {group.products.map((product) => (
+                    <li key={product} className="flex items-start gap-3 text-base text-white/85">
+                      <span className="mt-2 h-1 w-1 shrink-0 bg-jade-light" aria-hidden="true" />
+                      <span>{t(`capabilities.${product}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-14 border-t border-white/[0.12] pt-10">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+              <div className="max-w-2xl">
+                <h3 className="text-3xl font-semibold uppercase">{t('capabilities.feedstocks.title')}</h3>
+                <p className="mt-3 text-white/65">{t('capabilities.feedstocks.intro')}</p>
               </div>
-            </figure>
+              <ContactButton className="inline-flex shrink-0 items-center gap-3 self-start border-b border-copper pb-2 text-left text-sm font-semibold text-copper-light hover:text-white">
+                {t('capabilities.feedstocks.contact')}
+                <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+              </ContactButton>
+            </div>
+            <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {feedstocks.map((feedstock, index) => (
+                <article key={feedstock} className="min-w-0 border border-white/[0.12] p-5">
+                  <span className="font-display text-xl text-jade-light" aria-hidden="true">0{index + 1}</span>
+                  <h4 className="mt-3 font-semibold">{t(`capabilities.feedstocks.${feedstock}.title`)}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-white/55">{t(`capabilities.feedstocks.${feedstock}.text`)}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -322,7 +362,7 @@ const CompanyProfile: React.FC = () => {
               <Building2 className="h-7 w-7 text-copper" aria-hidden="true" />
               <p className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-copper-dark">{t('operations.singapore')}</p>
               <h3 className="mt-2 text-2xl font-semibold uppercase text-graphite">{t('operations.commercialHeadquarters')}</h3>
-              <p className="mt-4 text-steel-gray">MAVEX INVESTMENTS PTE. LTD.<br />112 Robinson Road, #03-01, Singapore 068902</p>
+              <p className="mt-4 text-steel-gray">MAVEX INVESTMENTS PTE. LTD.<br />{singaporeOffice.street}<br />{singaporeOffice.locality}</p>
             </article>
             <article className="bg-white p-8">
               <Factory className="h-7 w-7 text-jade-dark" aria-hidden="true" />

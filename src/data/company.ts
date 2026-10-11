@@ -1,3 +1,8 @@
+export const singaporeOffice = {
+  street: '2 Venture Drive, #12-03',
+  locality: 'Vision Exchange, Singapore 608526',
+};
+
 export type GalleryCategory = 'Campus' | 'Operations' | 'Processing' | 'Infrastructure';
 
 export interface GalleryImage {

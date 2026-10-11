@@ -67,11 +67,11 @@
   "hero": {
     "label": "钨 · 钼 · 循环价值",
     "title": "从复杂物料到战略价值。",
-    "intro": "连接新加坡商业平台与老挝工业运营，开展含钨、含钼物料加工、回收、产品转化与国际贸易。",
+    "intro": "连接新加坡国际贸易与老挝中钰生产基地，开展钨、钼资源回收，供应仲钨酸铵及金属材料产品。",
     "explore": "了解业务能力",
     "viewFactory": "查看工厂实景",
     "base": "老挝生产基地",
-    "processingLabel": "设计处理能力",
+    "processingLabel": "年处理能力",
     "processingUnit": "吨 / 年",
     "footprintLabel": "运营布局",
     "footprintValue": "SG · LA",
@@ -81,7 +81,7 @@
   "company": {
     "label": "公司平台",
     "title": "商业触达全球，产业扎根实体。",
-    "intro": "MAVEX INVESTMENTS PTE. LTD. 是一家注册于新加坡的公司，业务涵盖工业化学品批发与战略投资。公司的区域运营布局将国际贸易与老挝的金属材料加工连接起来。",
+    "intro": "MAVEX INVESTMENTS PTE. LTD. 依托新加坡的国际贸易与商务协调，以及老挝中钰生产基地，开展含钨、钼物料的加工回收与产品供应，以仲钨酸铵（APT）为核心，连接资源、产业与国际市场。",
     "conceptAlt": "连接商业物流与战略金属加工的概念视觉图",
     "conceptCaption": "区域平台概念图 · 新加坡 + 老挝",
     "platformLabel": "区域商业平台",
@@ -96,24 +96,62 @@
     "unit": "吨 / 年",
     "processing": "含金属物料处理能力",
     "aptCapacity": "仲钨酸铵产能",
-    "ferroalloyCapacity": "铁合金设计产能",
-    "capacityNote": "产能数据为公司资料所述的名义及设计产能，不代表实际年度产量。"
+    "ferroalloyCapacity": "铁合金产能"
   },
   "capabilities": {
-    "label": "当前加工范围",
+    "label": "产品与材料",
     "title": "聚焦钨、钼价值链。",
-    "intro": "当前委托加工范围涵盖含钨、含钼物料，产品包括仲钨酸铵（APT）、钨铁和钼铁。",
+    "intro": "以仲钨酸铵（APT）为核心，结合铁合金产品与金属回收副产品，持续拓展氧化钨及钴、镍材料领域。",
     "materials": {
-      "tungsten": { "name": "钨", "detail": "仲钨酸铵（APT）、钨铁及含钨物料回收" },
-      "molybdenum": { "name": "钼", "detail": "钼铁及含钼物料加工" }
+      "tungsten": {
+        "name": "钨",
+        "detail": "仲钨酸铵（APT）、钨铁及含钨物料回收"
+      },
+      "molybdenum": {
+        "name": "钼",
+        "detail": "钼酸、钼铁及含钼物料回收"
+      }
     },
     "conceptAlt": "战略金属材料概念陈列图",
     "conceptCaption": "材料概念视觉图",
-    "primaryProduct": "主要产品",
-    "ferroalloy": "铁合金",
+    "primaryProduct": "核心产品",
     "apt": "仲钨酸铵",
     "ferrotungsten": "钨铁",
-    "ferromolybdenum": "钼铁"
+    "ferromolybdenum": "钼铁",
+    "aptDescription": "仲钨酸铵是我们钨业务的核心产品，连接钨资源回收与下游材料应用。",
+    "groups": {
+      "alloys": "铁合金产品",
+      "byproducts": "资源回收副产品",
+      "development": "产品拓展"
+    },
+    "feedstocks": {
+      "title": "原料与加工合作",
+      "intro": "围绕多种含钨、钼原料，连接资源回收、加工转化与国际市场。",
+      "contact": "洽谈原料与加工合作",
+      "catalysts": {
+        "title": "废催化剂",
+        "text": "来自石油炼化过程的含钨、钼废催化剂。"
+      },
+      "grinding": {
+        "title": "硬质合金磨削料",
+        "text": "来自硬质合金制造过程的废磨削料。"
+      },
+      "alloyScrap": {
+        "title": "废合金料",
+        "text": "用于金属资源回收的含金属废合金料。"
+      },
+      "ore": {
+        "title": "低品位钨矿",
+        "text": "用于加工转化的含钨矿物原料。"
+      }
+    },
+    "molybdicAcid": "钼酸",
+    "cobaltResidue": "钴渣",
+    "nickelResidue": "镍渣",
+    "bto": "蓝钨（BTO）",
+    "yto": "黄钨（YTO）",
+    "cobaltSulfate": "硫酸钴",
+    "nickelSulfate": "硫酸镍"
   },
   "valueChain": {
     "label": "价值链",

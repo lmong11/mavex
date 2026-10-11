@@ -3,6 +3,7 @@ import { ArrowUpRight, Building2, Factory, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ContactButton from '../contact/ContactButton';
+import { singaporeOffice } from '../../data/company';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -44,7 +45,7 @@ const Footer: React.FC = () => {
                   <Building2 className="h-4 w-4 text-jade-light" aria-hidden="true" />
                   {t('footer.singaporeHeadquarters')}
                 </div>
-                <p className="mt-3 text-sm text-white/[0.55]">112 Robinson Road, #03-01<br />Singapore 068902</p>
+                <p className="mt-3 text-sm text-white/[0.55]">{singaporeOffice.street}<br />{singaporeOffice.locality}</p>
               </div>
               <div>
                 <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.1em]">
