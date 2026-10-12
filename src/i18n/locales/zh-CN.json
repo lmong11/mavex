@@ -1,4 +1,94 @@
 {
+  "materialsPartnership": {
+    "label": "原料收购与代加工",
+    "relatedLabel": "原料与质量信息",
+    "title": "原料供应与加工合作",
+    "intro": "收购特定含金属原料，承接钨酸钠、磨削料及合金料的代加工业务。",
+    "purchaseTitle": "收购原料范围",
+    "processingLabel": "委托加工",
+    "processingTitle": "可承接的代加工原料",
+    "formsTitle": "物料形态",
+    "forms": {
+      "powder": "粉末状",
+      "lumps": "块状",
+      "granules": "颗粒状"
+    },
+    "qualityLink": "了解质量控制与检测",
+    "items": {
+      "catalysts": {
+        "title": "废催化剂",
+        "text": "含钨、钼、钴或镍的废催化剂。"
+      },
+      "residues": {
+        "title": "磨削料及合金料",
+        "text": "含钨、钼、钴或镍的磨削料及合金料。"
+      },
+      "scheelite": {
+        "title": "低品位白钨矿",
+        "text": "用于钨资源回收与加工的白钨矿原料。"
+      },
+      "sodiumTungstate": {
+        "title": "钨酸钠",
+        "text": "用于进一步加工转化的钨酸钠原料。"
+      }
+    },
+    "mainAssays": "主含量评估",
+    "traceAssays": "微量成分与杂质评估",
+    "assayBasis": "钨以 WO₃ 计；钼、钴、镍以金属含量计。",
+    "assayContext": "结合物料成分和拟采用的加工路线进行评估。",
+    "enquiryTitle": "从一份原料检测报告开始",
+    "enquiryText": "请先通过邮件提供原料质量检测或化验报告，并注明原料出售或委托加工需求。我们完成资料评估后，再与您沟通询价与报价。",
+    "enquirySteps": "提供检测报告 → 原料评估 → 沟通报价",
+    "contact": "洽谈原料与加工"
+  },
+  "qualityControl": {
+    "label": "质量控制与检测能力",
+    "title": "以检测贯穿加工流程",
+    "intro": "中钰生产基地将取样、过程分析与产品检测融入含钨物料的回收和加工转化。",
+    "workflowTitle": "从代表性取样到结果追溯",
+    "steps": {
+      "sampling": {
+        "title": "原料取样与制样",
+        "text": "通过批次核对、多点取样、混匀与制样，为原料分析提供具有代表性的样品。"
+      },
+      "process": {
+        "title": "生产过程检测",
+        "text": "在关键工序设置中控分析项目，跟踪钨含量及相关杂质变化。"
+      },
+      "product": {
+        "title": "APT 产品分析",
+        "text": "检测 WO₃ 及杂质元素，为产品质量评估提供成分数据。"
+      },
+      "traceability": {
+        "title": "留样与记录追溯",
+        "text": "通过样品标识、交接记录、留样和复检流程，将分析结果与原料批次关联。"
+      }
+    },
+    "methodsTitle": "实验室检测能力",
+    "methods": {
+      "spectroscopy": {
+        "title": "元素分析",
+        "text": "发射光谱分析多种金属杂质；原子吸收分析钾、钠。"
+      },
+      "carbonSulfur": {
+        "title": "碳与硫",
+        "text": "采用高频红外碳硫分析。"
+      },
+      "ions": {
+        "title": "离子成分",
+        "text": "采用离子色谱分析氯离子、硫酸根及硝酸根。"
+      },
+      "physical": {
+        "title": "物理性能",
+        "text": "开展粒度、松装密度测量，并通过干燥称量进行水分分析。"
+      }
+    },
+    "processTitle": "APT 生产中控",
+    "processStages": "焙烧 · 浸出 · 离子交换 · 除钼 · 结晶",
+    "processText": "围绕各工序的溶液、渣料与结晶样品，设置相应分析项目，为过程控制提供依据。",
+    "contactText": "欢迎就具体原料或产品需求，沟通检测项目与质量资料。",
+    "contact": "沟通检测与质量要求"
+  },
   "policy": {
     "noticeLabel": "政策公告",
     "title": "中钰供应链政策",
@@ -120,27 +210,6 @@
       "oxides": "氧化钨产品",
       "byproducts": "资源回收副产品",
       "development": "产品拓展"
-    },
-    "feedstocks": {
-      "title": "原料与加工合作",
-      "intro": "围绕多种含钨、钼原料，连接资源回收、加工转化与国际市场。",
-      "contact": "洽谈原料与加工合作",
-      "catalysts": {
-        "title": "废催化剂",
-        "text": "来自石油炼化过程的含钨、钼废催化剂。"
-      },
-      "grinding": {
-        "title": "硬质合金磨削料",
-        "text": "来自硬质合金制造过程的废磨削料。"
-      },
-      "alloyScrap": {
-        "title": "废合金料",
-        "text": "用于金属资源回收的含金属废合金料。"
-      },
-      "ore": {
-        "title": "低品位钨矿",
-        "text": "用于加工转化的含钨矿物原料。"
-      }
     },
     "molybdicAcid": "钼酸",
     "cobaltResidue": "钴渣",

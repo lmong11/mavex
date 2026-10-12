@@ -10,6 +10,8 @@ const Footer: React.FC = () => {
   const footerLinks = [
     [t('navigation.company'), '/#company-profile'],
     [t('navigation.capabilities'), '/#capabilities'],
+    [t('materialsPartnership.label'), '/#materials'],
+    [t('qualityControl.label'), '/#quality-control'],
     [t('footer.valueChain'), '/#value-chain'],
     [t('navigation.operations'), '/#operations'],
     [t('footer.factoryGallery'), '/gallery'],

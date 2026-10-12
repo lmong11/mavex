@@ -1,4 +1,94 @@
 {
+  "materialsPartnership": {
+    "label": "Feedstocks & toll processing",
+    "relatedLabel": "Materials and quality information",
+    "title": "Supply materials. Partner in processing.",
+    "intro": "We purchase selected metal-bearing materials and provide toll processing for sodium tungstate, grinding residues, and alloy materials.",
+    "purchaseTitle": "Materials we purchase",
+    "processingLabel": "Toll processing",
+    "processingTitle": "Processing your materials",
+    "formsTitle": "Material forms",
+    "forms": {
+      "powder": "Powder",
+      "lumps": "Lumps",
+      "granules": "Granules"
+    },
+    "qualityLink": "Explore quality & testing",
+    "items": {
+      "catalysts": {
+        "title": "Spent catalysts",
+        "text": "Catalysts containing tungsten, molybdenum, cobalt, or nickel."
+      },
+      "residues": {
+        "title": "Grinding residues & alloy materials",
+        "text": "Grinding residues and alloy materials containing tungsten, molybdenum, cobalt, or nickel."
+      },
+      "scheelite": {
+        "title": "Low-grade scheelite",
+        "text": "Scheelite feedstocks for tungsten recovery and processing."
+      },
+      "sodiumTungstate": {
+        "title": "Sodium tungstate",
+        "text": "Sodium tungstate feedstocks for further processing."
+      }
+    },
+    "mainAssays": "Principal content",
+    "traceAssays": "Trace constituents & impurities",
+    "assayBasis": "Tungsten reported as WO₃; molybdenum, cobalt, and nickel as metal content.",
+    "assayContext": "Assessment follows the composition of the material and the proposed processing route.",
+    "enquiryTitle": "Start with your assay report",
+    "enquiryText": "Please email your raw-material quality or assay report and indicate whether you are offering materials for sale or seeking toll processing. We review the report before discussing a quotation.",
+    "enquirySteps": "Assay report → Material assessment → Quotation discussion",
+    "contact": "Discuss your material"
+  },
+  "qualityControl": {
+    "label": "Quality control & testing",
+    "title": "Analysis throughout the process.",
+    "intro": "At the Zhongyu production base, sampling, process analysis, and product testing support the recovery and conversion of tungsten-bearing materials.",
+    "workflowTitle": "From sampling to traceable results",
+    "steps": {
+      "sampling": {
+        "title": "Representative sampling",
+        "text": "Batch identification, multi-point sampling, homogenization, and sample preparation establish the basis for incoming-material analysis."
+      },
+      "process": {
+        "title": "In-process analysis",
+        "text": "Samples taken at key processing stages track tungsten content and relevant impurities."
+      },
+      "product": {
+        "title": "APT product analysis",
+        "text": "Analysis of WO₃ and impurity elements provides product-composition data for quality review."
+      },
+      "traceability": {
+        "title": "Sample & record traceability",
+        "text": "Sample labels, handover records, retained samples, and retesting procedures connect results with the original material batch."
+      }
+    },
+    "methodsTitle": "Analytical capabilities",
+    "methods": {
+      "spectroscopy": {
+        "title": "Elemental analysis",
+        "text": "Emission spectroscopy for multiple metal impurities; atomic absorption for potassium and sodium."
+      },
+      "carbonSulfur": {
+        "title": "Carbon & sulfur",
+        "text": "High-frequency infrared carbon–sulfur analysis."
+      },
+      "ions": {
+        "title": "Ionic constituents",
+        "text": "Ion chromatography for chloride, sulfate, and nitrate."
+      },
+      "physical": {
+        "title": "Physical properties",
+        "text": "Particle-size and apparent-density measurements, with drying and weighing for moisture analysis."
+      }
+    },
+    "processTitle": "APT process control",
+    "processStages": "Roasting · Leaching · Ion exchange · Molybdenum removal · Crystallization",
+    "processText": "Stage-specific analysis supports control of process solutions, residues, and crystallization samples.",
+    "contactText": "Discuss the analytical parameters and quality information relevant to your material or product requirements.",
+    "contact": "Discuss testing requirements"
+  },
   "policy": {
     "noticeLabel": "Policy announcement",
     "title": "Zhongyu Supply Chain Policy",
@@ -124,27 +214,6 @@
       "oxides": "Tungsten oxides",
       "byproducts": "Recovery by-products",
       "development": "Product development"
-    },
-    "feedstocks": {
-      "title": "Feedstock & processing partnerships",
-      "intro": "Connecting diverse tungsten- and molybdenum-bearing feedstocks with resource recovery, processing, and international markets.",
-      "contact": "Discuss materials & processing",
-      "catalysts": {
-        "title": "Spent catalysts",
-        "text": "Tungsten- and molybdenum-bearing catalysts from petroleum refining."
-      },
-      "grinding": {
-        "title": "Carbide grinding residues",
-        "text": "Grinding residues from cemented-carbide manufacturing."
-      },
-      "alloyScrap": {
-        "title": "Alloy scrap",
-        "text": "Metal-bearing alloy scrap for resource recovery."
-      },
-      "ore": {
-        "title": "Low-grade tungsten ore",
-        "text": "Tungsten-bearing mineral feedstocks for processing."
-      }
     },
     "molybdicAcid": "Molybdic acid",
     "cobaltResidue": "Cobalt-bearing residues",

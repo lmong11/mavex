@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "check:policy": "node scripts/extract-supply-chain-policy.mjs --check",
+    "check:content": "node scripts/check-business-content.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

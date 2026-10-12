@@ -1,5 +1,4 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
 import {
   ArrowUpRight,
   Building2,
@@ -16,6 +15,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ContactButton from '../contact/ContactButton';
 import { singaporeOffice } from '../../data/company';
+import MaterialsPartnership from './MaterialsPartnership';
+import QualityControl from './QualityControl';
 
 const capacityMetrics = [
   {
@@ -38,8 +39,6 @@ const productGroups = [
   { key: 'byproducts', products: ['molybdicAcid', 'cobaltResidue', 'nickelResidue'] },
   { key: 'development', products: ['cobaltSulfate', 'nickelSulfate'] },
 ];
-
-const feedstocks = ['catalysts', 'grinding', 'alloyScrap', 'ore'];
 
 const valueChain = [
   {
@@ -66,13 +65,8 @@ const valueChain = [
 
 const CompanyProfile: React.FC = () => {
   const { t } = useTranslation();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.08,
-  });
-
   return (
-    <div ref={ref} className={inView ? 'opacity-100' : 'opacity-0'}>
+    <div>
       <section id="company-profile" className="section scroll-mt-20 bg-warm-stone">
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-end">
@@ -204,29 +198,18 @@ const CompanyProfile: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-14 border-t border-white/[0.12] pt-10">
-            <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-              <div className="max-w-2xl">
-                <h3 className="text-3xl font-semibold uppercase">{t('capabilities.feedstocks.title')}</h3>
-                <p className="mt-3 text-white/65">{t('capabilities.feedstocks.intro')}</p>
-              </div>
-              <ContactButton className="inline-flex shrink-0 items-center gap-3 self-start border-b border-copper pb-2 text-left text-sm font-semibold text-copper-light hover:text-white">
-                {t('capabilities.feedstocks.contact')}
-                <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
-              </ContactButton>
-            </div>
-            <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {feedstocks.map((feedstock, index) => (
-                <article key={feedstock} className="min-w-0 border border-white/[0.12] p-5">
-                  <span className="font-display text-xl text-jade-light" aria-hidden="true">0{index + 1}</span>
-                  <h4 className="mt-3 font-semibold">{t(`capabilities.feedstocks.${feedstock}.title`)}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-white/55">{t(`capabilities.feedstocks.${feedstock}.text`)}</p>
-                </article>
-              ))}
-            </div>
-          </div>
+          <nav className="mt-10 flex flex-wrap gap-x-8 gap-y-4 border-t border-white/15 pt-6" aria-label={t('materialsPartnership.relatedLabel')}>
+            <a href="#materials" className="inline-flex items-center gap-3 text-sm font-semibold text-copper-light hover:text-white">
+              {t('materialsPartnership.label')}<ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+            </a>
+            <a href="#quality-control" className="inline-flex items-center gap-3 text-sm font-semibold text-copper-light hover:text-white">
+              {t('qualityControl.label')}<ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+            </a>
+          </nav>
         </div>
       </section>
+
+      <MaterialsPartnership />
 
       <section id="value-chain" className="section scroll-mt-20 bg-white">
         <div className="container-custom">
@@ -289,7 +272,9 @@ const CompanyProfile: React.FC = () => {
         </div>
       </section>
 
-      <section id="operations" className="section scroll-mt-20 bg-warm-stone">
+      <QualityControl />
+
+      <section id="operations" className="section scroll-mt-20 bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-6">

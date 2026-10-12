@@ -1,4 +1,94 @@
 {
+  "materialsPartnership": {
+    "label": "원료 매입 및 임가공",
+    "relatedLabel": "원료 및 품질 정보",
+    "title": "원료 공급부터 임가공 협력까지.",
+    "intro": "대상 금속 함유 원료를 매입하고 텅스텐산나트륨, 연삭 잔류물 및 합금 원료의 임가공을 제공합니다.",
+    "purchaseTitle": "매입 대상 원료",
+    "processingLabel": "임가공",
+    "processingTitle": "임가공 대상 원료",
+    "formsTitle": "원료 형태",
+    "forms": {
+      "powder": "분말",
+      "lumps": "괴상",
+      "granules": "입상"
+    },
+    "qualityLink": "품질 관리 및 분석 살펴보기",
+    "items": {
+      "catalysts": {
+        "title": "폐촉매",
+        "text": "텅스텐, 몰리브덴, 코발트 또는 니켈을 함유한 폐촉매."
+      },
+      "residues": {
+        "title": "연삭 잔류물 및 합금 원료",
+        "text": "텅스텐, 몰리브덴, 코발트 또는 니켈을 함유한 연삭 잔류물 및 합금 원료."
+      },
+      "scheelite": {
+        "title": "저품위 회중석",
+        "text": "텅스텐 회수 및 가공을 위한 회중석 원료."
+      },
+      "sodiumTungstate": {
+        "title": "텅스텐산나트륨",
+        "text": "추가 가공 및 전환을 위한 텅스텐산나트륨 원료."
+      }
+    },
+    "mainAssays": "주성분 평가",
+    "traceAssays": "미량 성분 및 불순물",
+    "assayBasis": "텅스텐은 WO₃ 기준, 몰리브덴·코발트·니켈은 금속 함량 기준으로 평가합니다.",
+    "assayContext": "원료 조성과 적용할 가공 공정에 따라 평가합니다.",
+    "enquiryTitle": "원료 분석 보고서부터 보내주세요",
+    "enquiryText": "원료 품질 검사 또는 분석 보고서를 이메일로 보내주시고, 원료 판매 또는 임가공 요청임을 알려주세요. 자료 검토 후 견적을 협의합니다.",
+    "enquirySteps": "분석 보고서 제공 → 원료 평가 → 견적 협의",
+    "contact": "원료 및 가공 문의"
+  },
+  "qualityControl": {
+    "label": "품질 관리 및 분석 역량",
+    "title": "가공 전 과정을 뒷받침하는 분석.",
+    "intro": "중위 생산 기지는 시료 채취, 공정 분석 및 제품 시험을 통해 텅스텐 함유 원료의 회수와 가공을 지원합니다.",
+    "workflowTitle": "대표 시료 채취부터 결과 추적까지",
+    "steps": {
+      "sampling": {
+        "title": "원료 시료 채취 및 전처리",
+        "text": "로트 확인, 다지점 채취, 균질화 및 시료 전처리로 원료 분석을 위한 대표 시료를 확보합니다."
+      },
+      "process": {
+        "title": "공정 중 분석",
+        "text": "주요 공정의 시료를 분석하여 텅스텐 함량과 관련 불순물을 확인합니다."
+      },
+      "product": {
+        "title": "APT 제품 분석",
+        "text": "WO₃ 및 불순물 원소 분석을 통해 품질 평가에 필요한 조성 데이터를 제공합니다."
+      },
+      "traceability": {
+        "title": "시료 및 기록 추적",
+        "text": "시료 식별, 인수인계 기록, 보관 시료 및 재시험 절차로 분석 결과와 원료 로트를 연결합니다."
+      }
+    },
+    "methodsTitle": "시험·분석 역량",
+    "methods": {
+      "spectroscopy": {
+        "title": "원소 분석",
+        "text": "발광분광법으로 여러 금속 불순물을, 원자흡광법으로 칼륨과 나트륨을 분석합니다."
+      },
+      "carbonSulfur": {
+        "title": "탄소 및 황",
+        "text": "고주파 적외선 탄소·황 분석."
+      },
+      "ions": {
+        "title": "이온 성분",
+        "text": "이온 크로마토그래피를 통한 염화물, 황산염 및 질산염 분석."
+      },
+      "physical": {
+        "title": "물리적 특성",
+        "text": "입도 및 겉보기 밀도 측정과 건조·칭량을 통한 수분 분석."
+      }
+    },
+    "processTitle": "APT 공정 관리",
+    "processStages": "배소 · 침출 · 이온 교환 · 몰리브덴 제거 · 결정화",
+    "processText": "공정별 용액, 잔류물 및 결정화 시료에 대한 분석으로 공정 관리를 지원합니다.",
+    "contactText": "원료 또는 제품 요구 사항에 맞는 분석 항목과 품질 자료를 상담해 보세요.",
+    "contact": "분석 및 품질 요건 문의"
+  },
   "policy": {
     "noticeLabel": "정책 공지",
     "title": "Zhongyu 공급망 정책",
@@ -120,27 +210,6 @@
       "oxides": "산화텅스텐",
       "byproducts": "자원 회수 부산물",
       "development": "제품 개발"
-    },
-    "feedstocks": {
-      "title": "원료 및 가공 파트너십",
-      "intro": "다양한 텅스텐·몰리브덴 함유 원료를 자원 회수, 가공 및 국제 시장과 연결합니다.",
-      "contact": "원료 및 가공 문의",
-      "catalysts": {
-        "title": "폐촉매",
-        "text": "석유 정제 공정에서 발생하는 텅스텐·몰리브덴 함유 촉매."
-      },
-      "grinding": {
-        "title": "초경합금 연삭 잔재",
-        "text": "초경합금 제조 공정에서 발생하는 연삭 잔재."
-      },
-      "alloyScrap": {
-        "title": "합금 스크랩",
-        "text": "금속 자원 회수를 위한 합금 스크랩."
-      },
-      "ore": {
-        "title": "저품위 텅스텐 광석",
-        "text": "가공을 위한 텅스텐 함유 광물 원료."
-      }
     },
     "molybdicAcid": "몰리브덴산",
     "cobaltResidue": "코발트 함유 잔재",

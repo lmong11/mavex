@@ -1,4 +1,94 @@
 {
+  "materialsPartnership": {
+    "label": "Thu mua nguyên liệu & gia công",
+    "relatedLabel": "Thông tin nguyên liệu và chất lượng",
+    "title": "Cung ứng nguyên liệu. Hợp tác gia công.",
+    "intro": "Chúng tôi thu mua các nhóm nguyên liệu chứa kim loại phù hợp và nhận gia công natri tungstat, phế liệu mài và vật liệu hợp kim.",
+    "purchaseTitle": "Nguyên liệu thu mua",
+    "processingLabel": "Gia công theo yêu cầu",
+    "processingTitle": "Nguyên liệu nhận gia công",
+    "formsTitle": "Dạng vật liệu",
+    "forms": {
+      "powder": "Bột",
+      "lumps": "Cục",
+      "granules": "Hạt"
+    },
+    "qualityLink": "Tìm hiểu kiểm soát chất lượng",
+    "items": {
+      "catalysts": {
+        "title": "Xúc tác đã qua sử dụng",
+        "text": "Xúc tác chứa vonfram, molypden, coban hoặc niken."
+      },
+      "residues": {
+        "title": "Phế liệu mài & vật liệu hợp kim",
+        "text": "Phế liệu mài và vật liệu hợp kim chứa vonfram, molypden, coban hoặc niken."
+      },
+      "scheelite": {
+        "title": "Quặng scheelit hàm lượng thấp",
+        "text": "Nguyên liệu scheelit dùng để thu hồi và chế biến vonfram."
+      },
+      "sodiumTungstate": {
+        "title": "Natri tungstat",
+        "text": "Nguyên liệu natri tungstat để tiếp tục gia công và chuyển hóa."
+      }
+    },
+    "mainAssays": "Hàm lượng thành phần chính",
+    "traceAssays": "Thành phần vi lượng & tạp chất",
+    "assayBasis": "Vonfram được tính theo WO₃; molypden, coban và niken được tính theo hàm lượng kim loại.",
+    "assayContext": "Đánh giá dựa trên thành phần vật liệu và quy trình gia công dự kiến.",
+    "enquiryTitle": "Bắt đầu từ báo cáo phân tích",
+    "enquiryText": "Vui lòng gửi báo cáo kiểm nghiệm chất lượng hoặc phân tích nguyên liệu qua email, đồng thời cho biết nhu cầu bán nguyên liệu hay gia công. Chúng tôi đánh giá hồ sơ trước khi trao đổi báo giá.",
+    "enquirySteps": "Gửi báo cáo phân tích → Đánh giá nguyên liệu → Trao đổi báo giá",
+    "contact": "Trao đổi về nguyên liệu"
+  },
+  "qualityControl": {
+    "label": "Kiểm soát chất lượng & năng lực phân tích",
+    "title": "Phân tích xuyên suốt quy trình.",
+    "intro": "Cơ sở sản xuất Zhongyu kết hợp lấy mẫu, phân tích trong quá trình và kiểm nghiệm sản phẩm để hỗ trợ thu hồi và chế biến nguyên liệu chứa vonfram.",
+    "workflowTitle": "Từ lấy mẫu đại diện đến truy xuất kết quả",
+    "steps": {
+      "sampling": {
+        "title": "Lấy mẫu và chuẩn bị mẫu",
+        "text": "Đối chiếu lô, lấy mẫu tại nhiều vị trí, đồng nhất và chuẩn bị mẫu để bảo đảm tính đại diện cho phân tích nguyên liệu."
+      },
+      "process": {
+        "title": "Phân tích trong quá trình",
+        "text": "Phân tích mẫu tại các công đoạn chính để theo dõi hàm lượng vonfram và các tạp chất liên quan."
+      },
+      "product": {
+        "title": "Phân tích sản phẩm APT",
+        "text": "Phân tích WO₃ và các nguyên tố tạp chất cung cấp dữ liệu thành phần cho việc đánh giá chất lượng."
+      },
+      "traceability": {
+        "title": "Truy xuất mẫu và hồ sơ",
+        "text": "Nhãn mẫu, hồ sơ bàn giao, mẫu lưu và quy trình kiểm nghiệm lại liên kết kết quả phân tích với lô nguyên liệu."
+      }
+    },
+    "methodsTitle": "Năng lực phân tích và đo lường",
+    "methods": {
+      "spectroscopy": {
+        "title": "Phân tích nguyên tố",
+        "text": "Quang phổ phát xạ để phân tích nhiều tạp chất kim loại; hấp thụ nguyên tử để phân tích kali và natri."
+      },
+      "carbonSulfur": {
+        "title": "Cacbon & lưu huỳnh",
+        "text": "Phân tích cacbon và lưu huỳnh bằng hồng ngoại với lò cao tần."
+      },
+      "ions": {
+        "title": "Thành phần ion",
+        "text": "Sắc ký ion để phân tích clorua, sulfat và nitrat."
+      },
+      "physical": {
+        "title": "Đặc tính vật lý",
+        "text": "Đo kích thước hạt, khối lượng riêng biểu kiến và phân tích độ ẩm bằng sấy, cân."
+      }
+    },
+    "processTitle": "Kiểm soát quy trình APT",
+    "processStages": "Thiêu · Hòa tách · Trao đổi ion · Loại molypden · Kết tinh",
+    "processText": "Phân tích dung dịch, bã và mẫu kết tinh theo từng công đoạn để hỗ trợ kiểm soát quy trình.",
+    "contactText": "Trao đổi về các chỉ tiêu phân tích và tài liệu chất lượng phù hợp với nhu cầu nguyên liệu hoặc sản phẩm của bạn.",
+    "contact": "Trao đổi yêu cầu kiểm nghiệm"
+  },
   "policy": {
     "noticeLabel": "Thông báo chính sách",
     "title": "Chính sách chuỗi cung ứng Zhongyu",
@@ -120,27 +210,6 @@
       "oxides": "Oxit vonfram",
       "byproducts": "Sản phẩm phụ thu hồi",
       "development": "Phát triển sản phẩm"
-    },
-    "feedstocks": {
-      "title": "Hợp tác nguyên liệu & gia công",
-      "intro": "Kết nối các nguồn nguyên liệu chứa vonfram và molypden với thu hồi tài nguyên, gia công và thị trường quốc tế.",
-      "contact": "Trao đổi về nguyên liệu & gia công",
-      "catalysts": {
-        "title": "Xúc tác đã qua sử dụng",
-        "text": "Xúc tác chứa vonfram và molypden từ quá trình lọc dầu."
-      },
-      "grinding": {
-        "title": "Bã mài hợp kim cứng",
-        "text": "Bã mài từ quá trình sản xuất hợp kim cứng."
-      },
-      "alloyScrap": {
-        "title": "Phế liệu hợp kim",
-        "text": "Phế liệu hợp kim phục vụ thu hồi tài nguyên kim loại."
-      },
-      "ore": {
-        "title": "Quặng vonfram hàm lượng thấp",
-        "text": "Nguyên liệu khoáng chứa vonfram phục vụ gia công."
-      }
     },
     "molybdicAcid": "Axit molypdic",
     "cobaltResidue": "Bã chứa coban",

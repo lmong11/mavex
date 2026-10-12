@@ -16,7 +16,7 @@ const openGraphLocales: Record<string, string> = {
 const Layout: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
-  const { pathname, hash } = useLocation();
+  const { pathname, hash, key: navigationKey } = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -36,7 +36,7 @@ const Layout: React.FC = () => {
     }
 
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-  }, [hash, pathname]);
+  }, [hash, pathname, navigationKey]);
 
   useEffect(() => {
     const isPolicy = pathname === '/policies/supply-chain';
