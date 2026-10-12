@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 import GalleryPage from './pages/GalleryPage';
 import NotFoundPage from './pages/NotFoundPage';
 import SupplyChainPolicyPage from './pages/SupplyChainPolicyPage';
+import MaterialsPage from './pages/MaterialsPage';
+import ProductionQualityPage from './pages/ProductionQualityPage';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="materials-processing" element={<MaterialsPage />} />
+          <Route path="production-quality" element={<ProductionQualityPage />} />
           <Route path="gallery" element={<GalleryPage />} />
           <Route path="policies/supply-chain" element={<SupplyChainPolicyPage />} />
           <Route path="*" element={<NotFoundPage />} />

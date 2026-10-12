@@ -49,12 +49,12 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'desktop'
         aria-controls={menuId}
         aria-haspopup="menu"
         aria-label={t('language.select')}
-        className={`inline-flex items-center justify-between gap-2 border border-white/20 text-white transition-colors hover:border-copper-light hover:bg-white/[0.06] focus-visible:ring-copper-light ${
+        className={`inline-flex items-center justify-between gap-2 border border-graphite/15 text-graphite transition-colors hover:border-jade-dark hover:bg-jade/5 focus-visible:ring-jade-dark ${
           isMobile ? 'w-full px-3 py-3 text-sm' : 'px-3 py-2 text-xs font-semibold'
         }`}
       >
         <span className="inline-flex items-center gap-2">
-          <Globe2 className="h-4 w-4 text-jade-light" aria-hidden="true" />
+          <Globe2 className="h-4 w-4 text-jade-dark" aria-hidden="true" />
           <span>{isMobile ? activeLanguage.label : activeLanguage.shortLabel}</span>
         </span>
         <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
@@ -64,7 +64,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'desktop'
         <div
           id={menuId}
           role="menu"
-          className={`z-[70] border border-white/[0.14] bg-graphite/95 p-1.5 shadow-2xl backdrop-blur-xl ${
+          className={`z-[70] border border-graphite/15 bg-white p-1.5 shadow-lg ${
             isMobile ? 'mt-1 w-full' : 'absolute right-0 top-[calc(100%+0.55rem)] min-w-44'
           }`}
         >
@@ -79,8 +79,8 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ variant = 'desktop'
                 onClick={() => selectLanguage(language.code)}
                 className={`flex w-full items-center justify-between gap-4 px-3 py-2.5 text-left text-sm transition-colors ${
                   isActive
-                    ? 'bg-copper text-white'
-                    : 'text-white/75 hover:bg-white/[0.08] hover:text-white'
+                    ? 'bg-jade-dark text-white'
+                    : 'text-steel-gray hover:bg-jade/5 hover:text-jade-dark'
                 }`}
               >
                 <span lang={language.htmlLang}>{language.label}</span>

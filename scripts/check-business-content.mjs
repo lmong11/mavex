@@ -12,7 +12,7 @@ const baseline = JSON.parse(read('src/i18n/locales/en.json'));
 for (const language of languages) {
   const locale = JSON.parse(read(`src/i18n/locales/${language}.json`));
   assert.deepEqual(getKeys(locale).sort(), getKeys(baseline).sort(), `${language}: translation keys differ`);
-  for (const section of ['materialsPartnership', 'qualityControl']) {
+  for (const section of ['materialsPartnership', 'qualityControl', 'redesign']) {
     for (const key of getKeys(locale[section])) {
       const value = key.split('.').reduce((item, part) => item[part], locale[section]);
       assert.equal(typeof value, 'string');
@@ -33,7 +33,14 @@ assert.match(materials, /processingMaterials = \['sodiumTungstate', 'residues'\]
 assert.match(materials, /principalAssays = \['WO₃', 'Mo', 'Co', 'Ni'\]/);
 assert.match(materials, /traceAssays = \['Cr', 'Cu', 'Fe', 'Mn', 'Mg', 'Na', 'P', 'S'\]/);
 assert.doesNotMatch(materials, /<input|<form|type="file"/, 'No unconnected upload or quotation form');
-const company = read('src/components/home/CompanyProfile.tsx');
-assert.doesNotMatch(company, /opacity-0|useInView/, 'Long homepage content must stay visible on small viewports');
-assert.ok(company.includes('<MaterialsPartnership />') && company.includes('<QualityControl />'));
-console.log('Business content verified: six locales, four purchasing categories, two tolling categories, assay bases, quality sections, and disclosure guards.');
+const home = read('src/pages/HomePage.tsx');
+assert.doesNotMatch(home, /opacity-0|useInView|<CompanyProfile|<MaterialsPartnership|<QualityControl/,
+  'Home should remain visible and use summaries, not embed entire detail pages');
+assert.ok(home.includes('<ProductCatalogue />'));
+assert.ok(read('src/pages/MaterialsPage.tsx').includes('<MaterialsPartnership />'));
+assert.ok(read('src/pages/ProductionQualityPage.tsx').includes('<QualityControl />'));
+const routes = read('src/App.tsx');
+assert.match(routes, /path="materials-processing"/);
+assert.match(routes, /path="production-quality"/);
+assert.match(read('src/components/contact/ContactButton.tsx'), /encodeURIComponent\(\[t\('contactDialog.subject'\), subject\]/);
+console.log('Business content verified: six locales, purchasing/tolling scope, assay bases, dedicated routes, compact homepage, product enquiries, and disclosure guards.');

@@ -108,8 +108,8 @@ const GalleryPage: React.FC = () => {
   }, [closeModal, isModalOpen, navigateImage]);
 
   return (
-    <div className="bg-warm-stone pb-20 pt-20">
-      <section className="relative min-h-[520px] overflow-hidden bg-graphite text-white">
+    <div className="editorial-page bg-warm-stone pb-20 pt-20">
+      <section className="relative min-h-[330px] overflow-hidden bg-graphite text-white">
         <img
           key={`gallery-hero-${localeKey}`}
           src="/images/factory/factory-main-gate.jpg"
@@ -120,11 +120,11 @@ const GalleryPage: React.FC = () => {
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,17,24,0.96)_0%,rgba(11,17,24,0.82)_48%,rgba(11,17,24,0.25)_100%)]" aria-hidden="true" />
         <div className="industrial-grid absolute inset-0 opacity-20" aria-hidden="true" />
-        <div className="container-custom relative flex min-h-[520px] items-end py-16 md:py-20">
+        <div className="site-container relative flex min-h-[330px] items-end py-12 md:py-14">
           <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-7">
               <p className="section-label text-copper-light">{t('gallery.label')}</p>
-              <h1 className="mt-5 text-6xl font-semibold uppercase leading-[0.88] md:text-8xl">{t('gallery.title')}</h1>
+              <h1 className="mt-5 text-4xl leading-tight md:text-5xl">{t('gallery.title')}</h1>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="border-l border-copper pl-5 text-lg text-white/[0.68]">

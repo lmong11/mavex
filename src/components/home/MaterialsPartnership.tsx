@@ -1,4 +1,5 @@
-import { ArrowDownRight, ArrowUpRight, FileText } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ContactButton from '../contact/ContactButton';
 
@@ -10,99 +11,32 @@ const traceAssays = ['Cr', 'Cu', 'Fe', 'Mn', 'Mg', 'Na', 'P', 'S'];
 
 const MaterialsPartnership = () => {
   const { t } = useTranslation();
-
   return (
-    <section id="materials" aria-labelledby="materials-title" className="section scroll-mt-24 bg-warm-stone">
-      <div className="container-custom">
-        <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-6">
-            <p className="section-label text-copper-dark">{t('materialsPartnership.label')}</p>
-            <h2 id="materials-title" className="mt-5 text-4xl leading-tight text-graphite md:text-5xl">
-              {t('materialsPartnership.title')}
-            </h2>
-          </div>
-          <p className="max-w-2xl text-lg text-steel-gray lg:col-span-5 lg:col-start-8">
-            {t('materialsPartnership.intro')}
-          </p>
-        </div>
-
-        <div className="mt-10 grid border-t border-graphite/20 lg:grid-cols-12">
-          <div className="min-w-0 py-8 lg:col-span-7 lg:pr-12">
-            <div className="flex items-center justify-between gap-4">
-              <h3 className="text-2xl text-graphite md:text-3xl">{t('materialsPartnership.purchaseTitle')}</h3>
-              <ArrowDownRight className="h-6 w-6 shrink-0 text-jade-dark" aria-hidden="true" />
-            </div>
-            <ol className="mt-5 divide-y divide-graphite/15">
-              {purchaseMaterials.map((material, index) => (
-                <li key={material} className="grid grid-cols-[2rem_1fr] gap-3 py-5">
-                  <span className="pt-1 font-display text-xl text-copper-dark" aria-hidden="true">0{index + 1}</span>
-                  <div>
-                    <h4 className="text-xl leading-snug text-graphite">{t(`materialsPartnership.items.${material}.title`)}</h4>
-                    <p className="mt-1 text-sm text-steel-gray">{t(`materialsPartnership.items.${material}.text`)}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </div>
-
-          <div className="min-w-0 border-t border-graphite/15 bg-white p-6 sm:p-8 lg:col-span-5 lg:border-l lg:border-t-0 lg:p-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-jade-dark">{t('materialsPartnership.processingLabel')}</p>
-            <h3 className="mt-3 text-2xl text-graphite md:text-3xl">{t('materialsPartnership.processingTitle')}</h3>
-            <ul className="mt-6 space-y-4">
-              {processingMaterials.map((material) => (
-                <li key={material} className="flex items-start gap-3 text-lg font-medium text-graphite">
-                  <span className="mt-2.5 h-1.5 w-1.5 shrink-0 bg-jade-dark" aria-hidden="true" />
-                  {t(`materialsPartnership.items.${material}.title`)}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-9 border-t border-graphite/15 pt-6">
-              <h4 className="font-body text-sm font-semibold text-steel-gray">{t('materialsPartnership.formsTitle')}</h4>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {materialForms.map((form) => (
-                  <li key={form} className="border border-graphite/20 px-3 py-1.5 text-sm text-graphite">{t(`materialsPartnership.forms.${form}`)}</li>
-                ))}
-              </ul>
-            </div>
-            <a href="#quality-control" className="mt-8 inline-flex items-center gap-3 border-b border-jade-dark pb-2 text-sm font-semibold text-jade-dark hover:text-graphite">
-              {t('materialsPartnership.qualityLink')}
-              <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
-            </a>
-          </div>
-        </div>
-
-        <div className="grid gap-8 border-y border-graphite/20 py-8 md:grid-cols-2">
-          <div>
-            <h3 className="font-body text-sm font-semibold text-steel-gray">{t('materialsPartnership.mainAssays')}</h3>
-            <p className="mt-3 flex flex-wrap gap-x-6 gap-y-2 font-display text-3xl font-semibold text-graphite" aria-label={t('materialsPartnership.mainAssays')}>
-              {principalAssays.map((assay) => <span key={assay}>{assay}</span>)}
-            </p>
-            <p className="mt-3 text-sm text-steel-gray">{t('materialsPartnership.assayBasis')}</p>
-          </div>
-          <div>
-            <h3 className="font-body text-sm font-semibold text-steel-gray">{t('materialsPartnership.traceAssays')}</h3>
-            <p className="mt-3 leading-loose text-graphite">{traceAssays.join(' · ')}</p>
-            <p className="mt-2 text-sm text-steel-gray">{t('materialsPartnership.assayContext')}</p>
-          </div>
-        </div>
-
-        <div className="mt-8 flex flex-col gap-6 bg-graphite p-6 text-white sm:p-8 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex max-w-2xl items-start gap-4">
-            <FileText className="mt-1 h-6 w-6 shrink-0 text-copper-light" aria-hidden="true" />
-            <div>
-              <h3 className="text-2xl">{t('materialsPartnership.enquiryTitle')}</h3>
-              <p className="mt-2 text-sm text-white/75">{t('materialsPartnership.enquiryText')}</p>
-              <p className="mt-3 text-xs leading-relaxed text-jade-light">{t('materialsPartnership.enquirySteps')}</p>
-            </div>
-          </div>
-          <ContactButton className="btn-primary gap-3 self-start text-left lg:max-w-xs lg:shrink-0">
-            {t('materialsPartnership.contact')}
-            <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
-          </ContactButton>
-        </div>
+    <div className="materials-detail">
+      <div className="site-container materials-scope">
+        <section id="purchasing" className="anchor-section" aria-labelledby="purchase-title">
+          <p className="technical-label">01 / {t('materialsPartnership.purchaseTitle')}</p>
+          <h2 id="purchase-title">{t('materialsPartnership.purchaseTitle')}</h2>
+          <p className="section-description">{t('redesign.purchasingIntro')}</p>
+          <ol className="purchase-list">{purchaseMaterials.map((material, index) => <li key={material}><span className="list-number">0{index + 1}</span><div><h3>{t(`materialsPartnership.items.${material}.title`)}</h3><p>{t(`materialsPartnership.items.${material}.text`)}</p></div></li>)}</ol>
+        </section>
+        <aside id="toll-processing" className="toll-panel anchor-section" aria-labelledby="toll-title">
+          <p className="technical-label">02 / {t('materialsPartnership.processingLabel')}</p>
+          <h2 id="toll-title">{t('materialsPartnership.processingTitle')}</h2>
+          <ul>{processingMaterials.map(material => <li key={material}><ArrowRight size={18} aria-hidden="true" />{t(`materialsPartnership.items.${material}.title`)}</li>)}</ul>
+          <div className="material-forms"><h3>{t('materialsPartnership.formsTitle')}</h3><div>{materialForms.map(form => <span key={form}>{t(`materialsPartnership.forms.${form}`)}</span>)}</div></div>
+          <Link to="/production-quality#testing-methods" className="action-text">{t('materialsPartnership.qualityLink')}<ArrowUpRight size={17} aria-hidden="true" /></Link>
+        </aside>
       </div>
-    </section>
+      <section id="material-assessment" className="assessment-section anchor-section" aria-labelledby="assessment-title">
+        <div className="site-container assessment-grid"><div><p className="technical-label">03 / {t('redesign.assessment')}</p><h2 id="assessment-title">{t('materialsPartnership.enquiryTitle')}</h2><p className="section-description">{t('materialsPartnership.enquiryText')}</p></div><div className="assay-table"><div><h3>{t('materialsPartnership.mainAssays')}</h3><p className="principal-assays">{principalAssays.map(assay => <span key={assay}>{assay}</span>)}</p><p>{t('materialsPartnership.assayBasis')}</p></div><div><h3>{t('materialsPartnership.traceAssays')}</h3><p className="trace-assays">{traceAssays.join(' · ')}</p><p>{t('materialsPartnership.assayContext')}</p></div></div></div>
+      </section>
+      <section className="site-container enquiry-process" aria-labelledby="enquiry-process-title">
+        <h2 id="enquiry-process-title" className="sr-only">{t('redesign.assessment')}</h2>
+        <ol>{['flowReport', 'flowReview', 'flowQuote'].map((step, index) => <li key={step}><span>0{index + 1}</span><h3>{t(`redesign.${step}`)}</h3>{index < 2 && <ArrowRight size={21} aria-hidden="true" />}</li>)}</ol>
+        <div className="enquiry-instruction"><FileText size={24} aria-hidden="true" /><p>{t('redesign.enquiryHelp')}</p><ContactButton subject={t('materialsPartnership.label')} className="action-solid">{t('materialsPartnership.contact')}<ArrowUpRight size={17} aria-hidden="true" /></ContactButton></div>
+      </section>
+    </div>
   );
 };
-
 export default MaterialsPartnership;

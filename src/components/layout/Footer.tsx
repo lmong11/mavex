@@ -9,19 +9,17 @@ const Footer: React.FC = () => {
   const { t } = useTranslation();
   const footerLinks = [
     [t('navigation.company'), '/#company-profile'],
-    [t('navigation.capabilities'), '/#capabilities'],
-    [t('materialsPartnership.label'), '/#materials'],
-    [t('qualityControl.label'), '/#quality-control'],
-    [t('footer.valueChain'), '/#value-chain'],
-    [t('navigation.operations'), '/#operations'],
+    [t('redesign.navProducts'), '/#products'],
+    [t('redesign.navMaterials'), '/materials-processing'],
+    [t('redesign.navQuality'), '/production-quality'],
     [t('footer.factoryGallery'), '/gallery'],
     [t('policy.footerLabel'), '/policies/supply-chain'],
   ];
 
   return (
     <footer className="bg-graphite text-white">
-      <div className="h-1 bg-gradient-to-r from-jade via-copper to-transparent" aria-hidden="true" />
-      <div className="container-custom py-14 md:py-20">
+      <div className="h-px bg-jade-dark" aria-hidden="true" />
+      <div className="site-container py-12 md:py-14">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Link to="/" className="inline-flex items-center gap-4" aria-label={t('navigation.homeLabel')}>

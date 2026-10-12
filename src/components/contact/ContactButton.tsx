@@ -11,6 +11,7 @@ interface ContactButtonProps {
   children: React.ReactNode;
   className?: string;
   onOpen?: () => void;
+  subject?: string;
 }
 
 const fallbackCopy = (value: string) => {
@@ -26,7 +27,7 @@ const fallbackCopy = (value: string) => {
   return copied;
 };
 
-const ContactButton: React.FC<ContactButtonProps> = ({ children, className, onOpen }) => {
+const ContactButton: React.FC<ContactButtonProps> = ({ children, className, onOpen, subject }) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [copyState, setCopyState] = useState<CopyState>('idle');
@@ -103,7 +104,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({ children, className, onOp
     setCopyState(copied ? 'copied' : 'failed');
   };
 
-  const mailtoHref = `mailto:${businessEmail}?subject=${encodeURIComponent(t('contactDialog.subject'))}`;
+  const mailtoHref = `mailto:${businessEmail}?subject=${encodeURIComponent([t('contactDialog.subject'), subject].filter(Boolean).join(' — '))}`;
 
   return (
     <>
@@ -155,6 +156,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({ children, className, onOp
               <p id={descriptionId} className="mt-5 max-w-lg text-steel-gray">
                 {t('contactDialog.description')}
               </p>
+              {subject && <p className="mt-4 border-l-2 border-jade-dark pl-3 text-sm font-semibold text-jade-dark">{subject}</p>}
 
               <div className="mt-8 border border-graphite/15 bg-white p-5 sm:p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-steel-gray">

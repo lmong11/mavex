@@ -1,136 +1,44 @@
-import React, { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Mail, Menu, X } from 'lucide-react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import ContactButton from '../contact/ContactButton';
 import LanguageSwitcher from './LanguageSwitcher';
 
-interface NavbarProps {
-  scrolled: boolean;
-}
-
-const navigationItems = [
+const items = [
+  { key: 'redesign.navProducts', href: '/#products' },
+  { key: 'redesign.navMaterials', href: '/materials-processing' },
+  { key: 'redesign.navQuality', href: '/production-quality' },
   { key: 'navigation.company', href: '/#company-profile' },
-  { key: 'navigation.capabilities', href: '/#capabilities' },
-  { key: 'navigation.operations', href: '/#operations' },
-  { key: 'navigation.gallery', href: '/gallery' },
+  { key: 'redesign.navResources', href: '/#resources' },
 ];
-const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
+
+const Navbar = () => {
   const { t } = useTranslation();
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const solidNavigation = scrolled || location.pathname !== '/' || isOpen;
-
+  useEffect(() => { setIsOpen(false); }, [location.key]);
   useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
-
-  useEffect(() => {
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setIsOpen(false);
-    };
-
-    document.addEventListener('keydown', closeOnEscape);
-    return () => document.removeEventListener('keydown', closeOnEscape);
+    const close = (event: KeyboardEvent) => { if (event.key === 'Escape') setIsOpen(false); };
+    document.addEventListener('keydown', close);
+    return () => document.removeEventListener('keydown', close);
   }, []);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+  const isActive = (href: string) => href.includes('#') ? `${location.pathname}${location.hash}` === href : location.pathname === href;
   return (
-    <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        solidNavigation ? 'nav-scrolled' : 'bg-transparent'
-      }`}
-    >
-      <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3" aria-label={t('navigation.homeLabel')}>
-            <img
-              src="/images/mavex-logo.png"
-              alt=""
-              className="h-12 w-auto"
-            />
-            <span className="hidden sm:block text-[0.68rem] font-body font-semibold uppercase tracking-[0.2em] text-white/85">
-              Investments
-            </span>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-7" aria-label={t('navigation.primaryLabel')}>
-            {navigationItems.map((item) => (
-              <Link
-                key={item.key}
-                to={item.href}
-                className={`navbar-link-light ${
-                  (item.href === '/gallery' && location.pathname === '/gallery') ? 'text-copper-light' : ''
-                }`}
-              >
-                {t(item.key)}
-              </Link>
-            ))}
-            <LanguageSwitcher />
-            <ContactButton
-              className="inline-flex items-center gap-2 border border-white/30 px-4 py-2 text-sm font-semibold text-white transition-colors hover:border-copper hover:bg-copper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-light"
-            >
-              <Mail className="h-4 w-4" aria-hidden="true" />
-              {t('navigation.contact')}
-            </ContactButton>
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden">
-            <button
-              type="button"
-              className="text-white p-2"
-              onClick={toggleMenu}
-              aria-expanded={isOpen}
-              aria-controls="mobile-navigation"
-              aria-label={isOpen ? t('navigation.close') : t('navigation.open')}
-            >
-              {isOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </button>
-          </div>
+    <header className="site-header">
+      <div className="site-container header-row">
+        <Link to="/" className="site-brand" aria-label={t('navigation.homeLabel')}><img src="/images/mavex-logo.png" alt="" width="52" height="52" /><span>INVESTMENTS</span></Link>
+        <nav className="desktop-navigation" aria-label={t('navigation.primaryLabel')}>
+          {items.map(item => <Link key={item.key} to={item.href} aria-current={isActive(item.href) ? 'location' : undefined}>{t(item.key)}</Link>)}
+        </nav>
+        <div className="header-tools">
+          <LanguageSwitcher />
+          <ContactButton className="header-contact">{t('navigation.contact')}<ArrowUpRight size={15} aria-hidden="true" /></ContactButton>
+          <button type="button" className="mobile-toggle" onClick={() => setIsOpen(open => !open)} aria-expanded={isOpen} aria-controls="mobile-navigation" aria-label={t(isOpen ? 'navigation.close' : 'navigation.open')}>{isOpen ? <X size={23} /> : <Menu size={23} />}</button>
         </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div id="mobile-navigation" className="lg:hidden pb-4">
-            <nav className="space-y-1 border border-white/10 bg-slate-dark/95 p-2 backdrop-blur-md" aria-label={t('navigation.mobileLabel')}>
-              <LanguageSwitcher variant="mobile" />
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.key}
-                  to={item.href}
-                  className={`block px-3 py-2 text-base font-medium text-white rounded-md transition-colors ${
-                    location.pathname === item.href
-                      ? 'bg-copper text-white'
-                      : 'hover:bg-slate-light'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {t(item.key)}
-                </Link>
-              ))}
-              <ContactButton
-                onOpen={() => setIsOpen(false)}
-                className="flex items-center gap-2 rounded-md px-3 py-3 text-base font-medium text-white hover:bg-slate-light"
-              >
-                <Mail className="h-5 w-5 text-copper-light" aria-hidden="true" />
-                business@mavexinvest.com
-              </ContactButton>
-            </nav>
-          </div>
-        )}
       </div>
+      {isOpen && <nav id="mobile-navigation" className="mobile-navigation site-container" aria-label={t('navigation.mobileLabel')}>{items.map(item => <Link key={item.key} to={item.href} onClick={() => setIsOpen(false)} aria-current={isActive(item.href) ? 'location' : undefined}>{t(item.key)}<ArrowUpRight size={17} aria-hidden="true" /></Link>)}</nav>}
     </header>
   );
 };
-
 export default Navbar;
