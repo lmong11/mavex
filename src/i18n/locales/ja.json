@@ -75,6 +75,29 @@
     "enquirySteps": "分析報告書の提供 → 原料評価 → お見積りのご相談",
     "contact": "原料・加工について相談"
   },
+  "laboratory": {
+    "label": "分析室",
+    "title": "Zhongyu 分析室",
+    "intro": "機器分析と化学分析の作業エリアが、原料、工程試料、製品の検査を支えます。",
+    "visit": "分析室を見る",
+    "images": {
+      "overview": {
+        "title": "機器分析室",
+        "caption": "分析機器、作業台、換気設備。",
+        "alt": "Zhongyu 分析室内の分析機器、作業台、排気ダクト。"
+      },
+      "instruments": {
+        "title": "機器分析ワークステーション",
+        "caption": "分析機器とコンピューター作業環境。",
+        "alt": "Zhongyu 分析室の分析機器とコンピューター作業台。"
+      },
+      "chemistry": {
+        "title": "化学分析エリア",
+        "caption": "試薬、容量分析用ガラス器具、実験台。",
+        "alt": "Zhongyu 分析室の試薬とガラス器具を備えた化学分析実験台。"
+      }
+    }
+  },
   "qualityControl": {
     "label": "品質管理・分析能力",
     "title": "加工工程を支える分析。",

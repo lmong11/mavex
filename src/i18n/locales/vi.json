@@ -75,6 +75,29 @@
     "enquirySteps": "Gửi báo cáo phân tích → Đánh giá nguyên liệu → Trao đổi báo giá",
     "contact": "Trao đổi về nguyên liệu"
   },
+  "laboratory": {
+    "label": "Phòng thí nghiệm",
+    "title": "Phòng thí nghiệm Zhongyu",
+    "intro": "Khu vực phân tích bằng thiết bị và phân tích hóa học hỗ trợ kiểm tra nguyên liệu đầu vào, mẫu trong quá trình và sản phẩm.",
+    "visit": "Khám phá phòng thí nghiệm",
+    "images": {
+      "overview": {
+        "title": "Phòng thiết bị phân tích",
+        "caption": "Thiết bị phân tích, bàn làm việc và hệ thống thông gió.",
+        "alt": "Thiết bị phân tích, bàn làm việc và đường ống hút khí trong phòng thí nghiệm Zhongyu."
+      },
+      "instruments": {
+        "title": "Bàn thiết bị phân tích",
+        "caption": "Thiết bị phân tích và máy tính phục vụ công việc.",
+        "alt": "Thiết bị phân tích và bàn máy tính trong phòng thí nghiệm Zhongyu."
+      },
+      "chemistry": {
+        "title": "Khu vực phân tích hóa học",
+        "caption": "Hóa chất, dụng cụ thủy tinh định mức và bàn thí nghiệm.",
+        "alt": "Bàn phân tích hóa học với hóa chất và dụng cụ thủy tinh trong phòng thí nghiệm Zhongyu."
+      }
+    }
+  },
   "qualityControl": {
     "label": "Kiểm soát chất lượng & năng lực phân tích",
     "title": "Phân tích xuyên suốt quy trình.",

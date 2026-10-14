@@ -75,6 +75,29 @@
     "enquirySteps": "분석 보고서 제공 → 원료 평가 → 견적 협의",
     "contact": "원료 및 가공 문의"
   },
+  "laboratory": {
+    "label": "분석실",
+    "title": "Zhongyu 분석실",
+    "intro": "기기 분석 및 화학 분석 공간에서 원료, 공정 시료, 제품의 시험을 지원합니다.",
+    "visit": "분석실 살펴보기",
+    "images": {
+      "overview": {
+        "title": "기기 분석실",
+        "caption": "분석 장비, 작업대 및 환기 설비.",
+        "alt": "Zhongyu 분석실의 분석 장비, 작업대 및 배기 덕트."
+      },
+      "instruments": {
+        "title": "기기 분석 작업대",
+        "caption": "분석 장비와 컴퓨터 작업 공간.",
+        "alt": "Zhongyu 분석실의 분석 장비와 컴퓨터 작업대."
+      },
+      "chemistry": {
+        "title": "화학 분석 공간",
+        "caption": "시약, 부피 측정용 유리 기구 및 실험대.",
+        "alt": "시약과 유리 기구가 놓인 Zhongyu 분석실의 화학 분석 실험대."
+      }
+    }
+  },
   "qualityControl": {
     "label": "품질 관리 및 분석 역량",
     "title": "가공 전 과정을 뒷받침하는 분석.",

@@ -75,6 +75,29 @@
     "enquirySteps": "Assay report → Material assessment → Quotation discussion",
     "contact": "Discuss your material"
   },
+  "laboratory": {
+    "label": "Laboratory",
+    "title": "Zhongyu laboratory",
+    "intro": "Instrumental and chemical analysis workspaces support the testing of incoming materials, process samples, and products.",
+    "visit": "Inside the laboratory",
+    "images": {
+      "overview": {
+        "title": "Instrument room",
+        "caption": "Analytical instruments, workbenches, and ventilation facilities.",
+        "alt": "Analytical instruments, workbenches, and extraction ducts inside the Zhongyu laboratory."
+      },
+      "instruments": {
+        "title": "Instrument analysis workstation",
+        "caption": "Analytical equipment and its computer workstation.",
+        "alt": "An analytical instrument and computer workstation in the Zhongyu laboratory."
+      },
+      "chemistry": {
+        "title": "Chemical analysis workspace",
+        "caption": "Reagents, volumetric glassware, and laboratory benches.",
+        "alt": "Chemical analysis benches with reagents and glassware in the Zhongyu laboratory."
+      }
+    }
+  },
   "qualityControl": {
     "label": "Quality control & testing",
     "title": "Analysis throughout the process.",
