@@ -18,7 +18,12 @@ const Hero = () => {
           <div className="hero-range" aria-label={t('redesign.navProducts')}><span>APT</span><i /><span>YTO</span><i /><span>BTO</span></div>
         </div>
         <figure className="hero-photo">
-          <img src="/images/brand/mavex-reception-hero.jpg" alt={t('redesign.heroImageAlt')} width="1448" height="1086" />
+          <div className="hero-photo-frame">
+            <div className="hero-photo-scene" role="img" aria-label={t('redesign.heroImageAlt')}>
+              <img className="hero-photo-background" src="/images/brand/mavex-reception-background-v6.jpg" alt="" width="1448" height="1086" />
+              <img className="hero-original-logo" src="/images/mavex-logo.png" alt="" width="1024" height="1024" />
+            </div>
+          </div>
           <figcaption><span>MAVEX INVESTMENTS</span><Link to="/materials-processing">{t('redesign.materialsLink')}<ArrowUpRight size={17} aria-hidden="true" /></Link></figcaption>
         </figure>
       </div>
